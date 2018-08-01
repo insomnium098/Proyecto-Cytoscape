@@ -4,11 +4,14 @@ library(dplyr)
 ########## Procesamiento de reactants_products.txt y reactions.txt
 ##########  El producto es df_edges
 
-reactants_products <- read.delim("reactants_products.txt", header = FALSE)
-colnames(reactants_products) <- c("id","name","type")
+reactants_products <- read.delim("reactants_products.txt", header = FALSE,
+                                 col.names = c("id","name","type") )
 
-reactions <- read.delim("reactions.txt", header = FALSE)
-colnames(reactions) <- c("id","reaction_type","direction","ecocyc_name_id")
+
+reactions <- read.delim("reactions.txt", header = FALSE,
+                        col.names = c("id","reaction_type"
+                                      ,"direction",
+                                      "ecocyc_name_id"))
 
 
 ###Separar matriz reactant_product por producto y reaccion para
