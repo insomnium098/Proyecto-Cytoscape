@@ -1,0 +1,4 @@
+csa1	MntR-Cadmium	MntR
+csa1	MntR-Cadmium	Cadmium
+csa2	MntR-Mn(II)	MntR
+csa2	MntR-Mn(II)	Mn(II)

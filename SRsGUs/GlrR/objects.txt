@@ -1,0 +1,6 @@
+GlrR	PROTEIN
+GlrR-phosphate	COMPLEX
+RNA:Tke1	PROTEIN	TKE1-RNA
+glmY	GENE
+glmY_mRNA	RNA
+phosphate	SIMPLE_MOLECULE

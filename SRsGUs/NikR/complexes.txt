@@ -1,0 +1,15 @@
+csa1	NikR-Cadmium	NikR
+csa1	NikR-Cadmium	Cadmium
+csa2	NikR-cobalt ion	NikR
+csa2	NikR-cobalt ion	cobalt ion
+csa3	NikR-Cu(II)	NikR
+csa3	NikR-Cu(II)	Cu(II)
+csa4	NikR-nickel	NikR
+csa4	NikR-nickel	nickel
+csa5	NikR-Zinc	NikR
+csa5	NikR-Zinc	Zinc
+csa6	NikD-NikE-NikB-NikC-NikA	NikD
+csa6	NikD-NikE-NikB-NikC-NikA	NikE
+csa6	NikD-NikE-NikB-NikC-NikA	NikB
+csa6	NikD-NikE-NikB-NikC-NikA	NikC
+csa6	NikD-NikE-NikB-NikC-NikA	NikA

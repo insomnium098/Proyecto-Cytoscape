@@ -1,0 +1,56 @@
+re1	aidB	reactant
+re1	aidB_mRNA	product
+re2	alkA	reactant
+re2	alkA_mRNA	product
+re3	ada-alkB	reactant
+re3	ada-alkB_mRNA	product
+re4	methyl	reactant
+re4	Ada	reactant
+re4	Ada-methyl	product
+re5	aidB_mRNA	reactant
+re5	AidB	product
+re6	isovaleryl-CoA	reactant
+re6	oxidized ETF	reactant
+re6	3-methylcrotonyl-CoA	product
+re6	reduced ETF	product
+re7	ada-alkB_mRNA	reactant
+re7	Ada	product
+re8	DNA 6-O-methylguanine	reactant
+re8	peptide cysteine	reactant
+re8	[protein]-S-methyl-L-cysteine	product
+re8	DNA guanine	product
+re9	ada-alkB_mRNA	reactant
+re9	AlkB	product
+re10	ketoglutarate	reactant
+re10	DNA-base-CH3	reactant
+re10	oxygen	reactant
+re10	nucleobase within DNA	product
+re10	succinate	product
+re10	formol	product
+re10	CO2	product
+re11	1-ethyladenine	reactant
+re11	ketoglutarate	reactant
+re11	oxygen	reactant
+re11	succinate	product
+re11	adenine	product
+re11	ethanal	product
+re11	CO2	product
+re12	N3-methylcytosine	reactant
+re12	ketoglutarate	reactant
+re12	oxygen	reactant
+re12	succinate	product
+re12	cytosine	product
+re12	formol	product
+re12	CO2	product
+re13	1-methyladenine	reactant
+re13	ketoglutarate	reactant
+re13	oxygen	reactant
+re13	succinate	product
+re13	adenine	product
+re13	formol	product
+re13	CO2	product
+re14	alkA_mRNA	reactant
+re14	AlkA	product
+re15	alkylated DNA	reactant
+re15	base(2)	product
+re15	DNA(N)	product

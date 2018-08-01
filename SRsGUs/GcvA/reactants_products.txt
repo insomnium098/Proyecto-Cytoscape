@@ -1,0 +1,45 @@
+re1	gcvB	reactant
+re1	gcvB_mRNA	product
+re2	gcvTHP	reactant
+re2	gcvTHP_mRNA	product
+re3	gcvA	reactant
+re3	gcvA_mRNA	product
+re4	glycine	reactant
+re4	GcvA	reactant
+re4	GcvA-glycine	product
+re5	purine	reactant
+re5	GcvA	reactant
+re5	GcvA-purine	product
+re6	gcvB_mRNA	reactant
+re6	RNA:GcvB	product
+re7	gcvA_mRNA	reactant
+re7	GcvA	product
+re8	gcvTHP_mRNA	reactant
+re8	GcvT	product
+re9	GcvP	reactant
+re9	GcvH	reactant
+re9	GcvT	reactant
+re9	Lpd	reactant
+re9	Lpd-GcvP-GcvH-GcvT	product
+re10	THF polyglutamate	reactant
+re10	glycine	reactant
+re10	methylene-H4PteGlu(n)	product
+re10	ammonium	product
+re10	CO2	product
+re11	[glycine-cleavage complex H protein] N6-lipoyl-L-lysine	reactant
+re11	glycine	reactant
+re11	[glycine-cleavage complex H protein] N6-aminomethyldihydrolipoyl-L-lysine	product
+re11	CO2	product
+re12	[glycine-cleavage complex H protein] N6-aminomethyldihydrolipoyl-L-lysine	reactant
+re12	THF polyglutamate	reactant
+re12	[glycine-cleavage complex H protein] N6-dihydrolipoyl-L-lysine	product
+re12	methylene-H4PteGlu(n)	product
+re12	ammonium	product
+re13	[glycine-cleavage complex H protein] N6-dihydrolipoyl-L-lysine	reactant
+re13	[glycine-cleavage complex H protein] N6-lipoyl-L-lysine	product
+re14	gcvTHP_mRNA	reactant
+re14	GcvH	product
+re15	gcvTHP_mRNA	reactant
+re15	GcvP	product
+re16	methylene-H4PteGlu(n)	reactant
+re16	glycine	product

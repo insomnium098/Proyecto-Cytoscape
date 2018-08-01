@@ -1,0 +1,15 @@
+csa1	MprA-2,4-DNP	MprA
+csa1	MprA-2,4-DNP	2,4-DNP
+csa2	MprA-CCCP	MprA
+csa2	MprA-CCCP	CCCP
+csa3	MprA-Carbonyl cyanide p-(trifluoro-methoxy)phenylhydrazone	MprA
+csa3	MprA-Carbonyl cyanide p-(trifluoro-methoxy)phenylhydrazone	Carbonyl cyanide p-(trifluoro-methoxy)phenylhydrazone
+csa4	EmrA-EmrB-TolC	EmrA
+csa4	EmrA-EmrB-TolC	EmrB
+csa4	EmrA-EmrB-TolC	TolC
+csa5	AcrD-AcrA-TolC	AcrD
+csa5	AcrD-AcrA-TolC	AcrA
+csa5	AcrD-AcrA-TolC	TolC
+csa6	AcrA-TolC-AcrB	AcrA
+csa6	AcrA-TolC-AcrB	TolC
+csa6	AcrA-TolC-AcrB	AcrB

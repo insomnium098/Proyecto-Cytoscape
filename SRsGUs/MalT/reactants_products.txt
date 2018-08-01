@@ -1,0 +1,118 @@
+re1	ADP group	reactant
+re1	MalT	reactant
+re1	MalT-ADP group	product
+re2	malEFG	reactant
+re2	malEFG_mRNA	product
+re3	malK-lamB-malM	reactant
+re3	malK-lamB-malM_mRNA	product
+re4	malPQ	reactant
+re4	malPQ_mRNA	product
+re5	malS	reactant
+re5	malS_mRNA	product
+re6	malZ	reactant
+re6	malZ_mRNA	product
+re7	adenylpyrophosphate	reactant
+re7	MalT	reactant
+re7	MalT-adenylpyrophosphate	product
+re8	maltotriose	reactant
+re8	MalT	reactant
+re8	MalT-maltotriose	product
+re9	MalT	reactant
+re9	Aes	reactant
+re9	MalT-Aes	product
+re10	MalT	reactant
+re10	MalK	reactant
+re10	MalT-MalK	product
+re11	MalY	reactant
+re11	MalT	reactant
+re11	MalT-MalY	product
+re12	malK-lamB-malM_mRNA	reactant
+re12	MalK	product
+re13	MalE	reactant
+re13	MalF	reactant
+re13	MalG	reactant
+re13	MalK	reactant
+re13	MalK-MalF-MalG-MalE	product
+re14	maltose_Ext	reactant
+re14	maltose	product
+re15	maltotetraose_Ext	reactant
+re15	maltotetraose	product
+re16	maltotriose_Ext	reactant
+re16	maltotriose	product
+re17	malK-lamB-malM_mRNA	reactant
+re17	LamB	product
+re18	non-specific ion/solute_Ext	reactant
+re18	non-specific ion/solute	product
+re19	malK-lamB-malM_mRNA	reactant
+re19	MalM	product
+re20	malPQ_mRNA	reactant
+re20	MalP	product
+re21	debranched alpha-limit dextrin	reactant
+re21	phosphate	reactant
+re21	D-glucose 1-phosphate	product
+re22	maltoheptaose	reactant
+re22	phosphate	reactant
+re22	D-glucose 1-phosphate	product
+re22	maltohexaose	product
+re23	maltohexaose	reactant
+re23	phosphate	reactant
+re23	D-glucose 1-phosphate	product
+re23	maltopentaose	product
+re24	maltopentaose	reactant
+re24	phosphate	reactant
+re24	D-glucose 1-phosphate	product
+re24	maltotetraose	product
+re25	maltotetraose	reactant
+re25	phosphate	reactant
+re25	D-glucose 1-phosphate	product
+re25	maltotriose	product
+re26	phosphate	reactant
+re26	amylose	reactant
+re26	D-glucose 1-phosphate	product
+re26	amylose	product
+re27	malPQ_mRNA	reactant
+re27	MalQ	product
+re28	glucopyranose	reactant
+re28	maltohexaose	reactant
+re28	maltopentaose	product
+re28	maltose	product
+re29	glucopyranose	reactant
+re29	maltopentaose	reactant
+re29	maltotetraose	product
+re29	maltose	product
+re30	maltohexaose	reactant
+re30	maltose	reactant
+re30	glucopyranose	product
+re30	maltoheptaose	product
+re31	maltotriose	reactant
+re31	maltose	reactant
+re31	glucopyranose	product
+re31	maltotetraose	product
+re32	malZ_mRNA	reactant
+re32	MalZ	product
+re33	maltotriose	reactant
+re33	glucopyranose	product
+re33	maltose	product
+re34	amylose	reactant
+re34	glucopyranose	product
+re34	amylose	product
+re35	maltopentaose	reactant
+re35	glucopyranose	product
+re35	maltotetraose	product
+re36	maltohexaose	reactant
+re36	glucopyranose	product
+re36	maltopentaose	product
+re37	maltoheptaose	reactant
+re37	glucopyranose	product
+re37	maltohexaose	product
+re38	malEFG_mRNA	reactant
+re38	MalE	product
+re39	malEFG_mRNA	reactant
+re39	MalF	product
+re40	malEFG_mRNA	reactant
+re40	MalG	product
+re41	malS_mRNA	reactant
+re41	MalS	product
+re42	amylose	reactant
+re42	maltohexaose	product
+re42	amylose	product

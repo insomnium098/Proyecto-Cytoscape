@@ -1,0 +1,114 @@
+re10	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re100	CATALYSIS	TadA
+re108	CATALYSIS	SufS
+re109	CATALYSIS	SufS
+re11	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re110	CATALYSIS	SufS
+re111	CATALYSIS	SufS
+re111	INHIBITION	pyruvate	REG0-8228
+re112	CATALYSIS	SufS
+re117	CATALYSIS	HycD-HycC-HycF-HycG-HycB-HycE
+re12	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re125	CATALYSIS	HycI
+re13	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re133	CATALYSIS	Ndh
+re134	CATALYSIS	Ndh
+re135	CATALYSIS	Ndh
+re137	CATALYSIS	Hcp
+re137	INHIBITION	oxygen	REG0-8688
+re139	CATALYSIS	Hcr
+re14	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re141	CATALYSIS	AceE
+re141	CATALYSIS	AceE-AceF-Lpd
+re142	CATALYSIS	AceE
+re143	CATALYSIS	AceE
+re145	CATALYSIS	AceE-AceF-Lpd
+re145	INHIBITION	TeO2	REG0-11561
+re145	INHIBITION	pyruvate	REG0-6996
+re146	CATALYSIS	AceE-AceF-Lpd
+re146	CATALYSIS	AceF
+re147	CATALYSIS	AceE-AceF-Lpd
+re147	CATALYSIS	Lpd
+re15	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re151	CATALYSIS	Cdd
+re152	CATALYSIS	Cdd
+re154	CATALYSIS	TehA
+re156	CATALYSIS	TehB
+re16	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re168	CATALYSIS	TcyN-TcyL-TcyJ
+re169	CATALYSIS	TcyN-TcyL-TcyJ
+re169	INHIBITION	cysteine	REG0-12097
+re17	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re171	CATALYSIS	MhpT
+re172	CATALYSIS	MhpT
+re178	CATALYSIS	Lpd
+re179	CATALYSIS	Lpd
+re179	CATALYSIS	Lpd-GcvP-GcvH-GcvT
+re18	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re180	CATALYSIS	Lpd
+re180	CATALYSIS	SucA-SucB-Lpd
+re182	CATALYSIS	SucA-SucB-Lpd
+re183	CATALYSIS	SucA-SucB-Lpd
+re184	CATALYSIS	SucA-SucB-Lpd
+re186	CATALYSIS	Lpd-GcvP-GcvH-GcvT
+re187	CATALYSIS	Lpd-GcvP-GcvH-GcvT
+re188	CATALYSIS	Lpd-GcvP-GcvH-GcvT
+re19	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re191	CATALYSIS	Hmp
+re192	CATALYSIS	Hmp
+re194	CATALYSIS	ThrS
+re197	CATALYSIS	WaaH
+re2	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re20	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re206	CATALYSIS	PheS-PheT
+re21	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re22	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re23	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re24	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re25	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re26	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re27	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re28	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re29	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re3	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re30	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re31	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re32	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re33	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re34	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re35	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re37	INHIBITION	NsrR
+re38	INHIBITION	NsrR
+re39	INHIBITION	NsrR
+re4	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re41	CATALYSIS	Rfe
+re45	CATALYSIS	WecB
+re45	INHIBITION	UDP-GlcNAc	REG0-11735
+re47	CATALYSIS	WecC
+re47	INHIBITION	ammonium	REG0-11788
+re49	CATALYSIS	RffG
+re5	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re51	CATALYSIS	RffH
+re51	INHIBITION	TDP-glucose	REG0-11790
+re53	CATALYSIS	RffC
+re55	CATALYSIS	RffA
+re57	CATALYSIS	WzxE
+re59	CATALYSIS	RffT
+re6	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re62	CATALYSIS	RffM
+re64	CATALYSIS	MepH
+re67	CATALYSIS	NrfD-NrfC-NrfB-NrfA
+re68	CATALYSIS	NrfD-NrfC-NrfB-NrfA
+re7	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re76	CATALYSIS	DkgB
+re76	CATALYSIS	YeaE
+re77	CATALYSIS	DkgB
+re78	CATALYSIS	DkgB
+re8	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re84	CATALYSIS	FeaB
+re84	INHIBITION	hyacinthin	REG0-8930
+re86	CATALYSIS	SodB
+re86	INHIBITION	perhydrol	REG0-11608
+re9	INHIBITION	NsrR-reduced [2Fe-2S] ferredoxin
+re90	CATALYSIS	HypB
+re98	CATALYSIS	PgpC

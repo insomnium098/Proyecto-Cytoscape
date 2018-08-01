@@ -1,0 +1,18 @@
+re1	rtcBA	reactant
+re1	rtcBA_mRNA	product
+re2	rtcBA_mRNA	reactant
+re2	RtcB	product
+re3	RNA terminal-2',3'-cyclic-phosphate	reactant
+re3	5'-hydroxyl terminated RNA	reactant
+re3	guanosine-triphosphate	reactant
+re3	diphosphate	product
+re3	ligated RNA	product
+re3	guanylate	product
+re4	rtcBA_mRNA	reactant
+re4	RtcA	product
+re5	RNA 3'-terminal-phosphate	reactant
+re5	RNA terminal-2',3'-cyclic-phosphate	product
+re5	diphosphate	product
+re6	5'-phosphopolynucleotide	reactant
+re6	5' adenylylated polynucleotide	product
+re6	diphosphate	product

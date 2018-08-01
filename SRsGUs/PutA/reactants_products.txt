@@ -1,0 +1,22 @@
+re1	putA	reactant
+re1	putA_mRNA	product
+re2	putP	reactant
+re2	putP_mRNA	product
+re3	putP_mRNA	reactant
+re3	PutP	product
+re4	proline_Ext	reactant
+re4	Sodium_Ext	reactant
+re4	proline	product
+re4	Sodium	product
+re5	propanoate_Ext	reactant
+re5	propanoate	product
+re6	putA_mRNA	reactant
+re6	PutA	product
+re7	ubiquinone	reactant
+re7	proline	reactant
+re7	pyrroline 5-carboxylate	product
+re7	ubiquinol	product
+re8	glutamate-semialdehyde	reactant
+re8	L-glutamate	product
+re9	pyrroline 5-carboxylate	reactant
+re9	glutamate-semialdehyde	product

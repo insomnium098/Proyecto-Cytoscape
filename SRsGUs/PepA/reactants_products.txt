@@ -1,0 +1,31 @@
+re1	carAB	reactant
+re1	carAB_mRNA	product
+re2	pepA	reactant
+re2	pepA_mRNA	product
+re3	pepA_mRNA	reactant
+re3	PepA	product
+re4	peptide with an N-terminal X-L-proline	reactant
+re4	peptide with an N-terminal L-proline	product
+re4	amino acids	product
+re5	Cys-Gly	reactant
+re5	cysteine	product
+re5	glycine	product
+re6	carAB_mRNA	reactant
+re6	CarA	product
+re7	CarB	reactant
+re7	CarA	reactant
+re7	CarB-CarA	product
+re8	glutamine	reactant
+re8	carbonate	reactant
+re8	L-glutamate	product
+re8	carbamoyl-P	product
+re8	phosphate	product
+re9	glutamine	reactant
+re9	L-glutamate	product
+re9	ammonium	product
+re10	carbonate	reactant
+re10	ammonium	reactant
+re10	carbamoyl-P	product
+re10	phosphate	product
+re11	carAB_mRNA	reactant
+re11	CarB	product

@@ -1,0 +1,219 @@
+re1	nrdHIEF	reactant
+re1	nrdHIEF_mRNA	product
+re2	sufABCDSE	reactant
+re2	sufABCDSE_mRNA	product
+re3	ydiU	reactant
+re3	ydiU_mRNA	product
+re4	erpA	reactant
+re4	erpA_mRNA	product
+re5	gntX-nfuA	reactant
+re5	gntX-nfuA_mRNA	product
+re6	hyaABCDEF	reactant
+re6	hyaABCDEF_mRNA	product
+re7	iscRSUA	reactant
+re7	iscRSUA_mRNA	product
+re8	napFDAGHBC-ccmABCDEFGH	reactant
+re8	napFDAGHBC-ccmABCDEFGH_mRNA	product
+re9	rnlAB	reactant
+re9	rnlAB_mRNA	product
+re10	[2Fe-2S]1+	reactant
+re10	IscR	reactant
+re10	IscR-[2Fe-2S]1+	product
+re11	napFDAGHBC	reactant
+re11	napFDAGHBC_mRNA	product
+re12	nfuA	reactant
+re12	nfuA_mRNA	product
+re13	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re13	NapF	product
+re14	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re14	NapD	product
+re15	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re15	NapA	product
+re16	NapH	reactant
+re16	NapB	reactant
+re16	NapA	reactant
+re16	NapC	reactant
+re16	NapG	reactant
+re16	NapB-NapC-NapH-NapG-NapA	product
+re17	ubiquinol	reactant
+re17	nitrate	reactant
+re17	ubiquinone	product
+re17	nitrite	product
+re18	menaquinol	reactant
+re18	nitrate	reactant
+re18	vitamin K2	product
+re18	nitrite	product
+re19	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re19	NapG	product
+re20	NapH	reactant
+re20	NapG	reactant
+re20	NapG-NapH	product
+re21	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re21	NapH	product
+re22	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re22	NapB	product
+re23	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re23	NapC	product
+re24	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re24	CcmA	product
+re25	CcmA	reactant
+re25	CcmD	reactant
+re25	CcmB	reactant
+re25	CcmE	reactant
+re25	CcmC	reactant
+re25	CcmD-CcmB-CcmA-CcmE-CcmC	product
+re26	protoheme IX_Ext	reactant
+re26	protoheme IX	product
+re27	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re27	CcmB	product
+re28	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re28	CcmC	product
+re29	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re29	CcmD	product
+re30	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re30	CcmE	product
+re31	CcmG	reactant
+re31	CcmE	reactant
+re31	CcmF	reactant
+re31	CcmH	reactant
+re31	CcmE-CcmF-CcmG-CcmH	product
+re32	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re32	CcmF	product
+re33	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re33	CcmG	product
+re34	napFDAGHBC-ccmABCDEFGH_mRNA	reactant
+re34	CcmH	product
+re35	nrdHIEF_mRNA	reactant
+re35	NrdH	product
+re36	nrdHIEF_mRNA	reactant
+re36	NrdI	product
+re37	nrdHIEF_mRNA	reactant
+re37	NrdE	product
+re38	NrdE	reactant
+re38	NrdF	reactant
+re38	NrdE-NrdF	product
+re39	cytidine-diphosphate	reactant
+re39	YgaN	reactant
+re39	oxidized NrdH glutaredoxin-like protein	product
+re39	dCDP	product
+re40	guanosine-diphosphate	reactant
+re40	YgaN	reactant
+re40	oxidized NrdH glutaredoxin-like protein	product
+re40	dGDP	product
+re41	YgaN	reactant
+re41	oxidized NrdH glutaredoxin-like protein	product
+re41	dADP	product
+re42	uridine-diphosphate	reactant
+re42	YgaN	reactant
+re42	oxidized NrdH glutaredoxin-like protein	product
+re42	dUDP	product
+re43	nucleoside diphosphate	reactant
+re43	reduced thioredoxin	reactant
+re43	deoxynucleoside diphosphate	product
+re43	thioredoxin disulfide	product
+re44	nrdHIEF_mRNA	reactant
+re44	NrdF	product
+re45	rnlAB_mRNA	reactant
+re45	RnlA	product
+re46	mRNA	reactant
+re46	single-stranded RNA	product
+re47	RnlA	reactant
+re47	RnlB	reactant
+re47	RnlB-RnlA	product
+re48	rnlAB_mRNA	reactant
+re48	RnlB	product
+re49	iscRSUA_mRNA	reactant
+re49	IscR	product
+re50	iscRSUA_mRNA	reactant
+re50	IscS	product
+re51	cystein desulfurase	reactant
+re51	cysteine	reactant
+re51	S-sulfanyl-[L-cysteine desulfurase]	product
+re51	alanine	product
+re52	unsulfurated [sulfur donor]	reactant
+re52	cysteine	reactant
+re52	sulfurated sulfur donor	product
+re52	alanine	product
+re53	[L-cysteine desulfurase] L-cysteine persulfide	reactant
+re53	unsulfurated [sulfur donor]	reactant
+re53	sulfurated sulfur donor	product
+re53	protein cysteines	product
+re54	[L-cysteine desulfurase] L-cysteine persulfide	reactant
+re54	ThiI	reactant
+re54	sulfurylated sulfur-carrier protein ThiI	product
+re54	protein cysteines	product
+re55	protein cysteines	reactant
+re55	cysteine	reactant
+re55	[L-cysteine desulfurase] L-cysteine persulfide	product
+re55	alanine	product
+re56	iscRSUA_mRNA	reactant
+re56	IscU	product
+re57	[disordered-form [Fe-S] cluster scaffold protein]	reactant
+re57	S-sulfanyl-[L-cysteine desulfurase]	reactant
+re57	S-sulfanyl-[cysteine desulfurase]-[disordered-form scaffold protein] complex	product
+re58	iscRSUA_mRNA	reactant
+re58	IscA	product
+re59	sufABCDSE_mRNA	reactant
+re59	SufA	product
+re60	sufABCDSE_mRNA	reactant
+re60	SufB	product
+re61	SufD	reactant
+re61	SufB	reactant
+re61	SufC	reactant
+re61	SufB-SufC-SufD	product
+re62	sufABCDSE_mRNA	reactant
+re62	SufC	product
+re63	sufABCDSE_mRNA	reactant
+re63	SufD	product
+re64	sufABCDSE_mRNA	reactant
+re64	SufS	product
+re65	3-sulfinoalanine	reactant
+re65	alanine	product
+re65	sulfite	product
+re66	selenocysteine	reactant
+re66	A(H2)	reactant
+re66	acceptors	product
+re66	selenide	product
+re66	alanine	product
+re67	sufABCDSE_mRNA	reactant
+re67	SufE	product
+re68	ydiU_mRNA	reactant
+re68	YdiU	product
+re69	hyaABCDEF_mRNA	reactant
+re69	HyaA	product
+re70	HyaC	reactant
+re70	HyaB	reactant
+re70	HyaA	reactant
+re70	HyaA-HyaB-HyaC	product
+re71	hyaABCDEF_mRNA	reactant
+re71	HyaB	product
+re72	hyaABCDEF_mRNA	reactant
+re72	HyaC	product
+re73	hyaABCDEF_mRNA	reactant
+re73	HyaD	product
+re74	hyaABCDEF_mRNA	reactant
+re74	HyaE	product
+re75	hyaABCDEF_mRNA	reactant
+re75	HyaF	product
+re76	gntX-nfuA_mRNA	reactant
+re76	GntX	product
+re77	gntX-nfuA_mRNA	reactant
+re77	NfuA	product
+re78	napFDAGHBC_mRNA	reactant
+re78	NapF	product
+re79	napFDAGHBC_mRNA	reactant
+re79	NapD	product
+re80	napFDAGHBC_mRNA	reactant
+re80	NapA	product
+re81	napFDAGHBC_mRNA	reactant
+re81	NapG	product
+re82	napFDAGHBC_mRNA	reactant
+re82	NapH	product
+re83	napFDAGHBC_mRNA	reactant
+re83	NapB	product
+re84	napFDAGHBC_mRNA	reactant
+re84	NapC	product
+re85	erpA_mRNA	reactant
+re85	ErpA	product
+re86	nfuA_mRNA	reactant
+re86	NfuA	product

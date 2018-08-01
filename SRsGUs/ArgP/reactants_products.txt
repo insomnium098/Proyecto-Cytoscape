@@ -1,0 +1,136 @@
+re1	argO	reactant
+re1	argO_mRNA	product
+re2	dapB	reactant
+re2	dapB_mRNA	product
+re3	dnaAN-recF	reactant
+re3	dnaAN-recF_mRNA	product
+re4	gdhA	reactant
+re4	gdhA_mRNA	product
+re5	lysA	reactant
+re5	lysA_mRNA	product
+re6	lysC	reactant
+re6	lysC_mRNA	product
+re7	lysP	reactant
+re7	lysP_mRNA	product
+re8	map-glnD-dapD	reactant
+re8	map-glnD-dapD_mRNA	product
+re9	nrdAB-yfaE	reactant
+re9	nrdAB-yfaE_mRNA	product
+re10	argP	reactant
+re10	argP_mRNA	product
+re11	arginine	reactant
+re11	ArgP	reactant
+re11	ArgP-arginine	product
+re12	lysine	reactant
+re12	ArgP	reactant
+re12	ArgP-lysine	product
+re13	dapD	reactant
+re13	dapD_mRNA	product
+re14	lysA_mRNA	reactant
+re14	LysA	product
+re15	M-DAP	reactant
+re15	lysine	product
+re15	CO2	product
+re16	argO_mRNA	reactant
+re16	ArgO	product
+re17	arginine_Ext	reactant
+re17	arginine	product
+re18	gdhA_mRNA	reactant
+re18	GdhA	product
+re19	L-glutamate	reactant
+re19	ketoglutarate	product
+re19	ammonium	product
+re20	lysC_mRNA	reactant
+re20	LysC	product
+re21	aspartate	reactant
+re21	aspartyl-4-P	product
+re22	dapD_mRNA	reactant
+re22	DapD	product
+re23	tetrahydrodipicolinate	reactant
+re23	suc-coa	reactant
+re23	N-Succinyl-2-L-amino-6-oxoheptanedioate	product
+re23	coenzyme A	product
+re24	lysP_mRNA	reactant
+re24	LysP	product
+re25	lysine_Ext	reactant
+re25	lysine	product
+re26	nrdAB-yfaE_mRNA	reactant
+re26	NrdA	product
+re27	NrdB	reactant
+re27	NrdA	reactant
+re27	NrdA-NrdB	product
+re28	nucleoside diphosphate	reactant
+re28	reduced thioredoxin	reactant
+re28	deoxynucleoside diphosphate	product
+re28	thioredoxin disulfide	product
+re29	cytidine-diphosphate	reactant
+re29	reduced thioredoxin	reactant
+re29	thioredoxin disulfide	product
+re29	dCDP	product
+re30	reduced thioredoxin	reactant
+re30	uridine-diphosphate	reactant
+re30	thioredoxin disulfide	product
+re30	dUDP	product
+re31	thioredoxin disulfide	reactant
+re31	dADP	reactant
+re31	reduced thioredoxin	product
+re32	guanosine-diphosphate	reactant
+re32	reduced thioredoxin	reactant
+re32	thioredoxin disulfide	product
+re32	dGDP	product
+re33	nrdAB-yfaE_mRNA	reactant
+re33	NrdB	product
+re34	nrdAB-yfaE_mRNA	reactant
+re34	YfaE	product
+re35	map-glnD-dapD_mRNA	reactant
+re35	DapD	product
+re36	map-glnD-dapD_mRNA	reactant
+re36	GlnD	product
+re37	uridine-triphosphate	reactant
+re37	GlnB	reactant
+re37	diphosphate	product
+re37	GlnB	product
+re38	GlnB	reactant
+re38	5'-UMP	product
+re38	GlnB	product
+re39	uridine-triphosphate	reactant
+re39	GlnK	reactant
+re39	diphosphate	product
+re39	YbaI	product
+re40	map-glnD-dapD_mRNA	reactant
+re40	Map	product
+re41	peptide with an N-terminal L-methionine	reactant
+re41	methionine	product
+re41	peptide	product
+re42	argP_mRNA	reactant
+re42	ArgP	product
+re43	dnaAN-recF_mRNA	reactant
+re43	DnaA	product
+re44	dnaAN-recF_mRNA	reactant
+re44	DnaN	product
+re45	HolE	reactant
+re45	HolA	reactant
+re45	DnaN	reactant
+re45	HolB	reactant
+re45	HolC	reactant
+re45	HolD	reactant
+re45	DnaE	reactant
+re45	DnaX	reactant
+re45	DnaQ	reactant
+re45	HolE-DnaQ-DnaE-HolA-HolB-DnaX-DnaN-HolD-HolC	product
+re46	dnaAN-recF_mRNA	reactant
+re46	RecF	product
+re47	RecO	reactant
+re47	RecF	reactant
+re47	RecR	reactant
+re47	RecF-RecR-RecO	product
+re48	unstable RecA filament-DNA complex	reactant
+re48	stabilized RecA filament-DNA complex	product
+re49	dapB_mRNA	reactant
+re49	DapB	product
+re50	(2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate	reactant
+re50	tetrahydrodipicolinate	product
+re51	N-Succinyl-2-L-amino-6-oxoheptanedioate	reactant
+re51	M-DAP	product
+re52	aspartyl-4-P	reactant
+re52	(2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate	product

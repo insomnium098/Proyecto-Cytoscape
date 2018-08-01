@@ -1,0 +1,107 @@
+re1	adenylpyrophosphate	reactant
+re1	NrdR	reactant
+re1	NrdR-adenylpyrophosphate	product
+re2	nrdAB-yfaE	reactant
+re2	nrdAB-yfaE_mRNA	product
+re3	nrdDG	reactant
+re3	nrdDG_mRNA	product
+re4	nrdHIEF	reactant
+re4	nrdHIEF_mRNA	product
+re5	Zinc	reactant
+re5	NrdR	reactant
+re5	NrdR-Zinc	product
+re6	dATP	reactant
+re6	NrdR	reactant
+re6	NrdR-dATP	product
+re7	nrdDG_mRNA	reactant
+re7	NrdD	product
+re8	FldA	reactant
+re8	FldA	product
+re8	dATP	product
+re9	guanosine-triphosphate	reactant
+re9	FldA	reactant
+re9	FldA	product
+re9	dGTP	product
+re10	uridine-triphosphate	reactant
+re10	FldA	reactant
+re10	FldA	product
+re10	dUTP	product
+re11	cytidine-triphosphate	reactant
+re11	FldA	reactant
+re11	FldA	product
+re11	dCTP	product
+re12	nucleoside triphosphate	reactant
+re12	FldA	reactant
+re12	deoxynucleoside triphosphate	product
+re12	FldA	product
+re13	NrdG	reactant
+re13	NrdD	reactant
+re13	Fpr	reactant
+re13	NrdD-NrdG-Fpr	product
+re14	nrdDG_mRNA	reactant
+re14	NrdG	product
+re15	inactive ribonucleoside triphosphate reductase	reactant
+re15	SAM	reactant
+re15	active ribonucleoside triphosphate reductase	product
+re15	5'-deoxyadenosine	product
+re15	methionine	product
+re16	nrdAB-yfaE_mRNA	reactant
+re16	NrdA	product
+re17	NrdB	reactant
+re17	NrdA	reactant
+re17	NrdA-NrdB	product
+re18	nucleoside diphosphate	reactant
+re18	reduced thioredoxin	reactant
+re18	deoxynucleoside diphosphate	product
+re18	thioredoxin disulfide	product
+re19	cytidine-diphosphate	reactant
+re19	reduced thioredoxin	reactant
+re19	thioredoxin disulfide	product
+re19	dCDP	product
+re20	reduced thioredoxin	reactant
+re20	uridine-diphosphate	reactant
+re20	thioredoxin disulfide	product
+re20	dUDP	product
+re21	thioredoxin disulfide	reactant
+re21	dADP	reactant
+re21	reduced thioredoxin	product
+re22	guanosine-diphosphate	reactant
+re22	reduced thioredoxin	reactant
+re22	thioredoxin disulfide	product
+re22	dGDP	product
+re23	nrdAB-yfaE_mRNA	reactant
+re23	NrdB	product
+re24	nrdAB-yfaE_mRNA	reactant
+re24	YfaE	product
+re25	nrdHIEF_mRNA	reactant
+re25	NrdH	product
+re26	nrdHIEF_mRNA	reactant
+re26	NrdI	product
+re27	nrdHIEF_mRNA	reactant
+re27	NrdE	product
+re28	NrdE	reactant
+re28	NrdF	reactant
+re28	NrdE-NrdF	product
+re29	cytidine-diphosphate	reactant
+re29	YgaN	reactant
+re29	oxidized NrdH glutaredoxin-like protein	product
+re29	dCDP	product
+re30	guanosine-diphosphate	reactant
+re30	YgaN	reactant
+re30	oxidized NrdH glutaredoxin-like protein	product
+re30	dGDP	product
+re31	YgaN	reactant
+re31	oxidized NrdH glutaredoxin-like protein	product
+re31	dADP	product
+re32	uridine-diphosphate	reactant
+re32	YgaN	reactant
+re32	oxidized NrdH glutaredoxin-like protein	product
+re32	dUDP	product
+re33	nrdHIEF_mRNA	reactant
+re33	NrdF	product
+re34	dADP	reactant
+re34	FldA	product
+re35	dGDP	reactant
+re35	guanosine-triphosphate	product
+re36	dADP	reactant
+re36	dATP	product

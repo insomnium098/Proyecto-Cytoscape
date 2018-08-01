@@ -1,0 +1,20 @@
+re1	arsRBC	reactant
+re1	arsRBC_mRNA	product
+re2	antimonite ion	reactant
+re2	ArsR	reactant
+re2	ArsR-antimonite ion	product
+re3	arsenite	reactant
+re3	ArsR	reactant
+re3	ArsR-arsenite	product
+re4	arsRBC_mRNA	reactant
+re4	ArsR	product
+re5	arsRBC_mRNA	reactant
+re5	ArsB	product
+re6	arsenite_Ext	reactant
+re6	arsenite	product
+re7	arsRBC_mRNA	reactant
+re7	ArsC	product
+re8	reduced glutaredoxin	reactant
+re8	arsenate	reactant
+re8	oxidized glutaredoxin	product
+re8	arsenite	product

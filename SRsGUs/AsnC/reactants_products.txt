@@ -1,0 +1,72 @@
+re1	asnA	reactant
+re1	asnA_mRNA	product
+re2	asnC-mioC-mnmG-rsmG	reactant
+re2	asnC-mioC-mnmG-rsmG_mRNA	product
+re3	asparagine	reactant
+re3	AsnC	reactant
+re3	AsnC-asparagine	product
+re4	asnC	reactant
+re4	asnC_mRNA	product
+re5	asnC-mioC	reactant
+re5	asnC-mioC_mRNA	product
+re6	asnC-mioC-mnmG	reactant
+re6	asnC-mioC-mnmG_mRNA	product
+re7	asnC-mioC-mnmG-rsmG_mRNA	reactant
+re7	AsnC	product
+re8	asnC-mioC-mnmG-rsmG_mRNA	reactant
+re8	MioC	product
+re9	asnC-mioC-mnmG-rsmG_mRNA	reactant
+re9	MnmG	product
+re10	MnmG	reactant
+re10	MnmE	reactant
+re10	MnmE-MnmG	product
+re11	guanosine-triphosphate	reactant
+re11	methylene-H4PteGlu(n)	reactant
+re11	tRNA uridine34	reactant
+re11	acceptors	reactant
+re11	glycine	reactant
+re11	5-carboxymethylaminomethyluridine in tRNA	product
+re11	guanosine-diphosphate	product
+re11	7,8-dihydrofolate	product
+re11	phosphate	product
+re11	A(H2)	product
+re12	guanosine-triphosphate	reactant
+re12	methylene-H4PteGlu(n)	reactant
+re12	tRNA 2-thiouridine34	reactant
+re12	glycine	reactant
+re12	5-carboxymethylaminomethyl-2-thiouridine in tRNA	product
+re12	guanosine-diphosphate	product
+re12	7,8-dihydrofolate	product
+re12	phosphate	product
+re13	guanosine-triphosphate	reactant
+re13	methylene-H4PteGlu(n)	reactant
+re13	tRNA 2-thiouridine34	reactant
+re13	ammonium	reactant
+re13	5-aminomethyl-2-thiouridine in tRNA	product
+re13	guanosine-diphosphate	product
+re13	7,8-dihydrofolate	product
+re13	phosphate	product
+re14	asnC-mioC-mnmG-rsmG_mRNA	reactant
+re14	RsmG	product
+re15	guanine527 in 16S rRNA	reactant
+re15	SAM	reactant
+re15	N7-methylguanine527 in 16S rRNA	product
+re15	adenosylhomocysteine	product
+re16	asnC_mRNA	reactant
+re16	AsnC	product
+re17	asnC-mioC-mnmG_mRNA	reactant
+re17	AsnC	product
+re18	asnC-mioC-mnmG_mRNA	reactant
+re18	MioC	product
+re19	asnC-mioC-mnmG_mRNA	reactant
+re19	MnmG	product
+re20	asnA_mRNA	reactant
+re20	AsnA	product
+re21	aspartate	reactant
+re21	ammonium	reactant
+re21	diphosphate	product
+re21	asparagine	product
+re22	asnC-mioC_mRNA	reactant
+re22	AsnC	product
+re23	asnC-mioC_mRNA	reactant
+re23	MioC	product

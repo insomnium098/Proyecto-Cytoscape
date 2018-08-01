@@ -1,0 +1,72 @@
+re1	galE	reactant
+re1	galE_mRNA	product
+re2	galET	reactant
+re2	galET_mRNA	product
+re3	galETK	reactant
+re3	galETK_mRNA	product
+re4	galETKM	reactant
+re4	galETKM_mRNA	product
+re5	micF	reactant
+re5	micF_mRNA	product
+re6	mtr	reactant
+re6	mtr_mRNA	product
+re7	seqA-pgm	reactant
+re7	seqA-pgm_mRNA	product
+re8	tyrP	reactant
+re8	tyrP_mRNA	product
+re9	tyrP_mRNA	reactant
+re9	TyrP	product
+re10	tyrosine_Ext	reactant
+re10	tyrosine	product
+re11	seqA-pgm_mRNA	reactant
+re11	SeqA	product
+re12	seqA-pgm_mRNA	reactant
+re12	Pgm	product
+re13	D-glucose 1-phosphate	reactant
+re13	glucose-6-P	product
+re14	phosphorylated phosphoglucomutase	reactant
+re14	D-glucose 1-phosphate	reactant
+re14	alpha-glucose 1,6-bisphosphate	product
+re14	phosphoglucomutase	product
+re15	alpha-glucose 1,6-bisphosphate	reactant
+re15	phosphoglucomutase	reactant
+re15	phosphorylated phosphoglucomutase	product
+re15	glucose-6-P	product
+re16	galETKM_mRNA	reactant
+re16	GalE	product
+re17	UDPG	reactant
+re17	UDP-galactose	product
+re18	galETKM_mRNA	reactant
+re18	GalT	product
+re19	galactose-1-P	reactant
+re19	UDPG	reactant
+re19	D-glucose 1-phosphate	product
+re19	UDP-galactose	product
+re20	galETKM_mRNA	reactant
+re20	GalK	product
+re21	alpha-D-galactose	reactant
+re21	galactose-1-P	product
+re22	galETKM_mRNA	reactant
+re22	GalM	product
+re23	beta-D-galactose	reactant
+re23	alpha-D-galactose	product
+re24	galET_mRNA	reactant
+re24	GalE	product
+re25	galET_mRNA	reactant
+re25	GalT	product
+re26	galETK_mRNA	reactant
+re26	GalE	product
+re27	galETK_mRNA	reactant
+re27	GalT	product
+re28	galETK_mRNA	reactant
+re28	GalK	product
+re29	galE_mRNA	reactant
+re29	GalE	product
+re30	mtr_mRNA	reactant
+re30	Mtr	product
+re31	indole_Ext	reactant
+re31	indole	product
+re32	tryptophan_Ext	reactant
+re32	tryptophan	product
+re33	micF_mRNA	reactant
+re33	RNA:MicF	product

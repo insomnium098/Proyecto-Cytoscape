@@ -1,0 +1,8 @@
+csa1	GcvA-glycine	GcvA
+csa1	GcvA-glycine	glycine
+csa2	GcvA-purine	GcvA
+csa2	GcvA-purine	purine
+csa3	Lpd-GcvP-GcvH-GcvT	Lpd
+csa3	Lpd-GcvP-GcvH-GcvT	GcvP
+csa3	Lpd-GcvP-GcvH-GcvT	GcvH
+csa3	Lpd-GcvP-GcvH-GcvT	GcvT

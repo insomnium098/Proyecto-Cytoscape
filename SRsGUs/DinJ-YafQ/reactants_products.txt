@@ -1,0 +1,15 @@
+re1	cspE	reactant
+re1	cspE_mRNA	product
+re2	dinJ-yafQ	reactant
+re2	dinJ-yafQ_mRNA	product
+re3	cspE_mRNA	reactant
+re3	CspE	product
+re4	dinJ-yafQ_mRNA	reactant
+re4	DinJ	product
+re5	DinJ	reactant
+re5	YafQ	reactant
+re5	YafQ-DinJ	product
+re6	dinJ-yafQ_mRNA	reactant
+re6	YafQ	product
+re7	mRNA	reactant
+re7	single-stranded RNA	product

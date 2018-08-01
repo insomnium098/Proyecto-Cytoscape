@@ -1,0 +1,28 @@
+re1	[2Fe-2S]3+ oxidized	reactant
+re1	SoxR	reactant
+re1	SoxR-[2Fe-2S]3+ oxidized	product
+re2	fumAC	reactant
+re2	fumAC_mRNA	product
+re3	soxS	reactant
+re3	soxS_mRNA	product
+re4	soxR	reactant
+re4	soxR_mRNA	product
+re5	[2Fe-2S]2+ reduced	reactant
+re5	SoxR	reactant
+re5	SoxR-[2Fe-2S]2+ reduced	product
+re6	fumC	reactant
+re6	fumC_mRNA	product
+re7	fumAC_mRNA	reactant
+re7	FumA	product
+re8	malate	reactant
+re8	fumarate	product
+re9	oxalacetate	reactant
+re9	enol-oxaloacetate	product
+re10	fumAC_mRNA	reactant
+re10	FumC	product
+re11	soxR_mRNA	reactant
+re11	SoxR	product
+re12	soxS_mRNA	reactant
+re12	SoxS	product
+re13	fumC_mRNA	reactant
+re13	FumC	product

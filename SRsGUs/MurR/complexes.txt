@@ -1,0 +1,4 @@
+csa1	MurR-MurNAc-6-P	MurR
+csa1	MurR-MurNAc-6-P	MurNAc-6-P
+csa2	MurP-Crr	MurP
+csa2	MurP-Crr	Crr

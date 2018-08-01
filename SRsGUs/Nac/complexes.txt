@@ -1,0 +1,8 @@
+csa1	MnmE-MnmG	MnmE
+csa1	MnmE-MnmG	MnmG
+csa2	GltD-GltB	GltD
+csa2	GltD-GltB	GltB
+csa3	YdcS-YdcT-YdcV-YdcU	YdcS
+csa3	YdcS-YdcT-YdcV-YdcU	YdcT
+csa3	YdcS-YdcT-YdcV-YdcU	YdcV
+csa3	YdcS-YdcT-YdcV-YdcU	YdcU

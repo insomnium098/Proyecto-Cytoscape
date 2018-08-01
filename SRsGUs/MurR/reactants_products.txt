@@ -1,0 +1,36 @@
+re1	murR	reactant
+re1	murR_mRNA	product
+re2	murQP-yfeW	reactant
+re2	murQP-yfeW_mRNA	product
+re3	MurNAc-6-P	reactant
+re3	MurR	reactant
+re3	MurR-MurNAc-6-P	product
+re4	murQP	reactant
+re4	murQP_mRNA	product
+re5	murR_mRNA	reactant
+re5	MurR	product
+re6	murQP-yfeW_mRNA	reactant
+re6	MurQ	product
+re7	MurNAc-6-P	reactant
+re7	N-acetyl-alpha-D-glucosamine 6-phosphate	product
+re7	lactate	product
+re8	murQP-yfeW_mRNA	reactant
+re8	MurP	product
+re9	MurP	reactant
+re9	Crr	reactant
+re9	MurP-Crr	product
+re10	HPr - phosphorylated_Ext	reactant
+re10	MurNAc_Ext	reactant
+re10	MurNAc-6-P	product
+re10	PtsH	product
+re11	1,6-anhMurNAc_Ext	reactant
+re11	1,6-anhMurNAc	product
+re12	murQP-yfeW_mRNA	reactant
+re12	YfeW	product
+re13	nascent peptidoglycan with (L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine) pentapeptide	reactant
+re13	nascent peptidoglycan with (L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanine) tetrapeptide	product
+re13	ala	product
+re14	murQP_mRNA	reactant
+re14	MurQ	product
+re15	murQP_mRNA	reactant
+re15	MurP	product

@@ -1,0 +1,17 @@
+re1	ycjY	reactant
+re1	ycjY_mRNA	product
+re2	ycjY-ymjDC-mpaA	reactant
+re2	ycjY-ymjDC-mpaA_mRNA	product
+re3	ycjY-ymjDC-mpaA_mRNA	reactant
+re3	YcjY	product
+re4	ycjY-ymjDC-mpaA_mRNA	reactant
+re4	YmjD	product
+re5	ycjY-ymjDC-mpaA_mRNA	reactant
+re5	YmjC	product
+re6	ycjY-ymjDC-mpaA_mRNA	reactant
+re6	MpaA	product
+re7	Ala-gamma-D-Glu-Dap	reactant
+re7	Ala-D-Glu	product
+re7	M-DAP	product
+re8	ycjY_mRNA	reactant
+re8	YcjY	product

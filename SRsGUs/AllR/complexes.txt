@@ -1,0 +1,2 @@
+csa1	AllR-glyoxylate	AllR
+csa1	AllR-glyoxylate	glyoxylate

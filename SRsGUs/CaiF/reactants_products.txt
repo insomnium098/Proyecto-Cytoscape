@@ -1,0 +1,42 @@
+re1	caiTABCDE	reactant
+re1	caiTABCDE_mRNA	product
+re2	fixABCX	reactant
+re2	fixABCX_mRNA	product
+re3	fixABCX_mRNA	reactant
+re3	FixA	product
+re4	fixABCX_mRNA	reactant
+re4	FixB	product
+re5	fixABCX_mRNA	reactant
+re5	FixC	product
+re6	fixABCX_mRNA	reactant
+re6	FixX	product
+re7	caiTABCDE_mRNA	reactant
+re7	CaiT	product
+re8	gamma-butyrobetaine_Ext	reactant
+re8	vitamin Bt_Ext	reactant
+re8	gamma-butyrobetaine	product
+re8	vitamin Bt	product
+re9	caiTABCDE_mRNA	reactant
+re9	CaiA	product
+re10	crotonobetainyl-CoA	reactant
+re10	A(H2)	reactant
+re10	gamma-butyrobetaine-CoA	product
+re10	acceptors	product
+re11	caiTABCDE_mRNA	reactant
+re11	CaiB	product
+re12	gamma-butyrobetaine-CoA	reactant
+re12	vitamin Bt	reactant
+re12	gamma-butyrobetaine	product
+re12	carnityl-CoA	product
+re13	caiTABCDE_mRNA	reactant
+re13	CaiC	product
+re14	vitamin Bt	reactant
+re14	coenzyme A	reactant
+re14	carnityl-CoA	product
+re14	diphosphate	product
+re15	caiTABCDE_mRNA	reactant
+re15	CaiD	product
+re16	carnityl-CoA	reactant
+re16	crotonobetainyl-CoA	product
+re17	caiTABCDE_mRNA	reactant
+re17	CaiE	product

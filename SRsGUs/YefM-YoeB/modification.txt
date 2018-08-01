@@ -1,0 +1,2 @@
+re1	INHIBITION	YefM-YoeB
+re5	CATALYSIS	YoeB

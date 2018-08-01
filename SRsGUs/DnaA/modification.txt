@@ -1,0 +1,32 @@
+re10	CATALYSIS	AldA
+re10	INHIBITION	glycoaldehyde	REG0-9207
+re11	CATALYSIS	AldA
+re11	INHIBITION	lactaldehyde	REG0-9209
+re13	CATALYSIS	PolA
+re14	CATALYSIS	PolA
+re15	CATALYSIS	PolA
+re18	CATALYSIS	NrdA-NrdB
+re18	INHIBITION	dCDP	REG0-7702
+re19	CATALYSIS	NrdA-NrdB
+re2	PHYSICAL_STIMULATION	DnaA-adenylpyrophosphate
+re20	CATALYSIS	NrdA-NrdB
+re21	CATALYSIS	NrdA-NrdB
+re22	CATALYSIS	NrdA-NrdB
+re26	CATALYSIS	GuaB
+re26	INHIBITION	ammonium	REG0-7391
+re26	INHIBITION	guanylate	REG0-7387
+re28	CATALYSIS	GuaA
+re29	CATALYSIS	GuaA
+re29	INHIBITION	L-glutamate	REG0-7397
+re29	INHIBITION	L-glutamate	REG0-8740
+re29	INHIBITION	L-glutamate	REG0-8754
+re3	INHIBITION	DnaA-adenylpyrophosphate
+re3	PHYSICAL_STIMULATION	DnaA-adenylpyrophosphate
+re30	CATALYSIS	GuaA
+re38	CATALYSIS	RecF-RecR-RecO
+re4	INHIBITION	DnaA-adenylpyrophosphate
+re4	PHYSICAL_STIMULATION	DnaA-adenylpyrophosphate
+re5	INHIBITION	DnaA-adenylpyrophosphate
+re6	INHIBITION	DnaA-adenylpyrophosphate
+re7	INHIBITION	DnaA-adenylpyrophosphate
+re8	INHIBITION	DnaA-adenylpyrophosphate

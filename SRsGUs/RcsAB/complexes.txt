@@ -1,0 +1,8 @@
+csa1	Wza-Wzc	Wza
+csa1	Wza-Wzc	Wzc
+csa2	CsgE-CsgG	CsgE
+csa2	CsgE-CsgG	CsgG
+csa3	FlhD-FlhC	FlhD
+csa3	FlhD-FlhC	FlhC
+csa4	RcsB-RcsA	RcsB
+csa4	RcsB-RcsA	RcsA

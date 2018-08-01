@@ -1,0 +1,35 @@
+re1	ulaABCDEF	reactant
+re1	ulaABCDEF_mRNA	product
+re2	ulaG	reactant
+re2	ulaG_mRNA	product
+re3	ulaABCDEF_mRNA	reactant
+re3	UlaA	product
+re4	UlaC	reactant
+re4	UlaA	reactant
+re4	UlaB	reactant
+re4	UlaC-UlaB-UlaA	product
+re5	HPr - phosphorylated_Ext	reactant
+re5	ascorbate_Ext	reactant
+re5	ascorbate 6-phosphate	product
+re5	PtsH	product
+re6	ulaABCDEF_mRNA	reactant
+re6	UlaB	product
+re7	ulaABCDEF_mRNA	reactant
+re7	UlaC	product
+re8	ulaABCDEF_mRNA	reactant
+re8	UlaD	product
+re9	3-keto-L-gulonate 6-P	reactant
+re9	xylulose 5P	product
+re9	CO2	product
+re10	ulaABCDEF_mRNA	reactant
+re10	UlaE	product
+re11	xylulose 5P	reactant
+re11	ribulose-5-P	product
+re12	ulaABCDEF_mRNA	reactant
+re12	UlaF	product
+re13	ribulose-5-P	reactant
+re13	xylulose-P	product
+re14	ulaG_mRNA	reactant
+re14	UlaG	product
+re15	ascorbate 6-phosphate	reactant
+re15	3-keto-L-gulonate 6-P	product

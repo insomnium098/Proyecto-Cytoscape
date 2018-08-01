@@ -1,0 +1,8 @@
+csa1	LsrR-AI-2	LsrR
+csa1	LsrR-AI-2	AI-2
+csa2	LsrR-autoinducer 2-P	LsrR
+csa2	LsrR-autoinducer 2-P	autoinducer 2-P
+csa3	LsrB-LsrD-LsrC-LsrA	LsrB
+csa3	LsrB-LsrD-LsrC-LsrA	LsrD
+csa3	LsrB-LsrD-LsrC-LsrA	LsrC
+csa3	LsrB-LsrD-LsrC-LsrA	LsrA

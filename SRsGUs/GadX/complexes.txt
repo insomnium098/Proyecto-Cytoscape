@@ -1,0 +1,13 @@
+csa1	RcsB-GadE	RcsB
+csa1	RcsB-GadE	GadE
+csa2	RpoB-RpoC-RpoA-RpoS	RpoB
+csa2	RpoB-RpoC-RpoA-RpoS	RpoC
+csa2	RpoB-RpoC-RpoA-RpoS	RpoA
+csa2	RpoB-RpoC-RpoA-RpoS	RpoS
+csa3	TolC-MdtE-MdtF	TolC
+csa3	TolC-MdtE-MdtF	MdtE
+csa3	TolC-MdtE-MdtF	MdtF
+csa4	BtuB-ExbD-ExbB-TonB	BtuB
+csa4	BtuB-ExbD-ExbB-TonB	ExbD
+csa4	BtuB-ExbD-ExbB-TonB	ExbB
+csa4	BtuB-ExbD-ExbB-TonB	TonB

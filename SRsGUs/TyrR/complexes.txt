@@ -1,0 +1,6 @@
+csa1	TyrR-tryptophan	TyrR
+csa1	TyrR-tryptophan	tryptophan
+csa2	TyrR-phenylalanine	TyrR
+csa2	TyrR-phenylalanine	phenylalanine
+csa3	TyrR-tyrosine	TyrR
+csa3	TyrR-tyrosine	tyrosine

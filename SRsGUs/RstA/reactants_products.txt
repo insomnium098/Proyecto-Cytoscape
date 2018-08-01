@@ -1,0 +1,85 @@
+re1	phosphate	reactant
+re1	RstA	reactant
+re1	RstA-phosphate	product
+re2	asr	reactant
+re2	asr_mRNA	product
+re3	narGHJI	reactant
+re3	narGHJI_mRNA	product
+re4	csgDEFG	reactant
+re4	csgDEFG_mRNA	product
+re5	ompF	reactant
+re5	ompF_mRNA	product
+re6	csgDEFG_mRNA	reactant
+re6	CsgD	product
+re7	csgDEFG_mRNA	reactant
+re7	CsgE	product
+re8	CsgG	reactant
+re8	CsgE	reactant
+re8	CsgE-CsgG	product
+re9	CsgA_Ext	reactant
+re9	CsgA	product
+re10	csgDEFG_mRNA	reactant
+re10	CsgF	product
+re11	csgDEFG_mRNA	reactant
+re11	CsgG	product
+re12	ompF_mRNA	reactant
+re12	OmpF	product
+re13	5-methylthioribose_Ext	reactant
+re13	5-methylthioribose	product
+re14	inositol_Ext	reactant
+re14	inositol	product
+re15	amino acid_Ext	reactant
+re15	amino acid	product
+re16	base(2)_Ext	reactant
+re16	base(2)	product
+re17	polyol_Ext	reactant
+re17	polyol	product
+re18	short-chain alcohol_Ext	reactant
+re18	short-chain alcohol	product
+re19	short-chain acid anion_Ext	reactant
+re19	short-chain acid anion	product
+re20	organosulfur compound_Ext	reactant
+re20	organosulfur compound	product
+re21	CO2_Ext	reactant
+re21	CO2	product
+re22	ion_Ext	reactant
+re22	ion	product
+re23	monosaccharide_Ext	reactant
+re23	monosaccharide	product
+re24	beta-Neu5Ac_Ext	reactant
+re24	beta-Neu5Ac	product
+re25	N-acetylneuraminate_Ext	reactant
+re25	N-acetylneuraminate	product
+re26	betaine_Ext	reactant
+re26	betaine	product
+re27	hydrophilic solute or ion 600 Da_Ext	reactant
+re27	hydrophilic solute or ion 600 Da	product
+re28	TolB	reactant
+re28	OmpF	reactant
+re28	TolB-OmpF	product
+re29	narGHJI_mRNA	reactant
+re29	NarG	product
+re30	NarI	reactant
+re30	NarH	reactant
+re30	NarG	reactant
+re30	NarG-NarH-NarI	product
+re31	menaquinol_Ext	reactant
+re31	nitrate_Ext	reactant
+re31	vitamin K2	product
+re31	nitrite	product
+re32	ubiquinol_Ext	reactant
+re32	nitrate_Ext	reactant
+re32	ubiquinone	product
+re32	nitrite	product
+re33	A(H2)	reactant
+re33	TeO2	reactant
+re33	acceptors	product
+re33	Te0	product
+re34	narGHJI_mRNA	reactant
+re34	NarH	product
+re35	narGHJI_mRNA	reactant
+re35	NarJ	product
+re36	narGHJI_mRNA	reactant
+re36	NarI	product
+re37	asr_mRNA	reactant
+re37	Asr	product

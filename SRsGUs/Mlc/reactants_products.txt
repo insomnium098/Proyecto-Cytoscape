@@ -1,0 +1,92 @@
+re1	malT	reactant
+re1	malT_mRNA	product
+re2	manXYZ	reactant
+re2	manXYZ_mRNA	product
+re3	mlc-ynfK	reactant
+re3	mlc-ynfK_mRNA	product
+re4	ptsG	reactant
+re4	ptsG_mRNA	product
+re5	ptsHI-crr	reactant
+re5	ptsHI-crr_mRNA	product
+re6	EIIglc	reactant
+re6	Mlc	reactant
+re6	Mlc-EIIglc	product
+re7	mlc	reactant
+re7	mlc_mRNA	product
+re8	manXYZ_mRNA	reactant
+re8	ManX	product
+re9	ManZ	reactant
+re9	ManX	reactant
+re9	ManY	reactant
+re9	ManZ-ManY-ManX	product
+re10	HPr - phosphorylated_Ext	reactant
+re10	alpha-D-mannose_Ext	reactant
+re10	alpha-D-mannose-6-P	product
+re10	PtsH	product
+re11	HPr - phosphorylated_Ext	reactant
+re11	2-deoxyglucose_Ext	reactant
+re11	2-deoxy-D-glucose 6-phosphate	product
+re11	PtsH	product
+re12	N-acetyl-beta-D-mannosamine_Ext	reactant
+re12	HPr - phosphorylated_Ext	reactant
+re12	ManNAc-6-P	product
+re12	PtsH	product
+re13	HPr - phosphorylated_Ext	reactant
+re13	chitosamine_Ext	reactant
+re13	alpha-D-glucosamine phosphate	product
+re13	PtsH	product
+re14	HPr - phosphorylated_Ext	reactant
+re14	beta-glucose_Ext	reactant
+re14	beta-D-glucose-6-P	product
+re14	PtsH	product
+re15	HPr - phosphorylated_Ext	reactant
+re15	NAcGlc_Ext	reactant
+re15	N-acetyl-alpha-D-glucosamine 6-phosphate	product
+re15	PtsH	product
+re16	HPr - phosphorylated_Ext	reactant
+re16	beta-Levulose_Ext	reactant
+re16	fructose-6-P	product
+re16	PtsH	product
+re17	manXYZ_mRNA	reactant
+re17	IIABMan	product
+re18	manXYZ_mRNA	reactant
+re18	ManY	product
+re19	manXYZ_mRNA	reactant
+re19	ManZ	product
+re20	ptsHI-crr_mRNA	reactant
+re20	PtsH	product
+re21	ptsHI-crr_mRNA	reactant
+re21	PtsI	product
+re22	ptsHI-crr_mRNA	reactant
+re22	Crr	product
+re23	PtsG	reactant
+re23	Crr	reactant
+re23	PtsG-Crr	product
+re24	HPr - phosphorylated_Ext	reactant
+re24	Methyl-D-glucoside_Ext	reactant
+re24	methyl alpha-D-glucoside 6-phosphate	product
+re24	PtsH	product
+re25	TreB	reactant
+re25	Crr	reactant
+re25	TreB-Crr	product
+re26	HPr - phosphorylated_Ext	reactant
+re26	trehalose_Ext	reactant
+re26	alpha,alpha-trehalose 6-phosphate	product
+re26	PtsH	product
+re27	MurP	reactant
+re27	Crr	reactant
+re27	MurP-Crr	product
+re28	HPr - phosphorylated_Ext	reactant
+re28	MurNAc_Ext	reactant
+re28	MurNAc-6-P	product
+re28	PtsH	product
+re29	mlc_mRNA	reactant
+re29	Mlc	product
+re30	ptsG_mRNA	reactant
+re30	PtsG	product
+re31	malT_mRNA	reactant
+re31	MalT	product
+re32	mlc-ynfK_mRNA	reactant
+re32	Mlc	product
+re33	mlc-ynfK_mRNA	reactant
+re33	YnfK	product

@@ -1,0 +1,58 @@
+re1	homo-cys	reactant
+re1	MetR	reactant
+re1	MetR-homo-cys	product
+re2	hmp	reactant
+re2	hmp_mRNA	product
+re3	metE	reactant
+re3	metE_mRNA	product
+re4	metH	reactant
+re4	metH_mRNA	product
+re5	glyA	reactant
+re5	glyA_mRNA	product
+re6	metR	reactant
+re6	metR_mRNA	product
+re7	hmp_mRNA	reactant
+re7	Hmp	product
+re8	nitric oxide	reactant
+re8	oxygen	reactant
+re8	nitrate	product
+re9	tetrahydropteridine	reactant
+re9	6,7-dihydropteridine	product
+re10	metR_mRNA	reactant
+re10	MetR	product
+re11	metE_mRNA	reactant
+re11	MetE	product
+re12	5-methyltetrahydropteroyl tri-L-glutamate	reactant
+re12	homo-cys	reactant
+re12	H4PteGlu(n)	product
+re12	methionine	product
+re13	metH_mRNA	reactant
+re13	MetH	product
+re14	N5-methyl-tetrahydrofolate	reactant
+re14	homo-cys	reactant
+re14	THF polyglutamate	product
+re14	methionine	product
+re15	glyA_mRNA	reactant
+re15	GlyA	product
+re16	THF polyglutamate	reactant
+re16	serine	reactant
+re16	methylene-H4PteGlu(n)	product
+re16	glycine	product
+re17	CH-THF mono-L-glutamate	reactant
+re17	folinate	product
+re18	vitamin B6	reactant
+re18	ala	reactant
+re18	pyridoxamine phosphate	product
+re18	pyruvate	product
+re19	allo-thr	reactant
+re19	ethanal	product
+re19	glycine	product
+re20	allo-threonine	reactant
+re20	ethanal	product
+re20	glycine	product
+re21	glycine	reactant
+re21	THF polyglutamate	reactant
+re21	N5-methyl-tetrahydrofolate	product
+re22	THF polyglutamate	reactant
+re22	methylene-H4PteGlu(n)	product
+

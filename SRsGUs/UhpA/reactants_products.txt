@@ -1,0 +1,15 @@
+re1	phosphate	reactant
+re1	UhpA	reactant
+re1	UhpA-phosphate	product
+re2	uhpT	reactant
+re2	uhpT_mRNA	product
+re3	uhpT_mRNA	reactant
+re3	UhpT	product
+re4	GAP_Ext	reactant
+re4	GAP	product
+re5	alpha-D-mannose-6-P_Ext	reactant
+re5	alpha-D-mannose-6-P	product
+re6	fructose-6-P_Ext	reactant
+re6	fructose-6-P	product
+re7	beta-D-glucose-6-P_Ext	reactant
+re7	beta-D-glucose-6-P	product

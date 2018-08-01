@@ -1,0 +1,56 @@
+re1	phosphate	reactant
+re1	DpiA	reactant
+re1	DpiA-phosphate	product
+re2	citCDEFXG	reactant
+re2	citCDEFXG_mRNA	product
+re3	dpiBA	reactant
+re3	dpiBA_mRNA	product
+re4	exuT	reactant
+re4	exuT_mRNA	product
+re5	mdh	reactant
+re5	mdh_mRNA	product
+re6	appY	reactant
+re6	appY_mRNA	product
+re7	citCDEFXG_mRNA	reactant
+re7	CitC	product
+re8	[a holo citrate lyase acyl-carrier protein]	reactant
+re8	acetate	reactant
+re8	citrate lyase	product
+re8	diphosphate	product
+re9	citCDEFXG_mRNA	reactant
+re9	CitD	product
+re10	CitD	reactant
+re10	CitF	reactant
+re10	CitE	reactant
+re10	CitD-CitF-CitE	product
+re11	citCDEFXG_mRNA	reactant
+re11	CitE	product
+re12	citCDEFXG_mRNA	reactant
+re12	CitF	product
+re13	citCDEFXG_mRNA	reactant
+re13	CitX	product
+re14	[a citrate-lyase acyl-carrier protein]	reactant
+re14	2-5-triphosphoribosyl-3-dephospho-CoA	reactant
+re14	[a holo citrate lyase acyl-carrier protein]	product
+re14	diphosphate	product
+re15	citCDEFXG_mRNA	reactant
+re15	CitG	product
+re16	3-dephospho-CoA	reactant
+re16	2-5-triphosphoribosyl-3-dephospho-CoA	product
+re16	adenine	product
+re17	mdh_mRNA	reactant
+re17	Mdh	product
+re18	malate	reactant
+re18	oxalacetate	product
+re19	dpiBA_mRNA	reactant
+re19	DpiB	product
+re20	dpiBA_mRNA	reactant
+re20	DpiA	product
+re21	appY_mRNA	reactant
+re21	AppY	product
+re22	exuT_mRNA	reactant
+re22	ExuT	product
+re23	galaturonate_Ext	reactant
+re23	galaturonate	product
+re24	GlcA_Ext	reactant
+re24	GlcA	product

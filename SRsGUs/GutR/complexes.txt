@@ -1,0 +1,5 @@
+csa1	GutR-gulitol	GutR
+csa1	GutR-gulitol	gulitol
+csa2	SrlA-SrlB-SrlE	SrlA
+csa2	SrlA-SrlB-SrlE	SrlB
+csa2	SrlA-SrlB-SrlE	SrlE

@@ -1,0 +1,21 @@
+re1	eda	reactant
+re1	eda_mRNA	product
+re2	edd-eda	reactant
+re2	edd-eda_mRNA	product
+re3	edd-eda_mRNA	reactant
+re3	Edd	product
+re4	6-p gluconate	reactant
+re4	KDGP	product
+re5	edd-eda_mRNA	reactant
+re5	Eda	product
+re6	oxalacetate	reactant
+re6	pyruvate	product
+re6	CO2	product
+re7	KDGP	reactant
+re7	glyceraldehyde-P	product
+re7	pyruvate	product
+re8	4-hydroxy-2-oxoglutarate	reactant
+re8	glyoxylate	product
+re8	pyruvate	product
+re9	eda_mRNA	reactant
+re9	Eda	product

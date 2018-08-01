@@ -1,0 +1,58 @@
+re1	bglG	reactant
+re1	bglG_mRNA	product
+re2	bglGFB	reactant
+re2	bglGFB_mRNA	product
+re3	leuO	reactant
+re3	leuO_mRNA	product
+re4	ssrS	reactant
+re4	ssrS_mRNA	product
+re5	ssrS-fau	reactant
+re5	ssrS-fau_mRNA	product
+re6	stpA	reactant
+re6	stpA_mRNA	product
+re7	bglGFB_mRNA	reactant
+re7	BglG	product
+re8	bglGFB_mRNA	reactant
+re8	BglF	product
+re9	b-methyl-D-glucoside_Ext	reactant
+re9	HPr - phosphorylated_Ext	reactant
+re9	methyl beta-D-glucoside 6-phosphate	product
+re9	PtsH	product
+re10	HPr - phosphorylated_Ext	reactant
+re10	Ursin_Ext	reactant
+re10	arbutin-6P	product
+re10	PtsH	product
+re11	HPr - phosphorylated_Ext	reactant
+re11	salicin_Ext	reactant
+re11	salicin-6-p	product
+re11	PtsH	product
+re12	HPr - phosphorylated_Ext	reactant
+re12	beta-glucose_Ext	reactant
+re12	beta-D-glucose-6-P	product
+re12	PtsH	product
+re13	bglGFB_mRNA	reactant
+re13	BglB	product
+re14	salicin-6-p	reactant
+re14	beta-D-glucose-6-P	product
+re14	saligenin	product
+re15	arbutin-6P	reactant
+re15	beta-D-glucose-6-P	product
+re15	hydroquinol	product
+re16	beta-D-cellobiose-6'-p	reactant
+re16	glucopyranose	product
+re16	glucose-6-P	product
+re17	ssrS_mRNA	reactant
+re17	RNA:SsrS	product
+re18	bglG_mRNA	reactant
+re18	BglG	product
+re19	stpA_mRNA	reactant
+re19	StpA	product
+re20	leuO_mRNA	reactant
+re20	LeuO	product
+re21	ssrS-fau_mRNA	reactant
+re21	RNA:SsrS	product
+re22	ssrS-fau_mRNA	reactant
+re22	Fau	product
+re23	folinate	reactant
+re23	CH-THF mono-L-glutamate	product
+re23	phosphate	product

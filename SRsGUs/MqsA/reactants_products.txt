@@ -1,0 +1,24 @@
+re1	cspD	reactant
+re1	cspD_mRNA	product
+re2	mqsRA	reactant
+re2	mqsRA_mRNA	product
+re3	rpoS	reactant
+re3	rpoS_mRNA	product
+re4	mqsRA_mRNA	reactant
+re4	MqsR	product
+re5	MqsR	reactant
+re5	MqsA	reactant
+re5	MqsA-MqsR	product
+re6	mRNA	reactant
+re6	single-stranded RNA	product
+re7	mqsRA_mRNA	reactant
+re7	MqsA	product
+re8	rpoS_mRNA	reactant
+re8	RpoS	product
+re9	RpoA	reactant
+re9	RpoC	reactant
+re9	RpoS	reactant
+re9	RpoB	reactant
+re9	RpoB-RpoC-RpoA-RpoS	product
+re10	cspD_mRNA	reactant
+re10	CspD	product

@@ -1,0 +1,5 @@
+csa1	GalR-galactose	GalR
+csa1	GalR-galactose	galactose
+csa2	MglA-MglC-MglB	MglA
+csa2	MglA-MglC-MglB	MglC
+csa2	MglA-MglC-MglB	MglB

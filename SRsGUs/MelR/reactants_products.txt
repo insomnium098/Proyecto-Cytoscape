@@ -1,0 +1,32 @@
+re1	melAB	reactant
+re1	melAB_mRNA	product
+re2	melR	reactant
+re2	melR_mRNA	product
+re3	melibiose	reactant
+re3	MelR	reactant
+re3	MelR-melibiose	product
+re4	melR_mRNA	reactant
+re4	MelR	product
+re5	melAB_mRNA	reactant
+re5	MelA	product
+re6	melibiose	reactant
+re6	galactopyranose	product
+re6	glucopyranose	product
+re7	melAB_mRNA	reactant
+re7	MelB	product
+re8	lithium ion_Ext	reactant
+re8	melibiose_Ext	reactant
+re8	lithium ion	product
+re8	melibiose	product
+re9	melibiose_Ext	reactant
+re9	Sodium_Ext	reactant
+re9	melibiose	product
+re9	Sodium	product
+re10	b-methyl-D-galactoside_Ext	reactant
+re10	Sodium_Ext	reactant
+re10	b-methyl-D-galactoside	product
+re10	Sodium	product
+re11	a-methyl-D-galactoside_Ext	reactant
+re11	a-methyl-D-galactoside	product
+re12	melibiose_Ext	reactant
+re12	melibiose	product

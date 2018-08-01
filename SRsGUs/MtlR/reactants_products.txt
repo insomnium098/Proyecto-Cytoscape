@@ -1,0 +1,20 @@
+re1	mtlADR	reactant
+re1	mtlADR_mRNA	product
+re2	mtlADR_mRNA	reactant
+re2	MtlA	product
+re3	HPr - phosphorylated_Ext	reactant
+re3	mannitol_Ext	reactant
+re3	mannitol-1-P	product
+re3	PtsH	product
+re4	HPr - phosphorylated_Ext	reactant
+re4	gulitol_Ext	reactant
+re4	sorbitol 6-phosphate	product
+re4	PtsH	product
+re5	mtlADR_mRNA	reactant
+re5	EIIMtl	product
+re6	mtlADR_mRNA	reactant
+re6	MtlD	product
+re7	mannitol-1-P	reactant
+re7	fructose-6-P	product
+re8	mtlADR_mRNA	reactant
+re8	MtlR	product

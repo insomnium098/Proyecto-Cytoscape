@@ -1,0 +1,13 @@
+csa1	NrdR-adenylpyrophosphate	NrdR
+csa1	NrdR-adenylpyrophosphate	adenylpyrophosphate
+csa2	NrdR-Zinc	NrdR
+csa2	NrdR-Zinc	Zinc
+csa3	NrdR-dATP	NrdR
+csa3	NrdR-dATP	dATP
+csa4	NrdD-NrdG-Fpr	NrdD
+csa4	NrdD-NrdG-Fpr	NrdG
+csa4	NrdD-NrdG-Fpr	Fpr
+csa5	NrdA-NrdB	NrdA
+csa5	NrdA-NrdB	NrdB
+csa6	NrdE-NrdF	NrdE
+csa6	NrdE-NrdF	NrdF

@@ -1,0 +1,33 @@
+re1	nadA-pnuC	reactant
+re1	nadA-pnuC_mRNA	product
+re2	nadB	reactant
+re2	nadB_mRNA	product
+re3	pncB	reactant
+re3	pncB_mRNA	product
+re4	nadB_mRNA	reactant
+re4	NadB	product
+re5	aspartate	reactant
+re5	fumarate	reactant
+re5	iminoaspartate	product
+re5	succinate	product
+re6	aspartate	reactant
+re6	oxygen	reactant
+re6	iminoaspartate	product
+re6	perhydrol	product
+re7	nadA-pnuC_mRNA	reactant
+re7	NadA	product
+re8	iminoaspartate	reactant
+re8	DHAP	reactant
+re8	quinolinate	product
+re8	phosphate	product
+re9	nadA-pnuC_mRNA	reactant
+re9	PnuC	product
+re10	nicotinamide ribose_Ext	reactant
+re10	nicotinamide ribose	product
+re11	pncB_mRNA	reactant
+re11	PncB	product
+re12	niacin	reactant
+re12	PRPP	reactant
+re12	diphosphate	product
+re12	phosphate	product
+re12	NaMN	product

@@ -1,0 +1,2 @@
+csa1	GlrR-phosphate	GlrR
+csa1	GlrR-phosphate	phosphate

@@ -1,0 +1,14 @@
+csa1	NagC-D-aldose 1-phosphate	NagC
+csa1	NagC-D-aldose 1-phosphate	D-aldose 1-phosphate
+csa2	PtsG-Crr	PtsG
+csa2	PtsG-Crr	Crr
+csa3	TreB-Crr	TreB
+csa3	TreB-Crr	Crr
+csa4	MurP-Crr	MurP
+csa4	MurP-Crr	Crr
+csa5	ManZ-ManY-ManX	ManZ
+csa5	ManZ-ManY-ManX	ManY
+csa5	ManZ-ManY-ManX	ManX
+csa6	ChbA-ChbC-ChbB	ChbA
+csa6	ChbA-ChbC-ChbB	ChbC
+csa6	ChbA-ChbC-ChbB	ChbB

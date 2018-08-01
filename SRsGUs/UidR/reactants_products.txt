@@ -1,0 +1,17 @@
+re1	uidABC	reactant
+re1	uidABC_mRNA	product
+re2	uidR	reactant
+re2	uidR_mRNA	product
+re3	uidABC_mRNA	reactant
+re3	UidA	product
+re4	glucuronide	reactant
+re4	glucopyranuronate	product
+re4	alcohol	product
+re5	uidABC_mRNA	reactant
+re5	UidB	product
+re6	D-glucoronoside_Ext	reactant
+re6	D-glucoronoside	product
+re7	uidABC_mRNA	reactant
+re7	UidC	product
+re8	uidR_mRNA	reactant
+re8	UidR	product

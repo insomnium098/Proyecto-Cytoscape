@@ -1,0 +1,50 @@
+re1	biotinyl-5'-AMP	reactant
+re1	BirA	reactant
+re1	BirA-biotinyl-5'-AMP	product
+re2	bioA	reactant
+re2	bioA_mRNA	product
+re3	bioBFCD	reactant
+re3	bioBFCD_mRNA	product
+re4	bioBFCD_mRNA	reactant
+re4	BioB	product
+re5	reduced [2Fe-2S] ferredoxin	reactant
+re5	sulfurated sulfur donor	reactant
+re5	dethiobiotin	reactant
+re5	SAM	reactant
+re5	oxidized [2Fe-2S] ferredoxin	product
+re5	unsulfurated [sulfur donor]	product
+re5	5'-deoxyadenosine	product
+re5	methionine	product
+re5	biotin	product
+re6	bioBFCD_mRNA	reactant
+re6	BioF	product
+re7	pimelyl-[acp]	reactant
+re7	alanine	reactant
+re7	AcpP	product
+re7	KAPA	product
+re7	CO2	product
+re8	pimelyl-CoA	reactant
+re8	alanine	reactant
+re8	coenzyme A	product
+re8	KAPA	product
+re8	CO2	product
+re9	bioBFCD_mRNA	reactant
+re9	BioC	product
+re10	malonyl-S-ACP	reactant
+re10	SAM	reactant
+re10	malonyl-[acp] methyl ester	product
+re10	adenosylhomocysteine	product
+re11	bioBFCD_mRNA	reactant
+re11	BioD	product
+re12	DAPA	reactant
+re12	CO2	reactant
+re12	dethiobiotin	product
+re12	phosphate	product
+re13	bioA_mRNA	reactant
+re13	BioA	product
+re14	KAPA	reactant
+re14	SAM	reactant
+re14	S-adenosyl-4-methylthio-2-oxobutanoate	product
+re14	DAPA	product
+re15	malonyl-[acp] methyl ester	reactant
+re15	pimelyl-[acp]	product

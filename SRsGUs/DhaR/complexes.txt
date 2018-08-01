@@ -1,0 +1,5 @@
+csa1	DhaR-DhaK	DhaR
+csa1	DhaR-DhaK	DhaK
+csa2	DhaM-DhaK-DhaL	DhaM
+csa2	DhaM-DhaK-DhaL	DhaK
+csa2	DhaM-DhaK-DhaL	DhaL

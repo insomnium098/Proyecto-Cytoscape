@@ -1,0 +1,2 @@
+csa1	UxuR-fructuronate	UxuR
+csa1	UxuR-fructuronate	fructuronate

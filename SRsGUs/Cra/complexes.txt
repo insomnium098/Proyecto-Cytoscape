@@ -1,0 +1,41 @@
+csa1	Cra-fructose 1,6-biphosphate	Cra
+csa1	Cra-fructose 1,6-biphosphate	fructose 1,6-biphosphate
+csa2	Cra-fructose 1-phosphate	Cra
+csa2	Cra-fructose 1-phosphate	fructose 1-phosphate
+csa3	NirD-NirB	NirD
+csa3	NirD-NirB	NirB
+csa4	PtsG-Crr	PtsG
+csa4	PtsG-Crr	Crr
+csa5	TreB-Crr	TreB
+csa5	TreB-Crr	Crr
+csa6	MurP-Crr	MurP
+csa6	MurP-Crr	Crr
+csa7	Ppk-Rne-RhlB-Pnp-Eno	Ppk
+csa7	Ppk-Rne-RhlB-Pnp-Eno	Rne
+csa7	Ppk-Rne-RhlB-Pnp-Eno	RhlB
+csa7	Ppk-Rne-RhlB-Pnp-Eno	Pnp
+csa7	Ppk-Rne-RhlB-Pnp-Eno	Eno
+csa8	CydA-CydB-CydX	CydA
+csa8	CydA-CydB-CydX	CydB
+csa8	CydA-CydB-CydX	CydX
+csa9	CyoD-CyoA-CyoB-CyoC	CyoD
+csa9	CyoD-CyoA-CyoB-CyoC	CyoA
+csa9	CyoD-CyoA-CyoB-CyoC	CyoB
+csa9	CyoD-CyoA-CyoB-CyoC	CyoC
+csa10	ManZ-ManY-ManX	ManZ
+csa10	ManZ-ManY-ManX	ManY
+csa10	ManZ-ManY-ManX	ManX
+csa11	CsgE-CsgG	CsgE
+csa11	CsgE-CsgG	CsgG
+csa12	FruB-FruA	FruB
+csa12	FruB-FruA	FruA
+csa13	AceE-AceF-Lpd	AceE
+csa13	AceE-AceF-Lpd	AceF
+csa13	AceE-AceF-Lpd	Lpd
+csa14	SucA-SucB-Lpd	SucA
+csa14	SucA-SucB-Lpd	SucB
+csa14	SucA-SucB-Lpd	Lpd
+csa15	Lpd-GcvP-GcvH-GcvT	Lpd
+csa15	Lpd-GcvP-GcvH-GcvT	GcvP
+csa15	Lpd-GcvP-GcvH-GcvT	GcvH
+csa15	Lpd-GcvP-GcvH-GcvT	GcvT

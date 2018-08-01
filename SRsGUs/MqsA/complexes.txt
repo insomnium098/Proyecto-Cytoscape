@@ -1,0 +1,6 @@
+csa1	MqsA-MqsR	MqsA
+csa1	MqsA-MqsR	MqsR
+csa2	RpoB-RpoC-RpoA-RpoS	RpoB
+csa2	RpoB-RpoC-RpoA-RpoS	RpoC
+csa2	RpoB-RpoC-RpoA-RpoS	RpoA
+csa2	RpoB-RpoC-RpoA-RpoS	RpoS

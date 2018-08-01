@@ -1,0 +1,10 @@
+csa1	PurR-guanine	PurR
+csa1	PurR-guanine	guanine
+csa2	PurR-hypoxanthine	PurR
+csa2	PurR-hypoxanthine	hypoxanthine
+csa3	Lpd-GcvP-GcvH-GcvT	Lpd
+csa3	Lpd-GcvP-GcvH-GcvT	GcvP
+csa3	Lpd-GcvP-GcvH-GcvT	GcvH
+csa3	Lpd-GcvP-GcvH-GcvT	GcvT
+csa4	CarB-CarA	CarB
+csa4	CarB-CarA	CarA

@@ -1,0 +1,73 @@
+re1	ssuEADCB	reactant
+re1	ssuEADCB_mRNA	product
+re2	tauABCD	reactant
+re2	tauABCD_mRNA	product
+re3	thiosulfate	reactant
+re3	Cbl	reactant
+re3	Cbl-thiosulfate	product
+re4	PAPS	reactant
+re4	Cbl	reactant
+re4	Cbl-PAPS	product
+re5	tauABCD_mRNA	reactant
+re5	TauA	product
+re6	TauC	reactant
+re6	TauA	reactant
+re6	TauB	reactant
+re6	TauA-TauC-TauB	product
+re7	taufon_Ext	reactant
+re7	taufon	product
+re8	tauABCD_mRNA	reactant
+re8	TauB	product
+re9	tauABCD_mRNA	reactant
+re9	TauC	product
+re10	tauABCD_mRNA	reactant
+re10	TauD	product
+re11	ketoglutarate	reactant
+re11	taufon	reactant
+re11	oxygen	reactant
+re11	aminoacetaldehyde	product
+re11	succinate	product
+re11	sulfite	product
+re11	CO2	product
+re12	ssuEADCB_mRNA	reactant
+re12	SsuE	product
+re13	flavin mononucleotide	reactant
+re13	Reduced FMN	product
+re14	ssuEADCB_mRNA	reactant
+re14	SsuA	product
+re15	SsuC	reactant
+re15	SsuA	reactant
+re15	SsuB	reactant
+re15	SsuA-SsuC-SsuB	product
+re16	aliphatic sulfonate_Ext	reactant
+re16	aliphatic sulfonate	product
+re17	ssuEADCB_mRNA	reactant
+re17	SsuD	product
+re18	alkanesulfonate	reactant
+re18	Reduced FMN	reactant
+re18	oxygen	reactant
+re18	flavin mononucleotide	product
+re18	sulfite	product
+re18	RCHO	product
+re19	Reduced FMN	reactant
+re19	oxygen	reactant
+re19	MOPS	reactant
+re19	flavin mononucleotide	product
+re19	3-morpholinopropanal	product
+re19	sulfite	product
+re20	butanesulfonate	reactant
+re20	Reduced FMN	reactant
+re20	oxygen	reactant
+re20	flavin mononucleotide	product
+re20	sulfite	product
+re20	butanal	product
+re21	Reduced FMN	reactant
+re21	isethionate	reactant
+re21	oxygen	reactant
+re21	flavin mononucleotide	product
+re21	glycoaldehyde	product
+re21	sulfite	product
+re22	ssuEADCB_mRNA	reactant
+re22	SsuC	product
+re23	ssuEADCB_mRNA	reactant
+re23	SsuB	product

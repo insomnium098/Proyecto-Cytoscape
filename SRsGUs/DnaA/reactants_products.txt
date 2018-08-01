@@ -1,0 +1,113 @@
+re1	adenylpyrophosphate	reactant
+re1	DnaA	reactant
+re1	DnaA-adenylpyrophosphate	product
+re2	polA	reactant
+re2	polA_mRNA	product
+re3	dnaAN-recF	reactant
+re3	dnaAN-recF_mRNA	product
+re4	nrdAB-yfaE	reactant
+re4	nrdAB-yfaE_mRNA	product
+re5	aldA	reactant
+re5	aldA_mRNA	product
+re6	guaBA	reactant
+re6	guaBA_mRNA	product
+re7	rpoH	reactant
+re7	rpoH_mRNA	product
+re8	yjeV	reactant
+re8	yjeV_mRNA	product
+re9	aldA_mRNA	reactant
+re9	AldA	product
+re10	glycoaldehyde	reactant
+re10	glycolate	product
+re11	lactaldehyde	reactant
+re11	lactate	product
+re12	polA_mRNA	reactant
+re12	PolA	product
+re13	double stranded DNA	reactant
+re13	5'-phosphomononucleotide	product
+re13	single stranded DNA	product
+re14	DNA(N)	reactant
+re14	mononucleotide	product
+re15	deoxynucleoside triphosphate	reactant
+re15	DNA(N)	reactant
+re15	diphosphate	product
+re15	DNA(N)	product
+re16	nrdAB-yfaE_mRNA	reactant
+re16	NrdA	product
+re17	NrdB	reactant
+re17	NrdA	reactant
+re17	NrdA-NrdB	product
+re18	nucleoside diphosphate	reactant
+re18	reduced thioredoxin	reactant
+re18	deoxynucleoside diphosphate	product
+re18	thioredoxin disulfide	product
+re19	cytidine-diphosphate	reactant
+re19	reduced thioredoxin	reactant
+re19	thioredoxin disulfide	product
+re19	dCDP	product
+re20	reduced thioredoxin	reactant
+re20	uridine-diphosphate	reactant
+re20	thioredoxin disulfide	product
+re20	dUDP	product
+re21	thioredoxin disulfide	reactant
+re21	dADP	reactant
+re21	reduced thioredoxin	product
+re22	guanosine-diphosphate	reactant
+re22	reduced thioredoxin	reactant
+re22	thioredoxin disulfide	product
+re22	dGDP	product
+re23	nrdAB-yfaE_mRNA	reactant
+re23	NrdB	product
+re24	nrdAB-yfaE_mRNA	reactant
+re24	YfaE	product
+re25	guaBA_mRNA	reactant
+re25	GuaB	product
+re26	5'-IMP	reactant
+re26	xanthosine-5-P	product
+re27	guaBA_mRNA	reactant
+re27	GuaA	product
+re28	xanthosine-5-P	reactant
+re28	glutamine	reactant
+re28	diphosphate	product
+re28	L-glutamate	product
+re28	guanylate	product
+re29	glutamine	reactant
+re29	L-glutamate	product
+re29	ammonium	product
+re30	xanthosine-5-P	reactant
+re30	ammonium	reactant
+re30	diphosphate	product
+re30	guanylate	product
+re31	rpoH_mRNA	reactant
+re31	RpoH	product
+re32	RpoH	reactant
+re32	RpoA	reactant
+re32	RpoC	reactant
+re32	RpoB	reactant
+re32	RpoB-RpoC-RpoA-RpoH	product
+re33	dnaAN-recF_mRNA	reactant
+re33	DnaA	product
+re34	dnaAN-recF_mRNA	reactant
+re34	DnaN	product
+re35	HolE	reactant
+re35	HolA	reactant
+re35	DnaN	reactant
+re35	HolB	reactant
+re35	HolC	reactant
+re35	HolD	reactant
+re35	DnaE	reactant
+re35	DnaX	reactant
+re35	DnaQ	reactant
+re35	HolE-DnaQ-DnaE-HolA-HolB-DnaX-DnaN-HolD-HolC	product
+re36	dnaAN-recF_mRNA	reactant
+re36	RecF	product
+re37	RecO	reactant
+re37	RecF	reactant
+re37	RecR	reactant
+re37	RecF-RecR-RecO	product
+re38	unstable RecA filament-DNA complex	reactant
+re38	stabilized RecA filament-DNA complex	product
+re39	yjeV_mRNA	reactant
+re39	YjeV	product
+re40	guanylate	reactant
+re40	guanosine-diphosphate	product

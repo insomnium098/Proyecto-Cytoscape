@@ -1,0 +1,16 @@
+csa1	MalT-ADP group	MalT
+csa1	MalT-ADP group	ADP group
+csa2	MalT-adenylpyrophosphate	MalT
+csa2	MalT-adenylpyrophosphate	adenylpyrophosphate
+csa3	MalT-maltotriose	MalT
+csa3	MalT-maltotriose	maltotriose
+csa4	MalT-Aes	MalT
+csa4	MalT-Aes	Aes
+csa5	MalT-MalK	MalT
+csa5	MalT-MalK	MalK
+csa6	MalT-MalY	MalT
+csa6	MalT-MalY	MalY
+csa7	MalK-MalF-MalG-MalE	MalK
+csa7	MalK-MalF-MalG-MalE	MalF
+csa7	MalK-MalF-MalG-MalE	MalG
+csa7	MalK-MalF-MalG-MalE	MalE

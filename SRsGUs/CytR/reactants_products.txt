@@ -1,0 +1,150 @@
+re1	cdd	reactant
+re1	cdd_mRNA	product
+re2	cytR	reactant
+re2	cytR_mRNA	product
+re3	deoCABD	reactant
+re3	deoCABD_mRNA	product
+re4	mutY-yggX-mltC-nupG	reactant
+re4	mutY-yggX-mltC-nupG_mRNA	product
+re5	nupC	reactant
+re5	nupC_mRNA	product
+re6	ppiA	reactant
+re6	ppiA_mRNA	product
+re7	rpoH	reactant
+re7	rpoH_mRNA	product
+re8	tsx	reactant
+re8	tsx_mRNA	product
+re9	udp	reactant
+re9	udp_mRNA	product
+re10	ycdZ	reactant
+re10	ycdZ_mRNA	product
+re11	cytidine	reactant
+re11	CytR	reactant
+re11	CytR-cytidine	product
+re12	nupG	reactant
+re12	nupG_mRNA	product
+re13	mutY-yggX-mltC-nupG_mRNA	reactant
+re13	MutY	product
+re14	DNA with G-A mismatch	reactant
+re14	DNA containing an apurinic site	product
+re15	mutY-yggX-mltC-nupG_mRNA	reactant
+re15	YggX	product
+re16	mutY-yggX-mltC-nupG_mRNA	reactant
+re16	MltC	product
+re17	peptidoglycan dimer (generic)	reactant
+re17	GlcNAc-1,6-anhydro-MurNAc-pentapeptide	product
+re17	lipid II	product
+re18	mutY-yggX-mltC-nupG_mRNA	reactant
+re18	NupG	product
+re19	nucleoside_Ext	reactant
+re19	nucleoside	product
+re20	uridine_Ext	reactant
+re20	uridine	product
+re21	thymidine_Ext	reactant
+re21	thymidine	product
+re22	inosine_Ext	reactant
+re22	inosine	product
+re23	deoxyuridine_Ext	reactant
+re23	deoxyuridine	product
+re24	deoxyinosine_Ext	reactant
+re24	deoxyinosine	product
+re25	d-cytidine_Ext	reactant
+re25	d-cytidine	product
+re26	deoxyadenosine_Ext	reactant
+re26	deoxyadenosine	product
+re27	cytidine_Ext	reactant
+re27	cytidine	product
+re28	adenosine_Ext	reactant
+re28	adenosine	product
+re29	xanthosine_Ext	reactant
+re29	xanthosine	product
+re30	cdd_mRNA	reactant
+re30	Cdd	product
+re31	cytidine	reactant
+re31	ammonium	product
+re31	uridine	product
+re32	d-cytidine	reactant
+re32	deoxyuridine	product
+re32	ammonium	product
+re33	nupG_mRNA	reactant
+re33	NupG	product
+re34	rpoH_mRNA	reactant
+re34	RpoH	product
+re35	RpoH	reactant
+re35	RpoA	reactant
+re35	RpoC	reactant
+re35	RpoB	reactant
+re35	RpoB-RpoC-RpoA-RpoH	product
+re36	nupC_mRNA	reactant
+re36	NupC	product
+re37	deoCABD_mRNA	reactant
+re37	DeoC	product
+re38	2-deoxy-D-ribose 5-phosphate	reactant
+re38	glyceraldehyde-P	product
+re38	ethanal	product
+re39	deoCABD_mRNA	reactant
+re39	DeoA	product
+re40	phosphate	reactant
+re40	thymidine	reactant
+re40	deoxy-D-ribose 1-phosphate	product
+re40	thymine	product
+re41	deoxyuridine	reactant
+re41	phosphate	reactant
+re41	deoxy-D-ribose 1-phosphate	product
+re41	uracil	product
+re42	deoCABD_mRNA	reactant
+re42	DeoB	product
+re43	deoxy-D-ribose 1-phosphate	reactant
+re43	2-deoxy-D-ribose 5-phosphate	product
+re44	ribose-1-phosphate	reactant
+re44	ribose-5P	product
+re45	deoCABD_mRNA	reactant
+re45	DeoD	product
+re46	nebularine	reactant
+re46	phosphate	reactant
+re46	ribose-1-phosphate	product
+re46	purine base	product
+re47	phosphate	reactant
+re47	guanosine	reactant
+re47	ribose-1-phosphate	product
+re47	guanine	product
+re48	deoxyguanosine	reactant
+re48	phosphate	reactant
+re48	deoxy-D-ribose 1-phosphate	product
+re48	guanine	product
+re49	phosphate	reactant
+re49	inosine	reactant
+re49	ribose-1-phosphate	product
+re49	hypoxanthine	product
+re50	deoxyinosine	reactant
+re50	phosphate	reactant
+re50	deoxy-D-ribose 1-phosphate	product
+re50	hypoxanthine	product
+re51	phosphate	reactant
+re51	adenosine	reactant
+re51	ribose-1-phosphate	product
+re51	adenine	product
+re52	deoxyadenosine	reactant
+re52	phosphate	reactant
+re52	deoxy-D-ribose 1-phosphate	product
+re52	adenine	product
+re53	tsx_mRNA	reactant
+re53	Tsx	product
+re54	cytR_mRNA	reactant
+re54	CytR	product
+re55	ycdZ_mRNA	reactant
+re55	YcdZ	product
+re56	udp_mRNA	reactant
+re56	Udp	product
+re57	phosphate	reactant
+re57	uridine	reactant
+re57	ribose-1-phosphate	product
+re57	uracil	product
+re58	ppiA_mRNA	reactant
+re58	PpiA	product
+re59	peptidylproline (omega = 180)	reactant
+re59	peptidylproline (omega = 0)	product
+re60	xanthosine	reactant
+re60	ribose-1-phosphate	product
+re61	adenosine	reactant
+re61	inosine	product

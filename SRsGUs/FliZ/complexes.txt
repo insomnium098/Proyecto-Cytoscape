@@ -1,0 +1,9 @@
+csa1	FlhD-FlhC	FlhD
+csa1	FlhD-FlhC	FlhC
+csa2	RcsB-GadE	RcsB
+csa2	RcsB-GadE	GadE
+csa3	TolC-MdtE-MdtF	TolC
+csa3	TolC-MdtE-MdtF	MdtE
+csa3	TolC-MdtE-MdtF	MdtF
+csa4	CsgE-CsgG	CsgE
+csa4	CsgE-CsgG	CsgG

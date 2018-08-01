@@ -1,0 +1,19 @@
+re1	cadBA	reactant
+re1	cadBA_mRNA	product
+re2	cadC	reactant
+re2	cadC_mRNA	product
+re3	cadC_mRNA	reactant
+re3	CadC	product
+re4	cadBA_mRNA	reactant
+re4	CadB	product
+re5	BioDex 1-_Ext	reactant
+re5	BioDex 1-	product
+re6	BioDex 1-_Ext	reactant
+re6	lysine_Ext	reactant
+re6	BioDex 1-	product
+re6	lysine	product
+re7	cadBA_mRNA	reactant
+re7	CadA	product
+re8	lysine	reactant
+re8	BioDex 1-	product
+re8	CO2	product

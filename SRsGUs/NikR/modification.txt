@@ -1,0 +1,6 @@
+re2	INHIBITION	NikR-Cadmium
+re2	INHIBITION	NikR-Cu(II)
+re2	INHIBITION	NikR-Zinc
+re2	INHIBITION	NikR-cobalt ion
+re2	INHIBITION	NikR-nickel
+re9	CATALYSIS	NikD-NikE-NikB-NikC-NikA

@@ -1,0 +1,6 @@
+csa1	TreR-trehalose	TreR
+csa1	TreR-trehalose	trehalose
+csa2	TreR-alpha,alpha-trehalose 6-phosphate	TreR
+csa2	TreR-alpha,alpha-trehalose 6-phosphate	alpha,alpha-trehalose 6-phosphate
+csa3	TreB-Crr	TreB
+csa3	TreB-Crr	Crr

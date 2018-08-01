@@ -1,0 +1,10 @@
+csa1	RutR-thymine	RutR
+csa1	RutR-thymine	thymine
+csa2	RutR-uracil	RutR
+csa2	RutR-uracil	uracil
+csa3	FepC-FepD-FepG-FepB	FepC
+csa3	FepC-FepD-FepG-FepB	FepD
+csa3	FepC-FepD-FepG-FepB	FepG
+csa3	FepC-FepD-FepG-FepB	FepB
+csa4	CarB-CarA	CarB
+csa4	CarB-CarA	CarA

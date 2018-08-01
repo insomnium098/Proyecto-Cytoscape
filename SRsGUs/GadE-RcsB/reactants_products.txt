@@ -1,0 +1,46 @@
+re1	adiC	reactant
+re1	adiC_mRNA	product
+re2	aslB	reactant
+re2	aslB_mRNA	product
+re3	cadBA	reactant
+re3	cadBA_mRNA	product
+re4	gadAX	reactant
+re4	gadAX_mRNA	product
+re5	slp-dctR	reactant
+re5	slp-dctR_mRNA	product
+re6	yhiM	reactant
+re6	yhiM_mRNA	product
+re7	adiC_mRNA	reactant
+re7	AdiC	product
+re8	agmatine_Ext	reactant
+re8	arginine_Ext	reactant
+re8	agmatine	product
+re8	arginine	product
+re9	slp-dctR_mRNA	reactant
+re9	Slp	product
+re10	slp-dctR_mRNA	reactant
+re10	DctR	product
+re11	gadAX_mRNA	reactant
+re11	GadA	product
+re12	L-glutamate	reactant
+re12	GABA	product
+re12	CO2	product
+re13	gadAX_mRNA	reactant
+re13	GadX	product
+re14	yhiM_mRNA	reactant
+re14	YhiM	product
+re15	cadBA_mRNA	reactant
+re15	CadB	product
+re16	BioDex 1-_Ext	reactant
+re16	BioDex 1-	product
+re17	BioDex 1-_Ext	reactant
+re17	lysine_Ext	reactant
+re17	BioDex 1-	product
+re17	lysine	product
+re18	cadBA_mRNA	reactant
+re18	CadA	product
+re19	lysine	reactant
+re19	BioDex 1-	product
+re19	CO2	product
+re20	aslB_mRNA	reactant
+re20	AslB	product

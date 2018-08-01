@@ -1,0 +1,17 @@
+re1	fimE	reactant
+re1	fimE_mRNA	product
+re2	flhDC	reactant
+re2	flhDC_mRNA	product
+re3	lrhA	reactant
+re3	lrhA_mRNA	product
+re4	fimE_mRNA	reactant
+re4	FimE	product
+re5	flhDC_mRNA	reactant
+re5	FlhD	product
+re6	FlhC	reactant
+re6	FlhD	reactant
+re6	FlhD-FlhC	product
+re7	flhDC_mRNA	reactant
+re7	FlhC	product
+re8	lrhA_mRNA	reactant
+re8	LrhA	product

@@ -1,0 +1,13 @@
+csa1	EvgA-phosphate	EvgA
+csa1	EvgA-phosphate	phosphate
+csa2	RcsB-GadE	RcsB
+csa2	RcsB-GadE	GadE
+csa3	TolC-MdtE-MdtF	TolC
+csa3	TolC-MdtE-MdtF	MdtE
+csa3	TolC-MdtE-MdtF	MdtF
+csa4	AcrD-AcrA-TolC	AcrD
+csa4	AcrD-AcrA-TolC	AcrA
+csa4	AcrD-AcrA-TolC	TolC
+csa5	EmrK-EmrY-TolC	EmrK
+csa5	EmrK-EmrY-TolC	EmrY
+csa5	EmrK-EmrY-TolC	TolC

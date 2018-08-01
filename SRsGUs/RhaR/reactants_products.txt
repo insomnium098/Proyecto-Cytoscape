@@ -1,0 +1,9 @@
+re1	rhamnose	reactant
+re1	RhaR	reactant
+re1	RhaR-rhamnose	product
+re2	rhaSR	reactant
+re2	rhaSR_mRNA	product
+re3	rhaSR_mRNA	reactant
+re3	RhaS	product
+re4	rhaSR_mRNA	reactant
+re4	RhaR	product

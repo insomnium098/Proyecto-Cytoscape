@@ -1,0 +1,49 @@
+re1	AI-2	reactant
+re1	LsrR	reactant
+re1	LsrR-AI-2	product
+re2	lsrACDBFG-tam	reactant
+re2	lsrACDBFG-tam_mRNA	product
+re3	lsrRK	reactant
+re3	lsrRK_mRNA	product
+re4	autoinducer 2-P	reactant
+re4	LsrR	reactant
+re4	LsrR-autoinducer 2-P	product
+re5	lsrACDBFG-tam_mRNA	reactant
+re5	LsrA	product
+re6	LsrB	reactant
+re6	LsrD	reactant
+re6	LsrA	reactant
+re6	LsrC	reactant
+re6	LsrB-LsrD-LsrC-LsrA	product
+re7	(R)-THMF_Ext	reactant
+re7	(R)-THMF	product
+re8	lsrACDBFG-tam_mRNA	reactant
+re8	LsrC	product
+re9	lsrACDBFG-tam_mRNA	reactant
+re9	LsrD	product
+re10	lsrACDBFG-tam_mRNA	reactant
+re10	LsrB	product
+re11	lsrACDBFG-tam_mRNA	reactant
+re11	LsrF	product
+re12	3-hydroxy-2,4-pentanedione phosphate	reactant
+re12	coenzyme A	reactant
+re12	acetyl-CoA	product
+re12	DHAP	product
+re13	lsrACDBFG-tam_mRNA	reactant
+re13	LsrG	product
+re14	(4S)-4-hydroxy-2,3-pentanedione 5-phosphate	reactant
+re14	3-hydroxy-2,4-pentanedione phosphate	product
+re15	3-hydroxy-2,4-pentanedione phosphate	reactant
+re15	P-TPO	product
+re16	lsrACDBFG-tam_mRNA	reactant
+re16	Tam	product
+re17	trans-aconitate	reactant
+re17	SAM	reactant
+re17	monomethyl-ester-of-trans-aconitate	product
+re17	adenosylhomocysteine	product
+re18	lsrRK_mRNA	reactant
+re18	LsrR	product
+re19	lsrRK_mRNA	reactant
+re19	LsrK	product
+re20	AI-2	reactant
+re20	(4S)-4-hydroxy-2,3-pentanedione 5-phosphate	product

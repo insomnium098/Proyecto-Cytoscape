@@ -1,0 +1,7 @@
+csa1	GlcC-acetate	GlcC
+csa1	GlcC-acetate	acetate
+csa2	GlcC-glycolate	GlcC
+csa2	GlcC-glycolate	glycolate
+csa3	GlcD-GlcE-GlcF	GlcD
+csa3	GlcD-GlcE-GlcF	GlcE
+csa3	GlcD-GlcE-GlcF	GlcF

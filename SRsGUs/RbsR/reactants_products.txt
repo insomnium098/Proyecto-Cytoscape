@@ -1,0 +1,57 @@
+re1	add	reactant
+re1	add_mRNA	product
+re2	purHD	reactant
+re2	purHD_mRNA	product
+re3	rbsDACBKR	reactant
+re3	rbsDACBKR_mRNA	product
+re4	ribose	reactant
+re4	RbsR	reactant
+re4	RbsR-ribose	product
+re5	rbsDACBKR_mRNA	reactant
+re5	RbsD	product
+re6	beta-D-ribopyranose	reactant
+re6	beta-D-ribofuranose	product
+re7	rbsDACBKR_mRNA	reactant
+re7	RbsA	product
+re8	RbsC	reactant
+re8	RbsA	reactant
+re8	RbsB	reactant
+re8	RbsA-RbsC-RbsB	product
+re9	beta-D-ribopyranose_Ext	reactant
+re9	beta-D-ribopyranose	product
+re10	rbsDACBKR_mRNA	reactant
+re10	RbsC	product
+re11	rbsDACBKR_mRNA	reactant
+re11	RbsB	product
+re12	rbsDACBKR_mRNA	reactant
+re12	RbsK	product
+re13	alpha D-ribose	reactant
+re13	alpha-D-ribose 5-phosphate	product
+re14	rbsDACBKR_mRNA	reactant
+re14	RbsR	product
+re15	add_mRNA	reactant
+re15	Add	product
+re16	deoxyadenosine	reactant
+re16	deoxyinosine	product
+re16	ammonium	product
+re17	adenosine	reactant
+re17	ammonium	product
+re17	inosine	product
+re18	purHD_mRNA	reactant
+re18	PurH	product
+re19	10-formyl-THF mono-L-glutamate	reactant
+re19	AICAR	reactant
+re19	THF polyglutamate	product
+re19	FAICAR	product
+re20	5'-IMP	reactant
+re20	FAICAR	product
+re21	purHD_mRNA	reactant
+re21	PurD	product
+re22	5-phosphoribosylamine	reactant
+re22	glycine	reactant
+re22	5'-p-ribosylglycinamide	product
+re22	phosphate	product
+re23	beta-D-ribofuranose	reactant
+re23	alpha D-ribose	product
+re24	5'-p-ribosylglycinamide	reactant
+re24	AICAR	product

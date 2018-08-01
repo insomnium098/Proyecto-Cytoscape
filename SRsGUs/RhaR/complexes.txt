@@ -1,0 +1,2 @@
+csa1	RhaR-rhamnose	RhaR
+csa1	RhaR-rhamnose	rhamnose

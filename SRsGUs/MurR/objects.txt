@@ -1,0 +1,25 @@
+1,6-anhMurNAc	SIMPLE_MOLECULE	CPD0-882
+1,6-anhMurNAc_Ext	SIMPLE_MOLECULE	CPD0-882_Ext
+Crr	PROTEIN	CRR-MONOMER
+HPr - phosphorylated_Ext	SIMPLE_MOLECULE	PTSH-PHOSPHORYLATED_Ext
+MurNAc-6-P	SIMPLE_MOLECULE
+MurNAc-6-P	SIMPLE_MOLECULE	CPD0-881
+MurNAc_Ext	SIMPLE_MOLECULE	NACMUR_Ext
+MurP	PROTEIN	MONOMER0-5
+MurP-Crr	COMPLEX	CPLX0-7
+MurQ	PROTEIN	G7263-MONOMER
+MurR	PROTEIN
+MurR-MurNAc-6-P	COMPLEX
+N-acetyl-alpha-D-glucosamine 6-phosphate	SIMPLE_MOLECULE	N-ACETYL-D-GLUCOSAMINE-6-P
+PtsH	SIMPLE_MOLECULE	PTSH-MONOMER
+YfeW	PROTEIN	G7265-MONOMER
+ala	SIMPLE_MOLECULE	D-ALANINE
+lactate	SIMPLE_MOLECULE	D-LACTATE
+murQP	GENE
+murQP-yfeW	GENE
+murQP-yfeW_mRNA	RNA
+murQP_mRNA	RNA
+murR	GENE
+murR_mRNA	RNA
+nascent peptidoglycan with (L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanine) tetrapeptide	SIMPLE_MOLECULE	CPD-17926
+nascent peptidoglycan with (L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine) pentapeptide	SIMPLE_MOLECULE	CPD-17927

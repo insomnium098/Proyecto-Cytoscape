@@ -1,0 +1,4 @@
+csa1	ZntR-Zinc	ZntR
+csa1	ZntR-Zinc	Zinc
+csa2	ZntR-mercury	ZntR
+csa2	ZntR-mercury	mercury

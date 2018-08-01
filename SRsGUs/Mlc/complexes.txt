@@ -1,0 +1,11 @@
+csa1	Mlc-EIIglc	Mlc
+csa1	Mlc-EIIglc	EIIglc
+csa2	ManZ-ManY-ManX	ManZ
+csa2	ManZ-ManY-ManX	ManY
+csa2	ManZ-ManY-ManX	ManX
+csa3	PtsG-Crr	PtsG
+csa3	PtsG-Crr	Crr
+csa4	TreB-Crr	TreB
+csa4	TreB-Crr	Crr
+csa5	MurP-Crr	MurP
+csa5	MurP-Crr	Crr
