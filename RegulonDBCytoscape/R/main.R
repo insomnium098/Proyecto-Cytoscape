@@ -26,5 +26,10 @@ colnames(df_reactant_product) <- c("id","reactant_name",
 
 ###Añadir datos de reactions en dataframe con edges final
 df_edges <- left_join(df_reactant_product, reactions, by = "id")
+
+#Eliminar dataframes que ya no se usan
+
+rm(df_product, df_reactant, df_reactant_product, reactants_products, reactions)
+
 #####
 #####
