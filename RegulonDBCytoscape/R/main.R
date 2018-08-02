@@ -1,7 +1,6 @@
 library(dplyr)
-library(stringr)
 
-#x es el nombre de la carpeta con los archivos
+#x es la ruta de la carpeta con los archivos
 x <- c("AdiY")
 
 cytoscapeRegulon <- function(x){
@@ -45,7 +44,8 @@ cytoscapeRegulon <- function(x){
   colnames(df_edges) <- c("reaction_id","source", "target","interaction",
                           "direction","ecocyc_name")
   ##
-  df_edges_test <- df_edges[,2:length(colnames(df_edges))]
+  df_edges$reaction_id_ <- df_edges$reaction_id
+  df_edges <- df_edges[,2:length(colnames(df_edges))]
   ##
   #Eliminar dataframes que ya no se usan
 
@@ -53,12 +53,8 @@ cytoscapeRegulon <- function(x){
 
 
   #Llamar RCy3
-  createNetworkFromDataFrames(df_nodes,df_edges_test, title=x,
+  createNetworkFromDataFrames(df_nodes,df_edges, title=x,
                               collection=x)
 
 
 }
-
-
-
-
