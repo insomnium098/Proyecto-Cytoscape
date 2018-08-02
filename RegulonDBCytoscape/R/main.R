@@ -97,7 +97,9 @@ cytoscapeRegulon <- function(x){
       for (j in seq_along(1:length(rownames(complejo_df)))){
         integrante_complejo <- complejo_df[j,]
         nombre_integrante_complejo <- as.character(integrante_complejo$type)
-        df_integrante_complejo <- data.frame("id" = nombre_integrante_complejo,
+        #Se añadira un espacio para que el nodo nuevo no tenga interaccion
+        df_integrante_complejo <- data.frame("id" = paste0(
+                                      nombre_integrante_complejo," "),
                                              "reactant_type" = "COMPLEX_NODE",
                                              "name" = i)
         #HACER UN DF_NODES CON COMPLEJOS
@@ -113,12 +115,13 @@ cytoscapeRegulon <- function(x){
           df_nodes_complex <- rbind(df_nodes_complex,temp_dataset)
           rm(temp_dataset)
         }
-        #El primer row se repite, se eliminara
-        df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
+
       }
 
     }
 
+  #El primer row se repite, se eliminara
+  df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
   #Unir el df_nodes_complex con el df_nodes
 
   df_nodes <- rbind(df_nodes, df_nodes_complex)
@@ -146,6 +149,8 @@ cytoscapeRegulon <- function(x){
   colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
+
+
 
 
 
