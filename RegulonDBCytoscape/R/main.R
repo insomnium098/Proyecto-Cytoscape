@@ -193,17 +193,17 @@ cytoscapeRegulon <- function(x){
   #######
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF")
+               'RNA',"GENE","COMPLEX","PROTEIN_TF","AUX")
   shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                'PARALLELOGRAM',"RECTANGLE","OCTAGON",
-               "ROUND_RECTANGLE")
+               "ROUND_RECTANGLE","TRIANGLE")
   setNodeShapeMapping (column, values, shapes)
 
   #####Color de los nodos
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF")
-  colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6")
+               'RNA',"GENE","COMPLEX","PROTEIN_TF","AUX")
+  colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6","#FFFFFF")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
 
