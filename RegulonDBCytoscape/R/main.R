@@ -1,4 +1,5 @@
 library(dplyr)
+library(RCy3)
 
 #x es la ruta de la carpeta con los archivos
 x <- c("AdiY")
@@ -56,5 +57,13 @@ cytoscapeRegulon <- function(x){
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
                               collection=x)
 
+  #######Forma de los nodos
+  #######
+  column <- 'reactant_type'
+  values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
+               'RNA',"GENE","COMPLEX")
+  shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
+               'PARALLELOGRAM',"RECTANGLE","OCTAGON")
+  setNodeShapeMapping (column, values, shapes)
 
 }
