@@ -57,7 +57,7 @@ cytoscapeRegulon <- function(x){
   mod_id<-paste0("mo_",seq_len(length(mod_nod_reac)))
   mod_reac<-data.frame(id=mod_id,name=mod_nod_reac,type="reactant")
 
-  rm(id_Nodaux,mod_id,mod_nod_prod,mod_nod_reac)
+  rm(mod_id,mod_nod_prod,mod_nod_reac)
   
   ###Los nodos invisibles generan modificaciones en las reacciones que se reconocen a continuacion
   ## Se agregan reacciones temporales
