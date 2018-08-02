@@ -2,7 +2,7 @@ library(dplyr)
 library(RCy3)
 
 #x es la ruta de la carpeta con los archivos
-x <- c("AdiY")
+x <- c("Ada")
 
 cytoscapeRegulon <- function(x){
   #x es el folder con los archivos
@@ -53,6 +53,28 @@ cytoscapeRegulon <- function(x){
   rm(df_product, df_reactant, df_reactant_product, reactants_products, reactions)
 
 
+  ####Añadir que proteinas son TF
+  tf_name <- x
+
+  ##extraer rows que son tf
+  df_nodes_tf <- subset(df_nodes, id == x)
+  df_nodes_tf$reactant_type <- rep("PROTEIN_TF",length(rownames(df_nodes_tf)))
+
+  ##extraer rows que no son tf
+
+  df_nodes_sin_tf <- filter(df_nodes, id != x)
+
+  ###unir nodos ya con tf
+
+  df_nodes <- rbind(df_nodes_tf,df_nodes_sin_tf)
+
+  ###eliminar dataframes que ya no se ocupan
+
+  rm(df_nodes_sin_tf,df_nodes_tf)
+
+  ####
+
+
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
                               collection=x)
@@ -61,9 +83,23 @@ cytoscapeRegulon <- function(x){
   #######
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX")
+               'RNA',"GENE","COMPLEX","PROTEIN_TF")
   shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
-               'PARALLELOGRAM',"RECTANGLE","OCTAGON")
+               'PARALLELOGRAM',"RECTANGLE","OCTAGON",
+               "ROUND_RECTANGLE")
   setNodeShapeMapping (column, values, shapes)
+
+  #####Color de los nodos
+  column <- 'reactant_type'
+  values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
+               'RNA',"GENE","COMPLEX","PROTEIN_TF")
+  colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6")
+  setNodeColorMapping (column, values, colors,
+                       mapping.type = "d")
+
+
+
+
+
 
 }
