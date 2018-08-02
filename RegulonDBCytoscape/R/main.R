@@ -168,7 +168,7 @@ cytoscapeRegulon <- function(x){
 
   deltacatnodes <- df_nodes[grep(g, df_nodes$name), "id"]
   ##OBTENER EL SUID
-  SUIDS <- filter(nodedata,`shared name` == deltacatnodes)
+  SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
   SUIDS <- as.character(SUIDS$SUID)
   ####
   nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
@@ -202,11 +202,14 @@ cytoscapeRegulon <- function(x){
               "#b6bd7b")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
+  ###Arrow shapes
 
+  #getArrowShapes()
+  #?setEdgeLineStyleMapping
 
-
-
-
-
+  column_arrow <- "interaction"
+  values_arrow <- c("STATE_TRANSITION","TRANSCRIPTION","TRANSLATION",
+                    "TRANSPORT","COMPLEX_INTERACTION")
+  ar
 }
 
