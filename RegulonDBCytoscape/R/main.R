@@ -53,8 +53,8 @@ cytoscapeRegulon <- function(x){
 
 
   #Llamar RCy3
-  createNetworkFromDataFrames(df_nodes,df_edges_test, title="Test",
-                              collection="Test")
+  createNetworkFromDataFrames(df_nodes,df_edges_test, title=x,
+                              collection=x)
 
 
 }
