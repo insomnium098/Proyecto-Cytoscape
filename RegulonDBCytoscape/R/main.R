@@ -188,14 +188,13 @@ cytoscapeRegulon <- function(x){
   #######
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF")
+               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE")
   shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                'PARALLELOGRAM',"RECTANGLE","OCTAGON",
-               "ROUND_RECTANGLE")
+               "ROUND_RECTANGLE","ELLIPSE")
   setNodeShapeMapping (column, values, shapes)
 
   #####Color de los nodos
-  ###FALTA EL DE LOS COMPLEX_NODES
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
                'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE")
