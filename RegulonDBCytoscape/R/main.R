@@ -2,7 +2,7 @@ library(dplyr)
 library(RCy3)
 
 #x es la ruta de la carpeta con los archivos
-x <- c("Ada")
+x <- c("AtoC")
 
 cytoscapeRegulon <- function(x){
   #x es el folder con los archivos
@@ -23,7 +23,11 @@ cytoscapeRegulon <- function(x){
                                        ,"name"), stringsAsFactors=FALSE)
 
 
-  ####
+
+
+  complexes <- read.delim("complexes.txt", header = FALSE,
+                          col.names = c("id","name","type"),
+                          stringsAsFactors=FALSE)
 
 
 
@@ -75,6 +79,52 @@ cytoscapeRegulon <- function(x){
   ####
 
 
+
+
+
+  ####Complejos
+
+  #Paso1: obtener los complejos
+
+  complejos <- unique(complexes$id)
+
+  #Paso2: extraer cada id de complejo
+
+    for (i in complejos){
+      complejo_df <- complexes[complexes$id==i,]
+      nombre_complejo <- i
+      #crear data frame para cada integrante del complejo
+      for (j in seq_along(1:length(rownames(complejo_df)))){
+        integrante_complejo <- complejo_df[j,]
+        nombre_integrante_complejo <- as.character(integrante_complejo$type)
+        df_integrante_complejo <- data.frame("id" = nombre_integrante_complejo,
+                                             "reactant_type" = "COMPLEX_NODE",
+                                             "name" = i)
+        #HACER UN DF_NODES CON COMPLEJOS
+        if (!exists("df_nodes_complex")){
+          df_nodes_complex <- df_integrante_complejo
+        }
+
+
+        #Si el dataset existe, se une
+        if (exists("df_nodes_complex")){
+          temp_dataset <- df_integrante_complejo
+          #dataset<-rbind(dataset, temp_dataset)
+          df_nodes_complex <- rbind(df_nodes_complex,temp_dataset)
+          rm(temp_dataset)
+        }
+        #El primer row se repite, se eliminara
+        df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
+      }
+
+    }
+
+  #Unir el df_nodes_complex con el df_nodes
+
+  df_nodes <- rbind(df_nodes, df_nodes_complex)
+
+
+
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
                               collection=x)
@@ -96,6 +146,7 @@ cytoscapeRegulon <- function(x){
   colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
+
 
 
 
