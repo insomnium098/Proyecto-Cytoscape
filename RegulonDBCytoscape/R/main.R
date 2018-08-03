@@ -231,6 +231,10 @@ cytoscapeRegulon <- function(x){
 
   rm(arrow_aux_reactivo,arrow_reactivo_aux,arrows_edge)
 
+  #####PRUEBA
+  colnames(df_nodes)[colnames(df_nodes)=="name"] <- "description"
+#########
+
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
                               collection=x)
@@ -249,8 +253,9 @@ cytoscapeRegulon <- function(x){
   for (g in unique(as.character(complexes$reaction_id_))){
 
 
-
-    deltacatnodes <- df_nodes[grep(g, df_nodes$name), "id"]
+    ####PRUEBA
+    deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
+    ###PRUEBA
     ##OBTENER EL SUID
     SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
     SUIDS <- as.character(SUIDS$SUID)
