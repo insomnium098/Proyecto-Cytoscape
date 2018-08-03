@@ -241,24 +241,43 @@ cytoscapeRegulon <- function(x){
   }
   ########
 
-  #######Forma de los nodos
-  #######
+
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE")
+               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX")
+  #####Tamaño de los nodos
+  lockNodeDimensions(TRUE)
+  sizes <- c(rep(50,7),10)
+  setNodeSizeMapping(column, values, sizes,
+                     mapping.type = "d")
+
+  #######Forma de los nodos
   shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                'PARALLELOGRAM',"RECTANGLE","OCTAGON",
-               "ROUND_RECTANGLE","ELLIPSE")
+               "ROUND_RECTANGLE","ELLIPSE","TRIANGLE")
   setNodeShapeMapping (column, values, shapes)
 
   #####Color de los nodos
-  column <- 'reactant_type'
-  values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE")
   colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
-              "#b6bd7b")
+              "#b6bd7b","#ffffff")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
+
+  #####Border de los nodos
+
+  colors <- rep("#000000",8)
+  setNodeBorderColorMapping (column, values, colors,
+                       mapping.type = "d")
+
+  #####Width Border de los nodos
+
+  widths <- rep(3,8)
+  setNodeBorderWidthMapping(column, values, widths,
+                             mapping.type = "d")
+
+
+
+
   ###Arrow shapes
 
   #getArrowShapes()
