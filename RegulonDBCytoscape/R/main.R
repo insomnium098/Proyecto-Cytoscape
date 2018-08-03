@@ -5,14 +5,16 @@
 #' @param x A directory with complexes.txt, modification.txt, objects.txt, reactants_products.txt, reactions.txt
 #' @param html Boolean if True it generates an HTML file.
 #' @export
-#' @import plyr dplyr RCy3
+#' @import plyr
+#' @import dplyr
+#' @import RCy3
+#' @importFrom RegulonDBCytoscape exportToHTML
 #' @examples
 #' ##No RUN##
 #' setwd("myDirectoryofTFs/")
 #' x<-LacI
 #' cytoscapeRegulon(x, html=TRUE)
 #'
-
 
 
 cytoscapeRegulon <- function(x,html){
@@ -112,7 +114,7 @@ cytoscapeRegulon <- function(x,html){
 
   df_reactant_product$id<-as.character(df_reactant_product$id)
   reactions$id<-as.character(reactions$id)
-  df_edges <- left_join(df_reactant_product, reactions, by = "id")
+  df_edges <- dplyr::left_join(df_reactant_product, reactions, by = "id")
 
   colnames(df_edges) <- c("reaction_id","source", "target","interaction",
                           "direction","ecocyc_name")
@@ -401,7 +403,7 @@ cytoscapeRegulon <- function(x,html){
 
   if(!(missing(html))){
     if(html){
-      suppressWarnings(RegulonDBCytoscape::exportToHTML())
+      suppressWarnings(exportToHTML())
     }
   }
 }

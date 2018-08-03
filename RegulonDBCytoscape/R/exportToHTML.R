@@ -1,4 +1,12 @@
-library(RCy3)
+#' Plot MDS for a DESeq2 object
+#'
+#' @description This function takes all the output files from "blabla" and conectes them with help of Cytoscape
+#' @author Antonio Martinez, Luis Pedro Iniguez, Servando Ramirez, Tobias Portillo
+#' @param x A directory with complexes.txt, modification.txt, objects.txt, reactants_products.txt, reactions.txt
+#' @param html Boolean if True it generates an HTML file.
+#' @export
+#' @import RCy3
+
 
 generateImage <- function(){
   full.path=paste(getwd(),'graph_image',sep='/')
