@@ -15,7 +15,7 @@
 
 
 
-cytoscapeRegulon <- function(x){
+cytoscapeRegulon <- function(x,html){
   #x es el folder con los archivos
   setwd(x)
   reactants_products <- read.delim("reactants_products.txt", header = FALSE,
@@ -244,7 +244,7 @@ cytoscapeRegulon <- function(x){
   #####PRUEBA
   colnames(df_nodes)[colnames(df_nodes)=="name"] <- "description"
 #########
-
+  ###REM
 
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
@@ -279,8 +279,17 @@ cytoscapeRegulon <- function(x){
     primer_vecino <- as.character(primer_vecino$`shared name`)
 
     ##Crear grupo del complejo
-    createGroup(primer_vecino)
-    collapseGroup(primer_vecino)
+    if(missing(html)){
+      createGroup(primer_vecino)
+      collapseGroup(primer_vecino)
+    }else{
+      if(html){
+        createGroup(primer_vecino)
+      }else{
+        createGroup(primer_vecino)
+        collapseGroup(primer_vecino)
+      }
+    }
   }
   ########
 
@@ -377,6 +386,22 @@ cytoscapeRegulon <- function(x){
   setEdgeColorMapping(column_line_color_edge,values_line_color_edge,line_color_edge,
                       mapping.type = "d")
 
-  #####COLORES DE LAS ARROWS
 
+  ###REMOVER TEXTO DE AUX
+
+  nodes_aux <- grep("Aux*",df_nodes$id)
+  nodes_aux <- df_nodes[nodes_aux,]
+  nodes_aux <- as.character(nodes_aux$id)
+
+  new_nodes_aux_names <- rep(" ", length(nodes_aux))
+  setNodeLabelBypass(nodes_aux,new_nodes_aux_names)
+
+
+
+
+  if(!(missing(html))){
+    if(html){
+      suppressWarnings(RegulonDBCytoscape::exportToHTML())
+    }
+  }
 }
