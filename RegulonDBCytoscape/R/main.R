@@ -235,6 +235,7 @@ cytoscapeRegulon <- function(x){
   colnames(df_nodes)[colnames(df_nodes)=="name"] <- "description"
 #########
 
+
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
                               collection=x)
@@ -329,9 +330,43 @@ cytoscapeRegulon <- function(x){
 
   setEdgeLineStyleMapping(column_line,values_line, values_line_shape)
 
-
   ####PUTAS ARROWS!!!!
 
-  values_arrow_shape <- c("")
+  values_arrow_shape <- c("NONE","NONE","NONE","CROSS_DELTA","OPEN_DELTA","NONE",
+                          "NONE","NONE","NONE","OPEN_DELTA","CROSS_DELTA","NONE",
+                          "NONE")
+
+
+  setEdgeTargetArrowMapping(column_line,values_line, values_arrow_shape)
+
+  ####Agregar tabla de modificaciones a cytoscape para hacer los colores de las lineas
+  ####Duplicar los valores de las reacciones de modifications y
+  #### agregar _Re, y _Pr
+  modifications_RE <- modifications
+  modifications_RE$reaction <- paste(modifications_RE$reaction, "_Re", sep="")
+
+  modifications_Pr <- modifications
+  modifications_Pr$reaction <- paste(modifications_Pr$reaction, "_Pr", sep="")
+
+  modifications <- rbind(modifications_RE, modifications_Pr)
+
+  loadTableData(modifications, data.key.column = "reaction",table = "edge",
+                table.key.column = "reaction_id_")
+
+  rm(modifications_RE, modifications_Pr)
+
+  ######COLORES DE LAS LINEAS
+
+  setEdgeColorDefault("#848484")
+  column_line_color_edge <- "modification_type"
+  values_line_color_edge <- c("PHYSICAL_STIMULATION","INHIBITION")
+
+  line_color_edge <- c("#48c4dc","#d80c0c")
+
+
+  setEdgeColorMapping(column_line_color_edge,values_line_color_edge,line_color_edge,
+                      mapping.type = "d")
+
+  #####COLORES DE LAS ARROWS
 
 }
