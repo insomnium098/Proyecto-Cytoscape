@@ -1,9 +1,19 @@
-library(dplyr)
-library(RCy3)
-library(plyr)
+#' Plot MDS for a DESeq2 object
+#'
+#' @description This function takes all the output files from "blabla" and conectes them with help of Cytoscape
+#' @author Antonio Martinez, Luis Pedro Iniguez, Servando Ramirez, Tobias Portillo
+#' @param x A directory with complexes.txt, modification.txt, objects.txt, reactants_products.txt, reactions.txt
+#' @param html Boolean if True it generates an HTML file.
+#' @export
+#' @import plyr dplyr RCy3
+#' @examples
+#' ##No RUN##
+#' setwd("myDirectoryofTFs/")
+#' x<-LacI
+#' cytoscapeRegulon(x, html=TRUE)
+#'
 
-#x es la ruta de la carpeta con los archivos
-x <- c("ArgR")
+
 
 cytoscapeRegulon <- function(x){
   #x es el folder con los archivos
