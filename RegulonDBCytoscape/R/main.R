@@ -234,7 +234,7 @@ cytoscapeRegulon <- function(x){
   #####PRUEBA
   colnames(df_nodes)[colnames(df_nodes)=="name"] <- "description"
 #########
-
+  ###REM
 
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
@@ -367,6 +367,14 @@ cytoscapeRegulon <- function(x){
   setEdgeColorMapping(column_line_color_edge,values_line_color_edge,line_color_edge,
                       mapping.type = "d")
 
-  #####COLORES DE LAS ARROWS
+
+  ###REMOVER TEXTO DE AUX
+
+  nodes_aux <- grep("Aux*",df_nodes$id)
+  nodes_aux <- df_nodes[nodes_aux,]
+  nodes_aux <- as.character(nodes_aux$id)
+
+  new_nodes_aux_names <- rep(" ", length(nodes_aux))
+  setNodeLabelBypass(nodes_aux,new_nodes_aux_names)
 
 }
