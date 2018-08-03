@@ -3,7 +3,7 @@ library(RCy3)
 library(plyr)
 
 #x es la ruta de la carpeta con los archivos
-x <- c("LacI")
+x <- c("ArgR")
 
 cytoscapeRegulon <- function(x){
   #x es el folder con los archivos
@@ -203,6 +203,33 @@ cytoscapeRegulon <- function(x){
 
 
 
+  ################Putas Arrows!!!
+  ###############
+
+  #Seleccionar primero las que vayan de un reactivo a un aux
+  arrow_reactivo_aux <- df_edges[-grep("Aux",df_edges$source),]
+  arrow_reactivo_aux$direccion <- rep("reactivo_aux",
+                                      length(rownames(arrow_reactivo_aux)))
+  #Seleccionar las que vayan de un aux a un reactivo
+  arrow_aux_reactivo <- df_edges[grep("Aux",df_edges$source),]
+  arrow_aux_reactivo$direccion <- rep("aux_reactivo",
+                                      length(rownames(arrow_aux_reactivo)))
+
+  ###Unir las dos df
+
+  arrows_edge <- rbind(arrow_reactivo_aux,
+                       arrow_aux_reactivo)
+  ###Unir las columnas de interaction con direccion
+
+  arrows_edge$arrow <- paste(arrows_edge$interaction,
+                             arrows_edge$direccion,sep="-")
+  ###Unir las columnas de arrows con direction
+  arrows_edge$arrow <- paste(arrows_edge$arrow,
+                             arrows_edge$direction,sep="-")
+
+  df_edges <- arrows_edge
+
+  rm(arrow_aux_reactivo,arrow_reactivo_aux,arrows_edge)
 
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=x,
@@ -259,13 +286,28 @@ cytoscapeRegulon <- function(x){
               "#b6bd7b")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
-  ###Arrow shapes
+  ###Line shapes
 
   #getArrowShapes()
   #?setEdgeLineStyleMapping
 
-  column_arrow <- "interaction"
-  values_arrow <- c("STATE_TRANSITION","TRANSCRIPTION","TRANSLATION",
-                    "TRANSPORT","COMPLEX_INTERACTION")
+  column_line <- "arrow"
+  values_line <- c("NA-reactivo_aux-NA","STATE_TRANSITION-reactivo_aux-",
+                    "TRANSCRIPTION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-RVB",
+                    "TRANSLATION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-L2R",
+                    "TRANSPORT-reactivo_aux-L2R","COMPLEX_INTERACTION-reactivo_aux-NA",
+                    "STATE_TRANSITION-aux_reactivo-","TRANSCRIPTION-aux_reactivo-",
+                    "STATE_TRANSITION-aux_reactivo-RVB","STATE_TRANSITION-aux_reactivo-L2R",
+                    "TRANSPORT-aux_reactivo-L2R")
+
+  values_line_shape <- c("SOLID","SOLID","SOLID","SOLID","MARQUEE_DASH",
+                         "SOLID","SOLID","DASH_DOT","SOLID","SOLID","SOLID")
+
+  setEdgeLineStyleMapping(column_line,values_line, values_line_shape)
+
+
+  ####PUTAS ARROWS!!!!
+
+  values_arrow_shape <- c("")
 
 }
