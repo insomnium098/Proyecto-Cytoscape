@@ -5,7 +5,7 @@ library(plyr)
 #x es la ruta de la carpeta con los archivos
 x <- c("ArgR")
 
-cytoscapeRegulon <- function(x){
+cytoscapeRegulon <- function(x,html){
   #x es el folder con los archivos
   setwd(x)
   reactants_products <- read.delim("reactants_products.txt", header = FALSE,
@@ -269,8 +269,17 @@ cytoscapeRegulon <- function(x){
     primer_vecino <- as.character(primer_vecino$`shared name`)
 
     ##Crear grupo del complejo
-    createGroup(primer_vecino)
-    collapseGroup(primer_vecino)
+    if(missing(html)){
+      createGroup(primer_vecino)
+      collapseGroup(primer_vecino)
+    }else{
+      if(html){
+        createGroup(primer_vecino)
+      }else{
+        createGroup(primer_vecino)
+        collapseGroup(primer_vecino)
+      }
+    }
   }
   ########
 
@@ -377,4 +386,9 @@ cytoscapeRegulon <- function(x){
   new_nodes_aux_names <- rep(" ", length(nodes_aux))
   setNodeLabelBypass(nodes_aux,new_nodes_aux_names)
 
+  if(!(missing(html))){
+    if(html){
+      RegulonDBCytoscape::exportToHTML()
+    }
+  }
 }
