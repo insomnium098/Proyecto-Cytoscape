@@ -386,9 +386,12 @@ cytoscapeRegulon <- function(x,html){
   new_nodes_aux_names <- rep(" ", length(nodes_aux))
   setNodeLabelBypass(nodes_aux,new_nodes_aux_names)
 
+
+
+
   if(!(missing(html))){
     if(html){
-      RegulonDBCytoscape::exportToHTML()
+      suppressWarnings(RegulonDBCytoscape::exportToHTML())
     }
   }
 }
