@@ -3,7 +3,7 @@ library(RCy3)
 library(plyr)
 
 #x es la ruta de la carpeta con los archivos
-x <- c("AraC")
+#x <- c("AgaR")
 
 cytoscapeRegulon <- function(x,html){
   #x es el folder con los archivos
@@ -269,22 +269,22 @@ cytoscapeRegulon <- function(x,html){
     primer_vecino <- setdiff(primer_vecino,nodos_suids)
 
     #primer_vecino_old <- filter(nodedata, SUID == primer_vecino)
-
-    primer_vecino <- nodedata[which(nodedata$SUID == primer_vecino),]
+    #Funcion en r base pero con warnings
+    primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
     primer_vecino <- as.character(primer_vecino$`shared name`)
 
     ##Crear grupo del complejo
-    if(missing(html)){
-      createGroup(primer_vecino)
-      collapseGroup(primer_vecino)
-    }else{
-      if(html){
-        createGroup(primer_vecino)
-      }else{
-        createGroup(primer_vecino)
-        collapseGroup(primer_vecino)
-      }
-    }
+#    if(missing(html)){
+#      createGroup(primer_vecino)
+#      collapseGroup(primer_vecino)
+#    }else{
+#      if(html){
+#        createGroup(primer_vecino)
+#      }else{
+#        createGroup(primer_vecino)
+#        collapseGroup(primer_vecino)
+#      }
+#    }
   }
   ########
 
