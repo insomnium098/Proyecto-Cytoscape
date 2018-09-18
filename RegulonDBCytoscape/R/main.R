@@ -276,9 +276,11 @@ cytoscapeRegulon <- function(x,html){
     primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
     primer_vecino <- as.character(primer_vecino$`shared name`)
 
+
+    ###AQUI EL ERROR DE HTML, AL PARECER EN COLLAPSEGROUP
     ##Crear grupo del complejo
 #    if(missing(html)){
-#      createGroup(primer_vecino)
+      createGroup(primer_vecino)
 #      collapseGroup(primer_vecino)
 #    }else{
 #      if(html){
