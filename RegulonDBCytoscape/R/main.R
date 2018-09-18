@@ -4,6 +4,9 @@ library(plyr)
 
 #x es la ruta de la carpeta con los archivos
 #x <- c("AgaR")
+###18/SEPT/18
+###FALTA SOLUCIONAR AQUELLAS REDES QUE TENGAN EL ARCHIVO DE COMPLEJOS VACIOS
+
 
 cytoscapeRegulon <- function(x,html){
   #x es el folder con los archivos
