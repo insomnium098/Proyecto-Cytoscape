@@ -258,7 +258,9 @@ cytoscapeRegulon <- function(x,html){
     deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
     ###PRUEBA
     ##OBTENER EL SUID
-    SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
+    #VERSION ANTIGUA USA DPLYR
+    #SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
+    SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
     SUIDS <- as.character(SUIDS$SUID)
     ####
     nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
