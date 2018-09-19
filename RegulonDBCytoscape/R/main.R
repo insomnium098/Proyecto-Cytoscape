@@ -4,8 +4,6 @@ library(plyr)
 
 #x es la ruta de la carpeta con los archivos
 #x <- c("AgaR")
-###18/SEPT/18
-###FALTA SOLUCIONAR AQUELLAS REDES QUE TENGAN EL ARCHIVO DE COMPLEJOS VACIOS
 
 
 cytoscapeRegulon <- function(x,html){
@@ -298,6 +296,18 @@ cytoscapeRegulon <- function(x,html){
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
                'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX")
+
+
+########Agregar un default para que los complejos agrupados tengan el estilo
+  ####FORMA
+  setNodeShapeDefault("OCTAGON")
+  setNodeColorDefault("#b6bd7b")
+  setNodeBorderColorDefault("#000000")
+  setNodeBorderWidthDefault(3)
+
+  #############
+
+
   #####Tamaño de los nodos
   lockNodeDimensions(TRUE)
   sizes <- c(rep(50,7),10)
@@ -305,6 +315,7 @@ cytoscapeRegulon <- function(x,html){
                      mapping.type = "d")
 
   #######Forma de los nodos
+
   shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                'PARALLELOGRAM',"RECTANGLE","OCTAGON",
                "ROUND_RECTANGLE","ELLIPSE","TRIANGLE")
