@@ -9,6 +9,11 @@ library(plyr)
 cytoscapeRegulon <- function(x,html){
   #x es el folder con los archivos
   setwd(x)
+
+  ###Obtener el nombre del factor de transcripcion
+
+  nombre_factor_transcripcion <- basename(x)
+
   reactants_products <- read.delim("reactants_products.txt", header = FALSE,
                                    col.names = c("id","name","type"),
                                    stringsAsFactors=FALSE)
@@ -239,7 +244,7 @@ cytoscapeRegulon <- function(x,html){
   ###REM
 
   #Llamar RCy3
-  createNetworkFromDataFrames(df_nodes,df_edges, title=x,
+  createNetworkFromDataFrames(df_nodes,df_edges, title=nombre_factor_transcripcion,
                               collection=x)
 
 
