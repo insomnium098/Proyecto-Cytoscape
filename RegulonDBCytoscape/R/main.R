@@ -143,67 +143,68 @@ cytoscapeRegulon <- function(x,html){
 
 
 
-  ####Complejos
+############Complejos
 
-  #Paso1: obtener los complejos
+  ####Verificar si el archivo de complejos esta vacio
 
-  complejos <- unique(complexes$id)
+  if (nrow(complexes) != 0){
+    ############
+    #Paso1: obtener los complejos
+    complejos <- unique(complexes$id)
+    #Paso2: extraer cada id de complejo
+    for (i in complejos){
+      complejo_df <- complexes[complexes$id==i,]
+      nombre_complejo <- i
+      #crear data frame para cada integrante del complejo
+      for (j in seq_along(1:length(rownames(complejo_df)))){
+        integrante_complejo <- complejo_df[j,]
+        nombre_integrante_complejo <- as.character(integrante_complejo$type)
+        df_integrante_complejo <- data.frame("id" = paste0(
+          nombre_integrante_complejo," "),
+          "reactant_type" = "COMPLEX_NODE",
+          "name" = i)
+        #HACER UN DF_NODES CON COMPLEJOS
+        if (!exists("df_nodes_complex")){
+          df_nodes_complex <- df_integrante_complejo
+        }
 
-  #Paso2: extraer cada id de complejo
 
-  for (i in complejos){
-    complejo_df <- complexes[complexes$id==i,]
-    nombre_complejo <- i
-    #crear data frame para cada integrante del complejo
-    for (j in seq_along(1:length(rownames(complejo_df)))){
-      integrante_complejo <- complejo_df[j,]
-      nombre_integrante_complejo <- as.character(integrante_complejo$type)
-      df_integrante_complejo <- data.frame("id" = paste0(
-        nombre_integrante_complejo," "),
-        "reactant_type" = "COMPLEX_NODE",
-        "name" = i)
-      #HACER UN DF_NODES CON COMPLEJOS
-      if (!exists("df_nodes_complex")){
-        df_nodes_complex <- df_integrante_complejo
-      }
+        #Si el dataset existe, se une
+        if (exists("df_nodes_complex")){
+          temp_dataset <- df_integrante_complejo
+          #dataset<-rbind(dataset, temp_dataset)
+          df_nodes_complex <- rbind(df_nodes_complex,temp_dataset)
+          rm(temp_dataset)
+        }
 
-
-      #Si el dataset existe, se une
-      if (exists("df_nodes_complex")){
-        temp_dataset <- df_integrante_complejo
-        #dataset<-rbind(dataset, temp_dataset)
-        df_nodes_complex <- rbind(df_nodes_complex,temp_dataset)
-        rm(temp_dataset)
       }
 
     }
 
+    #El primer row se repite, se eliminara
+    df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
+    #Unir el df_nodes_complex con el df_nodes
+    df_nodes <- rbind(df_nodes, df_nodes_complex)
+    ######Modificar el df de los complejos con los nuevos nombres con espacio
+    nombres_complejos <- as.character(complexes$type)
+    nombres_complejos <- paste0(nombres_complejos, ' ')
+    complexes$type <- nombres_complejos
+    ###Cambiar los colnames de complejes para posteriormente hacerlos edges
+    colnames(complexes) <- c("reaction_id_","target","source")
+    complexes$interaction <- rep("COMPLEX_INTERACTION",
+                                 length(rownames(complexes)))
+    ##unir complexes con df_edges
+    df_edges <- rbind.fill(df_edges,complexes)
+  } else{
+
+    print("INFO: El archivo de complejos esta vacio")
+
   }
 
-  #El primer row se repite, se eliminara
-  df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
-  #Unir el df_nodes_complex con el df_nodes
-
-  df_nodes <- rbind(df_nodes, df_nodes_complex)
 
 
-  ######Modificar el df de los complejos con los nuevos nombres con espacio
 
-  nombres_complejos <- as.character(complexes$type)
-  nombres_complejos <- paste0(nombres_complejos, ' ')
-
-  complexes$type <- nombres_complejos
-
-  ###Cambiar los colnames de complejes para posteriormente hacerlos edges
-  colnames(complexes) <- c("reaction_id_","target","source")
-
-  complexes$interaction <- rep("COMPLEX_INTERACTION",
-                               length(rownames(complexes)))
-
-  ##unir complexes con df_edges
-
-  df_edges <- rbind.fill(df_edges,complexes)
-
+#############END COMPLEJOS
 
 
   ################Putas Arrows!!!
@@ -245,53 +246,53 @@ cytoscapeRegulon <- function(x,html){
 
 
 
-  ####Agrupar moleculas de los complejos
+  ################3Agrupar moleculas de los complejos
+  if (nrow(complexes) != 0){
+    nodedata <- getTableColumns("node")
+    nodes_complexes <- nodedata[grep("COMPLEX_NODE", nodedata$reactant_type), ]
+    #####
+    # Seleccionar los complejos, uno por uno
+    for (g in unique(as.character(complexes$reaction_id_))){
+      ####PRUEBA
+      deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
+      ###PRUEBA
+      ##OBTENER EL SUID
+      #VERSION ANTIGUA USA DPLYR
+      #SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
+      SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
+      SUIDS <- as.character(SUIDS$SUID)
+      ####
+      nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
+      ###Seleccionar el primer nodo vecino
+      primer_vecino <- selectFirstNeighbors()
+      primer_vecino <- setdiff(primer_vecino,nodos_suids)
+      #primer_vecino_old <- filter(nodedata, SUID == primer_vecino)
+      #Funcion en r base pero con warnings
+      primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
+      primer_vecino <- as.character(primer_vecino$`shared name`)
 
-  nodedata <- getTableColumns("node")
-  nodes_complexes <- nodedata[grep("COMPLEX_NODE", nodedata$reactant_type), ]
-
-
-  #####
-
-  # Seleccionar los complejos, uno por uno
-  for (g in unique(as.character(complexes$reaction_id_))){
-
-
-    ####PRUEBA
-    deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
-    ###PRUEBA
-    ##OBTENER EL SUID
-    #VERSION ANTIGUA USA DPLYR
-    #SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
-    SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
-    SUIDS <- as.character(SUIDS$SUID)
-    ####
-    nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
-    ###Seleccionar el primer nodo vecino
-    primer_vecino <- selectFirstNeighbors()
-    primer_vecino <- setdiff(primer_vecino,nodos_suids)
-
-    #primer_vecino_old <- filter(nodedata, SUID == primer_vecino)
-    #Funcion en r base pero con warnings
-    primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
-    primer_vecino <- as.character(primer_vecino$`shared name`)
-
-
-    ###AQUI EL ERROR DE HTML, AL PARECER EN COLLAPSEGROUP
-    ##Crear grupo del complejo
-#    if(missing(html)){
+      ###AQUI EL ERROR DE HTML, AL PARECER EN COLLAPSEGROUP
+      ##Crear grupo del complejo
+      #    if(missing(html)){
       createGroup(primer_vecino)
-#      collapseGroup(primer_vecino)
-#    }else{
-#      if(html){
-#        createGroup(primer_vecino)
-#      }else{
-#        createGroup(primer_vecino)
-#        collapseGroup(primer_vecino)
-#      }
-#    }
+      #      collapseGroup(primer_vecino)
+      #    }else{
+      #      if(html){
+      #        createGroup(primer_vecino)
+      #      }else{
+      #        createGroup(primer_vecino)
+      #        collapseGroup(primer_vecino)
+      #      }
+      #    }
+    }
+
+
+  } else{
+
+    print("INFO: El archivo de complejos esta vacio")
   }
-  ########
+
+###############
 
 
   column <- 'reactant_type'
