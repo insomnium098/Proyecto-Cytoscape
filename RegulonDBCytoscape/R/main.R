@@ -241,6 +241,14 @@ cytoscapeRegulon <- function(x,html){
   #####PRUEBA
   colnames(df_nodes)[colnames(df_nodes)=="name"] <- "description"
 #########
+
+
+  ###########REMOVER EDGES REPETIDAS
+
+  df_edges$union <- paste(df_edges$source,
+                          df_edges$target,sep="-")
+
+  df_edges <- df_edges[!duplicated(df_edges$union),]
   ###REM
 
   #Llamar RCy3
