@@ -2,10 +2,19 @@ Package: RegulonDBCytoscape
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: as.person(c(
+    "Antonio Daniel Martinez Gutierrez <maga94@comunidad.unam.mx> [aut, cre]", 
+    "Luis Pedro Iniguez [aut]"
+  )) 
+Maintainer: Antonio Daniel Martinez Gutierrez <maga94@comunidad.unam.mx>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
+Depends:
+    dplyr,
+    RCy3,
+    plyr	
+
