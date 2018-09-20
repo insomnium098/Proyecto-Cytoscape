@@ -324,10 +324,19 @@ cytoscapeRegulon <- function(x,html){
 ###############
 
 
-  column <- 'reactant_type'
-  values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX",
-               "PROTEIN-TF","COMPLEX-TF","COMPLEX_NODE-TF")
+  if (nrow(complexes) != 0){
+    column <- 'reactant_type'
+    values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
+                 'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX",
+                 "PROTEIN-TF","COMPLEX-TF","COMPLEX_NODE-TF")
+  } else {
+    column <- 'reactant_type'
+    values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
+                 'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX")
+
+  }
+
+
 
 
 ########Agregar un default para que los complejos agrupados tengan el estilo
@@ -342,23 +351,56 @@ cytoscapeRegulon <- function(x,html){
 
   #####Tamaño de los nodos
   lockNodeDimensions(TRUE)
-  sizes <- c(50,50,50,50,50,50,50,10,50,50,50)
-  setNodeSizeMapping(column, values, sizes,
-                     mapping.type = "d")
+
+
+  if (nrow(complexes) != 0){
+    sizes <- c(50,50,50,50,50,50,50,10,50,50,50)
+    setNodeSizeMapping(column, values, sizes,
+                       mapping.type = "d")
+
+  } else{
+    sizes <- c(rep(50,7),10)
+    setNodeSizeMapping(column, values, sizes,
+                       mapping.type = "d")
+
+  }
+
 
   #######Forma de los nodos
 
-  shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
-               'PARALLELOGRAM',"RECTANGLE","OCTAGON",
-               "ROUND_RECTANGLE","ELLIPSE","TRIANGLE","ROUND_RECTANGLE",
-               "OCTAGON","ELLIPSE")
-  setNodeShapeMapping (column, values, shapes)
+
+  if (nrow(complexes) != 0){
+    shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
+                 'PARALLELOGRAM',"RECTANGLE","OCTAGON",
+                 "ROUND_RECTANGLE","ELLIPSE","TRIANGLE","ROUND_RECTANGLE",
+                 "OCTAGON","ELLIPSE")
+    setNodeShapeMapping (column, values, shapes)
+  } else{
+    shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
+                 'PARALLELOGRAM',"RECTANGLE","OCTAGON",
+                 "ROUND_RECTANGLE","ELLIPSE","TRIANGLE")
+    setNodeShapeMapping (column, values, shapes)
+
+  }
+
+
 
   #####Color de los nodos
-  colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
-              "#b6bd7b","#ffffff","#4881a6","#4881a6","#4881a6")
-  setNodeColorMapping (column, values, colors,
-                       mapping.type = "d")
+
+  if (nrow(complexes) != 0){
+    colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
+                "#b6bd7b","#ffffff","#4881a6","#4881a6","#4881a6")
+    setNodeColorMapping (column, values, colors,
+                         mapping.type = "d")
+
+  } else{
+    colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
+                "#b6bd7b","#ffffff")
+    setNodeColorMapping (column, values, colors,
+                         mapping.type = "d")
+
+  }
+
 
   #####Border de los nodos
 
