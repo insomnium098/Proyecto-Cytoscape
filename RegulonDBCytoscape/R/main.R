@@ -1,14 +1,28 @@
-library(dplyr)
-library(RCy3)
-library(plyr)
+#library(dplyr)
+#library(RCy3)
+#library(plyr)
+
+
 
 #x es la ruta de la carpeta con los archivos
 #x <- c("AgaR")
 
 #x <- c("/Users/daniel/OneDrive\ -\ UNIVERSIDAD\ NACIONAL\ AUTÓNOMA\ DE\ MÉXICO/owncloud/PROYECTO_CYTOSCAPE/Proyecto-Cytoscape/SRsGUs/LacI")
 
+#'@title CytoscapeRegulon
+#'@details Creates a cytoscape network from a tab delimited GENSOR unit files.
+#'
+#'
+#' @param x Is the folder path of the GENSOR unit
+#' @examples
+#' cytoscapeRegulon("/Users/daniel/Proyecto-Cytoscape/SRsGUs/LacI")
 
-cytoscapeRegulon <- function(x,html){
+#'
+#'@author Antonio Daniel Martinez Gutierrez
+
+#' @export
+#cytoscapeRegulon <- function(x,html){
+cytoscapeRegulon <- function(x){
   #x es el folder con los archivos
   setwd(x)
 
@@ -486,9 +500,9 @@ cytoscapeRegulon <- function(x,html){
 
 
 
-  if(!(missing(html))){
-    if(html){
-      suppressWarnings(RegulonDBCytoscape::exportToHTML())
-    }
-  }
+ # if(!(missing(html))){
+  #  if(html){
+      #suppressWarnings(RegulonDBCytoscape::exportToHTML())
+   # }
+  #}
 }
