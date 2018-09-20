@@ -5,6 +5,8 @@ library(plyr)
 #x es la ruta de la carpeta con los archivos
 #x <- c("AgaR")
 
+#x <- c("/Users/daniel/OneDrive\ -\ UNIVERSIDAD\ NACIONAL\ AUTÓNOMA\ DE\ MÉXICO/owncloud/PROYECTO_CYTOSCAPE/Proyecto-Cytoscape/SRsGUs/LacI")
+
 
 cytoscapeRegulon <- function(x,html){
   #x es el folder con los archivos
@@ -186,6 +188,9 @@ cytoscapeRegulon <- function(x,html){
 
     #El primer row se repite, se eliminara
     df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
+    df_nodes_complex$reactant_type <- as.character(df_nodes_complex$reactant_type)
+
+
     #Unir el df_nodes_complex con el df_nodes
     df_nodes <- rbind(df_nodes, df_nodes_complex)
     ######Modificar el df de los complejos con los nuevos nombres con espacio
@@ -204,7 +209,20 @@ cytoscapeRegulon <- function(x,html){
 
   }
 
+  ####VERSION 2.0 REVISAR SI LOS COMPLEJOS INTERACCIONAN CON EL TF
+  ###########
+  if (nrow(complexes) != 0){
 
+  index <- grep(nombre_factor_transcripcion, df_nodes$id)
+
+  reactantes_tf <- df_nodes$reactant_type[index]
+  reactantes_tf <- paste(reactantes_tf, "TF", sep="-")
+
+  df_nodes[index,2] <- reactantes_tf
+  } else{
+
+  }
+  ##########
 
 
 #############END COMPLEJOS
@@ -253,7 +271,7 @@ cytoscapeRegulon <- function(x,html){
 
   #Llamar RCy3
   createNetworkFromDataFrames(df_nodes,df_edges, title=nombre_factor_transcripcion,
-                              collection=x)
+                              collection=nombre_factor_transcripcion)
 
 
 
@@ -308,7 +326,8 @@ cytoscapeRegulon <- function(x,html){
 
   column <- 'reactant_type'
   values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX")
+               'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX",
+               "PROTEIN-TF","COMPLEX-TF","COMPLEX_NODE-TF")
 
 
 ########Agregar un default para que los complejos agrupados tengan el estilo
@@ -323,7 +342,7 @@ cytoscapeRegulon <- function(x,html){
 
   #####Tamaño de los nodos
   lockNodeDimensions(TRUE)
-  sizes <- c(rep(50,7),10)
+  sizes <- c(50,50,50,50,50,50,50,10,50,50,50)
   setNodeSizeMapping(column, values, sizes,
                      mapping.type = "d")
 
@@ -331,24 +350,25 @@ cytoscapeRegulon <- function(x,html){
 
   shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                'PARALLELOGRAM',"RECTANGLE","OCTAGON",
-               "ROUND_RECTANGLE","ELLIPSE","TRIANGLE")
+               "ROUND_RECTANGLE","ELLIPSE","TRIANGLE","ROUND_RECTANGLE",
+               "OCTAGON","ELLIPSE")
   setNodeShapeMapping (column, values, shapes)
 
   #####Color de los nodos
   colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
-              "#b6bd7b","#ffffff")
+              "#b6bd7b","#ffffff","#4881a6","#4881a6","#4881a6")
   setNodeColorMapping (column, values, colors,
                        mapping.type = "d")
 
   #####Border de los nodos
 
-  colors <- rep("#000000",8)
+  colors <- rep("#000000",length(values))
   setNodeBorderColorMapping (column, values, colors,
                        mapping.type = "d")
 
   #####Width Border de los nodos
 
-  widths <- rep(3,8)
+  widths <- rep(3,length(values))
   setNodeBorderWidthMapping(column, values, widths,
                              mapping.type = "d")
 
