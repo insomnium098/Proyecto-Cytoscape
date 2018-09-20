@@ -1,4 +1,4 @@
-# Proyecto-Cytoscape
+# CytoscapeRegulon
 
 This R package creates a Cytoscape network from GENSOR unit files from Regulon DB. 
 
