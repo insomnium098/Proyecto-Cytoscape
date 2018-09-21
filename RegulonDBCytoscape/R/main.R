@@ -290,34 +290,30 @@ cytoscapeRegulon <- function(x){
 
 
   ################3Agrupar moleculas de los complejos
-  if (nrow(complexes) != 0){
-    nodedata <- getTableColumns("node")
-    nodes_complexes <- nodedata[grep("COMPLEX_NODE", nodedata$reactant_type), ]
+  ###Funciona bien, se comentara para facilitar que el grupo de los
+  #complejos tenga el color correcto, se puede arreglar.
+  #if (nrow(complexes) != 0){
+   # nodedata <- getTableColumns("node")
+    #nodes_complexes <- nodedata[grep("COMPLEX_NODE", nodedata$reactant_type), ]
     #####
     # Seleccionar los complejos, uno por uno
-    for (g in unique(as.character(complexes$reaction_id_))){
-      ####PRUEBA
-      deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
-      ###PRUEBA
-      ##OBTENER EL SUID
-      #VERSION ANTIGUA USA DPLYR
-      #SUIDS <- filter(nodedata,`shared name` %in% deltacatnodes)
-      SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
-      SUIDS <- as.character(SUIDS$SUID)
+    #for (g in unique(as.character(complexes$reaction_id_))){
+     # deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
+      #SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
+      #SUIDS <- as.character(SUIDS$SUID)
       ####
-      nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
+      #nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
       ###Seleccionar el primer nodo vecino
-      primer_vecino <- selectFirstNeighbors()
-      primer_vecino <- setdiff(primer_vecino,nodos_suids)
-      #primer_vecino_old <- filter(nodedata, SUID == primer_vecino)
+      #primer_vecino <- selectFirstNeighbors()
+      #primer_vecino <- setdiff(primer_vecino,nodos_suids)
       #Funcion en r base pero con warnings
-      primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
-      primer_vecino <- as.character(primer_vecino$`shared name`)
+      #primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
+      #primer_vecino <- as.character(primer_vecino$`shared name`)
 
       ###AQUI EL ERROR DE HTML, AL PARECER EN COLLAPSEGROUP
       ##Crear grupo del complejo
       #    if(missing(html)){
-      createGroup(primer_vecino)
+      #createGroup(primer_vecino)###este si corre, no debe estar comentado
       #      collapseGroup(primer_vecino)
       #    }else{
       #      if(html){
@@ -327,13 +323,13 @@ cytoscapeRegulon <- function(x){
       #        collapseGroup(primer_vecino)
       #      }
       #    }
-    }
+   # }
 
 
-  } else{
+  #} else{
 
-    print("INFO: El archivo de complejos esta vacio")
-  }
+    #print("INFO: El archivo de complejos esta vacio")
+  #}
 
 ###############
 
@@ -454,7 +450,7 @@ cytoscapeRegulon <- function(x){
 
   values_arrow_shape <- c("NONE","NONE","NONE","CROSS_DELTA","OPEN_DELTA","NONE",
                           "NONE","NONE","NONE","OPEN_DELTA","CROSS_DELTA","NONE",
-                          "NONE")
+                          "OPEN_DELTA")
 
 
   setEdgeTargetArrowMapping(column_line,values_line, values_arrow_shape)
