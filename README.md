@@ -1,6 +1,6 @@
 # CytoscapeRegulon
 
-This R package creates a Cytoscape network from GENSOR unit files from Regulon DB. 
+This R package creates a Cytoscape GENSOR network from transcription factor files of RegulonDB. 
 
 Each transcription factor folder needs to have 5 tab delimited files:
 complexes.txt, modification.txt, objects.txt, reactants_products.txt and reactions.txt. 
