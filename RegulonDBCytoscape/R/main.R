@@ -346,6 +346,8 @@ cytoscapeRegulon <- function(x){
 
   }
 
+  ###Tamaño de los labels
+
 
 
 
@@ -508,6 +510,15 @@ cytoscapeRegulon <- function(x){
   new_nodes_aux_names <- rep(" ", length(nodes_aux))
   setNodeLabelBypass(nodes_aux,new_nodes_aux_names)
 
+  ###TAMAÑOS DE LOS LABELS
+
+  setNodeFontSizeDefault("22")
+
+  nodes_simple_molecule <- df_nodes[grep("SIMPLE_MOLECULE", df_nodes$reactant_type),1]
+  setNodeFontSizeBypass(nodes_simple_molecule,16)
+
+  nodes_complex_label <- df_nodes[grep("COMPLEX*", df_nodes$reactant_type),1]
+  setNodeFontSizeBypass(nodes_complex_label,16)
 
 
 
