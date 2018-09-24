@@ -449,11 +449,14 @@ cytoscapeRegulon <- function(x){
   ####PUTAS ARROWS!!!!
 
   values_arrow_shape <- c("NONE","NONE","NONE","CROSS_DELTA","OPEN_DELTA","NONE",
-                          "NONE","NONE","NONE","OPEN_DELTA","CROSS_DELTA","NONE",
+                          "NONE","NONE","OPEN_DELTA","OPEN_DELTA","CROSS_DELTA","NONE",
                           "OPEN_DELTA")
 
 
   setEdgeTargetArrowMapping(column_line,values_line, values_arrow_shape)
+
+
+
 
   ####Agregar tabla de modificaciones a cytoscape para hacer los colores de las lineas
   ####Duplicar los valores de las reacciones de modifications y
@@ -470,6 +473,16 @@ cytoscapeRegulon <- function(x){
                 table.key.column = "reaction_id_")
 
   rm(modifications_RE, modifications_Pr)
+
+  #####Colores de las arrows
+  column_line_color_arrow <- "modification_type"
+
+  values_color_arrow <- c("PHYSICAL_STIMULATION","INHIBITION","CATALYSIS")
+
+  colores_arrow <-c("#48c4dc","#d80c0c","#848484")
+
+  setEdgeTargetArrowColorMapping(column_line_color_arrow,values_color_arrow,colores_arrow,
+                                 mapping.type = "d")
 
   ######COLORES DE LAS LINEAS
 
