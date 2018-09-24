@@ -517,8 +517,17 @@ cytoscapeRegulon <- function(x){
   nodes_simple_molecule <- df_nodes[grep("SIMPLE_MOLECULE", df_nodes$reactant_type),1]
   setNodeFontSizeBypass(nodes_simple_molecule,16)
 
-  nodes_complex_label <- df_nodes[grep("COMPLEX*", df_nodes$reactant_type),1]
-  setNodeFontSizeBypass(nodes_complex_label,16)
+  if (nrow(complexes) != 0){
+    nodes_complex_label <- df_nodes[grep("COMPLEX*", df_nodes$reactant_type),1]
+    setNodeFontSizeBypass(nodes_complex_label,16)
+
+  } else{
+
+
+  }
+
+
+
 
 
 
