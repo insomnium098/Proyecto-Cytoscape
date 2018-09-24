@@ -448,8 +448,8 @@ cytoscapeRegulon <- function(x){
 
   ####PUTAS ARROWS!!!!
 
-  values_arrow_shape <- c("NONE","NONE","NONE","CROSS_DELTA","OPEN_DELTA","NONE",
-                          "NONE","NONE","OPEN_DELTA","OPEN_DELTA","CROSS_DELTA","NONE",
+  values_arrow_shape <- c("NONE","NONE","NONE","NONE","OPEN_DELTA","NONE",
+                          "NONE","NONE","OPEN_DELTA","OPEN_DELTA","CROSS_DELTA","OPEN_DELTA",
                           "OPEN_DELTA")
 
 
@@ -475,6 +475,8 @@ cytoscapeRegulon <- function(x){
   rm(modifications_RE, modifications_Pr)
 
   #####Colores de las arrows
+  setEdgeTargetArrowColorDefault("#000000")
+
   column_line_color_arrow <- "modification_type"
 
   values_color_arrow <- c("PHYSICAL_STIMULATION","INHIBITION","CATALYSIS")
