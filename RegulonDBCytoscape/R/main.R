@@ -542,6 +542,30 @@ cytoscapeRegulon <- function(x){
   }
 
 
+##########Obtener los edges adyacentes a catalisis y hacer que tengan forma
+  ###open circle
+  edgedata <- getTableColumns("edge")
+
+  edges_catalysis <- filter(edgedata, modification_type == "CATALYSIS")
+
+  ##obtener nodos que son source de catalisis
+  nodos_catalisis <- edges_catalysis$source
+
+
+  ###Obtener las edges que tienen como target a los nodos_catalisis
+
+  edges_target_catalisis <- filter(edgedata, target %in% nodos_catalisis)
+
+  ###Obtener solo los auxiliares que no tengan "CATALYSIS"
+
+  auxiliares_edges_target_catalsis <- edges_target_catalisis[!grepl("CATALYSIS", edges_target_catalisis$modification_type),]
+
+  nombres_edges_target_catalisis <- as.character(auxiliares_edges_target_catalsis$name)
+
+  setEdgeTargetArrowShapeBypass(nombres_edges_target_catalisis,"OPEN_CIRCLE")
+
+##############
+
 
 
 
