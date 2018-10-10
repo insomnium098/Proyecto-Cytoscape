@@ -594,6 +594,32 @@ cytoscapeRegulon <- function(x){
 
 ##############
 
+  #Terminar en punta (Target arrow shape) tipo “T”
+  #todas las modificaciones de tipo “INHIBITION”.
+  #Cuidado de mantener el color de la línea en la punta.
+
+  edges_inhibition <- filter(edgedata, modification_type == "INHIBITION")
+
+  nodos_originales_inhibition <- filter(modifications, modification_type =="INHIBITION")
+  nodos_originales_inhibition <- unique(as.character(nodos_originales_inhibition$Object))
+  #Obtener las reacciones re_Re
+  edges_inhibition <- filter(edges_inhibition, reaction_id_direccion == "re_Re")
+
+  ###Obtener los nodos auxuliares de las reacciones re_Re
+  nodos_aux_inhibition <- unique(as.character(edges_inhibition$target))
+
+  ###Obtener las edges que tengan como target los nodos aux inhibition y como source
+  ###los nodos originales inhibition
+
+  edges_inhibition_1 <- filter(edgedata, target %in% nodos_aux_inhibition &
+                                 source %in% nodos_originales_inhibition)
+
+
+  edges_inhibition_1 <- as.character(edges_inhibition_1$name)
+  setEdgeTargetArrowShapeBypass(edges_inhibition_1,"T")
+
+  #####################
+
   # if(!(missing(html))){
   #  if(html){
   #suppressWarnings(RegulonDBCytoscape::exportToHTML())
