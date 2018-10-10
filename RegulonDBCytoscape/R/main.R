@@ -347,11 +347,11 @@ cytoscapeRegulon <- function(x){
     column <- 'reactant_type'
     values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
                  'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX",
-                 "PROTEIN-TF","COMPLEX-TF","COMPLEX_NODE-TF")
+                 "PROTEIN-TF","COMPLEX-TF","COMPLEX_NODE-TF","PROTEIN_TF-TF")
   } else {
     column <- 'reactant_type'
     values <- c ('SIMPLE_MOLECULE',  'PROTEIN',
-                 'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "AUX")
+                 'RNA',"GENE","COMPLEX","PROTEIN_TF","COMPLEX_NODE", "PROTEIN_TF-TF","AUX")
 
   }
 
@@ -375,12 +375,12 @@ cytoscapeRegulon <- function(x){
 
 
   if (nrow(complexes) != 0){
-    sizes <- c(50,50,50,50,50,50,50,10,50,50,50)
+    sizes <- c(50,50,50,50,50,50,50,10,50,50,50,50)
     setNodeSizeMapping(column, values, sizes,
                        mapping.type = "d")
 
   } else{
-    sizes <- c(rep(50,7),10)
+    sizes <- c(rep(50,8),10)
     setNodeSizeMapping(column, values, sizes,
                        mapping.type = "d")
 
@@ -394,12 +394,12 @@ cytoscapeRegulon <- function(x){
     shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                  'PARALLELOGRAM',"RECTANGLE","OCTAGON",
                  "ROUND_RECTANGLE","ELLIPSE","TRIANGLE","ROUND_RECTANGLE",
-                 "OCTAGON","ELLIPSE")
+                 "OCTAGON","ELLIPSE","ROUND_RECTANGLE")
     setNodeShapeMapping (column, values, shapes)
   } else{
     shapes <- c ('ELLIPSE', 'ROUND_RECTANGLE',
                  'PARALLELOGRAM',"RECTANGLE","OCTAGON",
-                 "ROUND_RECTANGLE","ELLIPSE","TRIANGLE")
+                 "ROUND_RECTANGLE","ELLIPSE","ROUND_RECTANGLE","TRIANGLE")
     setNodeShapeMapping (column, values, shapes)
 
   }
@@ -410,13 +410,13 @@ cytoscapeRegulon <- function(x){
 
   if (nrow(complexes) != 0){
     colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
-                "#b6bd7b","#ffffff","#4881a6","#4881a6","#4881a6")
+                "#b6bd7b","#ffffff","#4881a6","#4881a6","#4881a6","#4881a6")
     setNodeColorMapping (column, values, colors,
                          mapping.type = "d")
 
   } else{
     colors <- c("#b6bd7b","#b6bd7b","#ffbc00","#ffbc00","#b6bd7b","#4881a6",
-                "#b6bd7b","#ffffff")
+                "#b6bd7b","#4881a6","#ffffff")
     setNodeColorMapping (column, values, colors,
                          mapping.type = "d")
 
@@ -470,11 +470,7 @@ cytoscapeRegulon <- function(x){
   edges_open_half_circle <- (edgedata[grep("re_Re", df_edges$reaction_id_direccion),"name"])
 
 
-  setEdgeTargetArrowShapeBypass(edges_open_half_circle,"OPEN_HALF_CIRCLE")
-
-
-
-
+  setEdgeSourceArrowShapeBypass(edges_open_half_circle,"OPEN_HALF_CIRCLE")
 
 
 
