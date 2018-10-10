@@ -576,6 +576,23 @@ cytoscapeRegulon <- function(x){
   #############
 
 
+  ####Convertir las líneas de modificacion que inciden sobre una reacción de transcripcion
+  ####a tipo “Contiguous Arrow”. Solo las que inciden sobre reacciones de transcripcion,
+  ####las otras dejarlas como están.
+
+  ######Obtener nodos auxiliares adyacentes a transcripcion
+  edges_transcription <- edgedata[edgedata$`shared interaction` == "TRANSCRIPTION",]
+
+  nodos_aux_transcripcion <- edges_transcription[grepl("Aux_", edges_transcription$target),"target"]
+  ####Obtener edges que tienen como target a este nodo y que no sean los primeros edges
+  edges_transcription_target <- edgedata[edgedata$target %in% nodos_aux_transcripcion,]
+
+  nombres_edges_transcription_original <- as.character(edges_transcription$name)
+  edges_transcription_target <- edges_transcription_target[!edges_transcription_target$name %in% nombres_edges_transcription_original,"name" ]
+
+  setEdgeLineStyleBypass(edges_transcription_target, "CONTIGUOUS_ARROW" )
+
+##############
 
   # if(!(missing(html))){
   #  if(html){
