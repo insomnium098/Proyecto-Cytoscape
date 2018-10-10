@@ -1,6 +1,7 @@
 #library(dplyr)
 #library(RCy3)
 #library(plyr)
+#library(stringr)
 
 
 
@@ -262,11 +263,17 @@ cytoscapeRegulon <- function(x){
                        arrow_aux_reactivo)
   ###Unir las columnas de interaction con direccion
 
+
+  arrows_edge$reaction_id_direccion <- gsub('[[:digit:]]+', '', arrows_edge$reaction_id_)
+
   arrows_edge$arrow <- paste(arrows_edge$interaction,
                              arrows_edge$direccion,sep="-")
   ###Unir las columnas de arrows con direction
   arrows_edge$arrow <- paste(arrows_edge$arrow,
                              arrows_edge$direction,sep="-")
+  ##Unir las columnas de arrows con la reaction id direccion
+  arrows_edge$arrow <- paste(arrows_edge$arrow,
+                             arrows_edge$reaction_id_direccion,sep="-")
 
   df_edges <- arrows_edge
 
@@ -437,13 +444,13 @@ cytoscapeRegulon <- function(x){
   #?setEdgeLineStyleMapping
 
   column_line <- "arrow"
-  values_line <- c("NA-reactivo_aux-NA","STATE_TRANSITION-reactivo_aux-",
-                   "TRANSCRIPTION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-RVB",
-                   "TRANSLATION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-L2R",
-                   "TRANSPORT-reactivo_aux-L2R","COMPLEX_INTERACTION-reactivo_aux-NA",
-                   "STATE_TRANSITION-aux_reactivo-","TRANSCRIPTION-aux_reactivo-",
-                   "STATE_TRANSITION-aux_reactivo-RVB","STATE_TRANSITION-aux_reactivo-L2R",
-                   "TRANSPORT-aux_reactivo-L2R")
+  values_line <- c("NA-reactivo_aux-NA-mo_","STATE_TRANSITION-reactivo_aux--re_Re",
+                   "TRANSCRIPTION-reactivo_aux--re_RE","STATE_TRANSITION-reactivo_aux-RVB-re_RE",
+                   "TRANSLATION-reactivo_aux--re","STATE_TRANSITION-reactivo_aux-L2R-re_RE",
+                   "TRANSPORT-reactivo_aux-L2R-re_Re","COMPLEX_INTERACTION-reactivo_aux-NA",
+                   "STATE_TRANSITION-aux_reactivo--re_Pr","TRANSCRIPTION-aux_reactivo--re_Pr",
+                   "STATE_TRANSITION-aux_reactivo-RVB-re_Pr","STATE_TRANSITION-aux_reactivo-L2R-re_Pr",
+                   "TRANSPORT-aux_reactivo-L2R_re_Pr")
 
   values_line_shape <- c("SOLID","SOLID","SOLID","SOLID","MARQUEE_DASH",
                          "SOLID","SOLID","DASH_DOT","SOLID","SOLID","SOLID")
@@ -451,13 +458,23 @@ cytoscapeRegulon <- function(x){
   setEdgeLineStyleMapping(column_line,values_line, values_line_shape)
 
   ####PUTAS ARROWS!!!!
-
+  ###Por default
   values_arrow_shape <- c("NONE","NONE","NONE","NONE","OPEN_DELTA","NONE",
                           "NONE","NONE","OPEN_DELTA","OPEN_DELTA","CROSS_DELTA","OPEN_DELTA",
                           "OPEN_DELTA")
-
-
   setEdgeTargetArrowMapping(column_line,values_line, values_arrow_shape)
+
+  ###Elegir aquellas edges re_RE que necesiten tener arrow open half circle
+  #getArrowShapes
+  edgedata <- getTableColumns("edge")
+  edges_open_half_circle <- (edgedata[grep("re_Re", df_edges$reaction_id_direccion),"name"])
+
+
+  setEdgeTargetArrowShapeBypass(edges_open_half_circle,"OPEN_HALF_CIRCLE")
+
+
+
+
 
 
 
