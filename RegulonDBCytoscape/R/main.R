@@ -495,14 +495,14 @@ cytoscapeRegulon <- function(x){
   ####MAL, HACERLO EN LA EXTRACCION DE EDGES
   setEdgeTargetArrowColorDefault("#000000")
 
-  #column_line_color_arrow <- "modification_type"
+  column_line_color_arrow <- "modification_type"
 
-  #values_color_arrow <- c("PHYSICAL_STIMULATION","INHIBITION","CATALYSIS")
+  values_color_arrow <- c("CATALYSIS")
 
-  #colores_arrow <-c("#48c4dc","#d80c0c","#848484")
+  colores_arrow <-c("#848484")
 
-  #setEdgeTargetArrowColorMapping(column_line_color_arrow,values_color_arrow,colores_arrow,
-                                 #mapping.type = "d")
+  setEdgeTargetArrowColorMapping(column_line_color_arrow,values_color_arrow,colores_arrow,
+                                 mapping.type = "d")
 
   ######COLORES DE LAS LINEAS
   ###Mal, tiene que hacerse uno por uno como
@@ -666,6 +666,27 @@ cytoscapeRegulon <- function(x){
   }
 
   #####################
+
+  ######Terminar en punta (Target arrow shape) tipo “Cross Open Delta”
+  #####todas las líneas que apunten a productos de reacciones de tipo “TRANSPORT”.
+
+  edges_transport <- filter(edgedata, `shared interaction` == "TRANSPORT")
+  if (length(rownames(edges_transport))>=1){
+    ###obtener las que van en direccion aux_reactivo
+    edges_transport <- filter(edges_transport, direccion == "aux_reactivo")
+    edges_transport <- as.character(edges_transport$name)
+    setEdgeTargetArrowShapeBypass(edges_transport,"CROSS_OPEN_DELTA")
+
+
+
+  } else{
+
+  }
+
+
+
+
+  ################
 
   # if(!(missing(html))){
   #  if(html){
