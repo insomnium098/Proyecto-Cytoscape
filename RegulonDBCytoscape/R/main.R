@@ -566,7 +566,14 @@ cytoscapeRegulon <- function(x){
 
 ##############
 
+##########Convertir las lineas de reacciones de transcripción a tipo “marquee dash dot”
 
+  edges_transcription <- edgedata[edgedata$`shared interaction` == "TRANSCRIPTION","name"]
+
+  setEdgeLineStyleBypass(edges_transcription, "MARQUEE_DASH_DOT" )
+
+
+  #############
 
 
 
