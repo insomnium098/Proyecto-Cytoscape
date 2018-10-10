@@ -492,28 +492,31 @@ cytoscapeRegulon <- function(x){
   rm(modifications_RE, modifications_Pr)
 
   #####Colores de las arrows
+  ####MAL, HACERLO EN LA EXTRACCION DE EDGES
   setEdgeTargetArrowColorDefault("#000000")
 
-  column_line_color_arrow <- "modification_type"
+  #column_line_color_arrow <- "modification_type"
 
-  values_color_arrow <- c("PHYSICAL_STIMULATION","INHIBITION","CATALYSIS")
+  #values_color_arrow <- c("PHYSICAL_STIMULATION","INHIBITION","CATALYSIS")
 
-  colores_arrow <-c("#48c4dc","#d80c0c","#848484")
+  #colores_arrow <-c("#48c4dc","#d80c0c","#848484")
 
-  setEdgeTargetArrowColorMapping(column_line_color_arrow,values_color_arrow,colores_arrow,
-                                 mapping.type = "d")
+  #setEdgeTargetArrowColorMapping(column_line_color_arrow,values_color_arrow,colores_arrow,
+                                 #mapping.type = "d")
 
   ######COLORES DE LAS LINEAS
+  ###Mal, tiene que hacerse uno por uno como
+  ### en la arrow T para inhibition
 
   setEdgeColorDefault("#848484")
-  column_line_color_edge <- "modification_type"
-  values_line_color_edge <- c("PHYSICAL_STIMULATION","INHIBITION")
+  #column_line_color_edge <- "modification_type"
+  #values_line_color_edge <- c("PHYSICAL_STIMULATION","INHIBITION")
 
-  line_color_edge <- c("#48c4dc","#d80c0c")
+  #line_color_edge <- c("#48c4dc","#d80c0c")
 
 
-  setEdgeColorMapping(column_line_color_edge,values_line_color_edge,line_color_edge,
-                      mapping.type = "d")
+  #setEdgeColorMapping(column_line_color_edge,values_line_color_edge,line_color_edge,
+  #                    mapping.type = "d")
 
 
   ###REMOVER TEXTO DE AUX
@@ -598,7 +601,15 @@ cytoscapeRegulon <- function(x){
   #todas las modificaciones de tipo “INHIBITION”.
   #Cuidado de mantener el color de la línea en la punta.
 
+
+
   edges_inhibition <- filter(edgedata, modification_type == "INHIBITION")
+
+  #Verificar si hay inhibiciones
+
+  if (length(rownames(edges_inhibition))>=1){
+
+
 
   nodos_originales_inhibition <- filter(modifications, modification_type =="INHIBITION")
   nodos_originales_inhibition <- unique(as.character(nodos_originales_inhibition$Object))
@@ -617,6 +628,42 @@ cytoscapeRegulon <- function(x){
 
   edges_inhibition_1 <- as.character(edges_inhibition_1$name)
   setEdgeTargetArrowShapeBypass(edges_inhibition_1,"T")
+  setEdgeColorBypass(edges_inhibition_1,"#d80c0c")
+  setEdgeTargetArrowColorBypass(edges_inhibition_1,"#d80c0c")
+  } else{
+    print ("No hay Inhibiciones")
+  }
+
+  #########Physical Stimulations
+
+  edges_stimulation <- filter(edgedata, modification_type == "PHYSICAL_STIMULATION")
+
+  #Verificar si hay inhibiciones
+
+  if (length(rownames(edges_stimulation))>=1){
+
+    nodos_originales_stimulation <- filter(modifications, modification_type =="PHYSICAL_STIMULATION")
+    nodos_originales_stimulation <- unique(as.character(nodos_originales_stimulation$Object))
+    #Obtener las reacciones re_Re
+    edges_stimulation <- filter(edges_stimulation, reaction_id_direccion == "re_Re")
+
+    ###Obtener los nodos auxuliares de las reacciones re_Re
+    nodos_aux_stimulation <- unique(as.character(edges_stimulation$target))
+
+    ###Obtener las edges que tengan como target los nodos aux stimulation y como source
+    ###los nodos originales stimulation
+
+    edges_stimulation_1 <- filter(edgedata, target %in% nodos_aux_stimulation &
+                                   source %in% nodos_originales_stimulation)
+
+
+    edges_stimulation_1 <- as.character(edges_stimulation_1$name)
+    setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
+    setEdgeColorBypass(edges_stimulation_1,"#48c4dc")
+    setEdgeTargetArrowColorBypass(edges_stimulation_1,"#48c4dc")
+  } else{
+    print ("No hay modificaciones Physical Stimulation")
+  }
 
   #####################
 
