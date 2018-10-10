@@ -162,84 +162,86 @@ cytoscapeRegulon <- function(x){
 
 
 
-############Complejos
+  ############Complejos
 
   ####Verificar si el archivo de complejos esta vacio
+  ####FUNCIONA BIEN, SE COMENTARÁ PARA EVITAR DUPLICACION DE
+  ####Miembros del complejo
 
-  if (nrow(complexes) != 0){
+  #if (nrow(complexes) != 0){
     ############
     #Paso1: obtener los complejos
-    complejos <- unique(complexes$id)
+    #complejos <- unique(complexes$id)
     #Paso2: extraer cada id de complejo
-    for (i in complejos){
-      complejo_df <- complexes[complexes$id==i,]
-      nombre_complejo <- i
+    #for (i in complejos){
+      #complejo_df <- complexes[complexes$id==i,]
+      #nombre_complejo <- i
       #crear data frame para cada integrante del complejo
-      for (j in seq_along(1:length(rownames(complejo_df)))){
-        integrante_complejo <- complejo_df[j,]
-        nombre_integrante_complejo <- as.character(integrante_complejo$type)
-        df_integrante_complejo <- data.frame("id" = paste0(
-          nombre_integrante_complejo," "),
-          "reactant_type" = "COMPLEX_NODE",
-          "name" = i)
+      #for (j in seq_along(1:length(rownames(complejo_df)))){
+        #integrante_complejo <- complejo_df[j,]
+        #nombre_integrante_complejo <- as.character(integrante_complejo$type)
+        #df_integrante_complejo <- data.frame("id" = paste0(
+          #nombre_integrante_complejo," "),
+          #"reactant_type" = "COMPLEX_NODE",
+          #"name" = i)
         #HACER UN DF_NODES CON COMPLEJOS
-        if (!exists("df_nodes_complex")){
-          df_nodes_complex <- df_integrante_complejo
-        }
+        #if (!exists("df_nodes_complex")){
+          #df_nodes_complex <- df_integrante_complejo
+        #}
 
 
         #Si el dataset existe, se une
-        if (exists("df_nodes_complex")){
-          temp_dataset <- df_integrante_complejo
+        #if (exists("df_nodes_complex")){
+          #temp_dataset <- df_integrante_complejo
           #dataset<-rbind(dataset, temp_dataset)
-          df_nodes_complex <- rbind(df_nodes_complex,temp_dataset)
-          rm(temp_dataset)
-        }
+          #df_nodes_complex <- rbind(df_nodes_complex,temp_dataset)
+          #rm(temp_dataset)
+        #}
 
-      }
+      #}
 
-    }
+    #}
 
     #El primer row se repite, se eliminara
-    df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
-    df_nodes_complex$reactant_type <- as.character(df_nodes_complex$reactant_type)
+    #df_nodes_complex <- df_nodes_complex[2:length(rownames(df_nodes_complex)),]
+    #df_nodes_complex$reactant_type <- as.character(df_nodes_complex$reactant_type)
 
 
     #Unir el df_nodes_complex con el df_nodes
-    df_nodes <- rbind(df_nodes, df_nodes_complex)
+    #df_nodes <- rbind(df_nodes, df_nodes_complex)
     ######Modificar el df de los complejos con los nuevos nombres con espacio
-    nombres_complejos <- as.character(complexes$type)
-    nombres_complejos <- paste0(nombres_complejos, ' ')
-    complexes$type <- nombres_complejos
+    #nombres_complejos <- as.character(complexes$type)
+    #nombres_complejos <- paste0(nombres_complejos, ' ')
+    #complexes$type <- nombres_complejos
     ###Cambiar los colnames de complejes para posteriormente hacerlos edges
-    colnames(complexes) <- c("reaction_id_","target","source")
-    complexes$interaction <- rep("COMPLEX_INTERACTION",
-                                 length(rownames(complexes)))
+    #colnames(complexes) <- c("reaction_id_","target","source")
+    #complexes$interaction <- rep("COMPLEX_INTERACTION",
+                                 #length(rownames(complexes)))
     ##unir complexes con df_edges
-    df_edges <- rbind.fill(df_edges,complexes)
-  } else{
+    #df_edges <- rbind.fill(df_edges,complexes)
+  #} else{
 
-    print("INFO: El archivo de complejos esta vacio")
+    #print("INFO: El archivo de complejos esta vacio")
 
-  }
+  #}
 
   ####VERSION 2.0 REVISAR SI LOS COMPLEJOS INTERACCIONAN CON EL TF
   ###########
   if (nrow(complexes) != 0){
 
-  index <- grep(nombre_factor_transcripcion, df_nodes$id)
+    index <- grep(nombre_factor_transcripcion, df_nodes$id)
 
-  reactantes_tf <- df_nodes$reactant_type[index]
-  reactantes_tf <- paste(reactantes_tf, "TF", sep="-")
+    reactantes_tf <- df_nodes$reactant_type[index]
+    reactantes_tf <- paste(reactantes_tf, "TF", sep="-")
 
-  df_nodes[index,2] <- reactantes_tf
+    df_nodes[index,2] <- reactantes_tf
   } else{
 
   }
   ##########
 
 
-#############END COMPLEJOS
+  #############END COMPLEJOS
 
 
   ################Putas Arrows!!!
@@ -272,7 +274,7 @@ cytoscapeRegulon <- function(x){
 
   #####PRUEBA
   colnames(df_nodes)[colnames(df_nodes)=="name"] <- "description"
-#########
+  #########
 
 
   ###########REMOVER EDGES REPETIDAS
@@ -293,45 +295,45 @@ cytoscapeRegulon <- function(x){
   ###Funciona bien, se comentara para facilitar que el grupo de los
   #complejos tenga el color correcto, se puede arreglar.
   #if (nrow(complexes) != 0){
-   # nodedata <- getTableColumns("node")
-    #nodes_complexes <- nodedata[grep("COMPLEX_NODE", nodedata$reactant_type), ]
-    #####
-    # Seleccionar los complejos, uno por uno
-    #for (g in unique(as.character(complexes$reaction_id_))){
-     # deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
-      #SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
-      #SUIDS <- as.character(SUIDS$SUID)
-      ####
-      #nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
-      ###Seleccionar el primer nodo vecino
-      #primer_vecino <- selectFirstNeighbors()
-      #primer_vecino <- setdiff(primer_vecino,nodos_suids)
-      #Funcion en r base pero con warnings
-      #primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
-      #primer_vecino <- as.character(primer_vecino$`shared name`)
+  # nodedata <- getTableColumns("node")
+  #nodes_complexes <- nodedata[grep("COMPLEX_NODE", nodedata$reactant_type), ]
+  #####
+  # Seleccionar los complejos, uno por uno
+  #for (g in unique(as.character(complexes$reaction_id_))){
+  # deltacatnodes <- df_nodes[grep(g, df_nodes$description), "id"]
+  #SUIDS <- nodedata[which(nodedata$`shared name` %in% deltacatnodes),]
+  #SUIDS <- as.character(SUIDS$SUID)
+  ####
+  #nodos_suids <- selectNodes(SUIDS, preserve=FALSE)
+  ###Seleccionar el primer nodo vecino
+  #primer_vecino <- selectFirstNeighbors()
+  #primer_vecino <- setdiff(primer_vecino,nodos_suids)
+  #Funcion en r base pero con warnings
+  #primer_vecino <- nodedata[which(nodedata$SUID %in% primer_vecino),]
+  #primer_vecino <- as.character(primer_vecino$`shared name`)
 
-      ###AQUI EL ERROR DE HTML, AL PARECER EN COLLAPSEGROUP
-      ##Crear grupo del complejo
-      #    if(missing(html)){
-      #createGroup(primer_vecino)###este si corre, no debe estar comentado
-      #      collapseGroup(primer_vecino)
-      #    }else{
-      #      if(html){
-      #        createGroup(primer_vecino)
-      #      }else{
-      #        createGroup(primer_vecino)
-      #        collapseGroup(primer_vecino)
-      #      }
-      #    }
-   # }
+  ###AQUI EL ERROR DE HTML, AL PARECER EN COLLAPSEGROUP
+  ##Crear grupo del complejo
+  #    if(missing(html)){
+  #createGroup(primer_vecino)###este si corre, no debe estar comentado
+  #      collapseGroup(primer_vecino)
+  #    }else{
+  #      if(html){
+  #        createGroup(primer_vecino)
+  #      }else{
+  #        createGroup(primer_vecino)
+  #        collapseGroup(primer_vecino)
+  #      }
+  #    }
+  # }
 
 
   #} else{
 
-    #print("INFO: El archivo de complejos esta vacio")
+  #print("INFO: El archivo de complejos esta vacio")
   #}
 
-###############
+  ###############
 
 
   if (nrow(complexes) != 0){
@@ -351,7 +353,7 @@ cytoscapeRegulon <- function(x){
 
 
 
-########Agregar un default para que los complejos agrupados tengan el estilo
+  ########Agregar un default para que los complejos agrupados tengan el estilo
   ####FORMA
   setNodeShapeDefault("OCTAGON")
   setNodeColorDefault("#b6bd7b")
@@ -418,13 +420,13 @@ cytoscapeRegulon <- function(x){
 
   colors <- rep("#000000",length(values))
   setNodeBorderColorMapping (column, values, colors,
-                       mapping.type = "d")
+                             mapping.type = "d")
 
   #####Width Border de los nodos
 
   widths <- rep(3,length(values))
   setNodeBorderWidthMapping(column, values, widths,
-                             mapping.type = "d")
+                            mapping.type = "d")
 
 
 
@@ -436,12 +438,12 @@ cytoscapeRegulon <- function(x){
 
   column_line <- "arrow"
   values_line <- c("NA-reactivo_aux-NA","STATE_TRANSITION-reactivo_aux-",
-                    "TRANSCRIPTION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-RVB",
-                    "TRANSLATION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-L2R",
-                    "TRANSPORT-reactivo_aux-L2R","COMPLEX_INTERACTION-reactivo_aux-NA",
-                    "STATE_TRANSITION-aux_reactivo-","TRANSCRIPTION-aux_reactivo-",
-                    "STATE_TRANSITION-aux_reactivo-RVB","STATE_TRANSITION-aux_reactivo-L2R",
-                    "TRANSPORT-aux_reactivo-L2R")
+                   "TRANSCRIPTION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-RVB",
+                   "TRANSLATION-reactivo_aux-","STATE_TRANSITION-reactivo_aux-L2R",
+                   "TRANSPORT-reactivo_aux-L2R","COMPLEX_INTERACTION-reactivo_aux-NA",
+                   "STATE_TRANSITION-aux_reactivo-","TRANSCRIPTION-aux_reactivo-",
+                   "STATE_TRANSITION-aux_reactivo-RVB","STATE_TRANSITION-aux_reactivo-L2R",
+                   "TRANSPORT-aux_reactivo-L2R")
 
   values_line_shape <- c("SOLID","SOLID","SOLID","SOLID","MARQUEE_DASH",
                          "SOLID","SOLID","DASH_DOT","SOLID","SOLID","SOLID")
@@ -531,9 +533,9 @@ cytoscapeRegulon <- function(x){
 
 
 
- # if(!(missing(html))){
+  # if(!(missing(html))){
   #  if(html){
-      #suppressWarnings(RegulonDBCytoscape::exportToHTML())
-   # }
+  #suppressWarnings(RegulonDBCytoscape::exportToHTML())
+  # }
   #}
 }
