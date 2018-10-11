@@ -607,6 +607,11 @@ cytoscapeRegulon <- function(x){
 
   }
 
+  ###Remover todas las flechas que apunten a los auxiliares
+
+  edges_auxiliares <- edgedata[grepl("Aux*", edgedata$target),"name"]
+  setEdgeTargetArrowShapeBypass(edges_auxiliares,"NONE")
+
 
 ##########Obtener los edges adyacentes a catalisis y hacer que tengan forma
   ###open circle
@@ -696,6 +701,7 @@ cytoscapeRegulon <- function(x){
   } else{
     print ("No hay Inhibiciones")
   }
+
 
   #########Physical Stimulations ####MAL, SE COMENATARA PARA BUSCAR EDGES QUE
   ########TAMBIEN SEAN INHIBIDOS Y COLOREARLOS DE AMARILLO
@@ -790,8 +796,5 @@ cytoscapeRegulon <- function(x){
   # }
   #}
 
-  ###Remover todas las flechas que apunten a los auxiliares
 
-  edges_auxiliares <- edgedata[grepl("Aux*", edgedata$target),"name"]
-  setEdgeTargetArrowShapeBypass(edges_auxiliares,"NONE")
 }
