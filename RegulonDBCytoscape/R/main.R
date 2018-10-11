@@ -371,20 +371,83 @@ cytoscapeRegulon <- function(x){
 
 
   #####Tamaño de los nodos
-  lockNodeDimensions(TRUE)
+  ###Version antigua
+  #lockNodeDimensions(TRUE)
+  #if (nrow(complexes) != 0){
+   # sizes <- c(50,50,50,50,50,50,50,10,50,50,50,50)
+  #  setNodeSizeMapping(column, values, sizes,
+   #                    mapping.type = "d")
 
+  #} else{
+  #  sizes <- c(rep(50,8),10)
+  #  setNodeSizeMapping(column, values, sizes,
+  #                     mapping.type = "d")
+
+  #}
+
+  ###Version nueva
+  lockNodeDimensions(FALSE)
+  ###### Proteinas y complejos
+  ###### height 35 y width 75
+  node_table <- getTableColumns(table = "node")
 
   if (nrow(complexes) != 0){
-    sizes <- c(50,50,50,50,50,50,50,10,50,50,50,50)
-    setNodeSizeMapping(column, values, sizes,
-                       mapping.type = "d")
+    protein_node <- grep("PROTEIN", node_table$reactant_type)
+    complex_node <- grep("COMPLEX", node_table$reactant_type)
 
-  } else{
-    sizes <- c(rep(50,8),10)
-    setNodeSizeMapping(column, values, sizes,
-                       mapping.type = "d")
+    index_protein_complex <- sort(c(protein_node, complex_node))
+    nodes_protein_complexes <- (node_table[index_protein_complex,"name"])
 
+    setNodeHeightBypass(nodes_protein_complexes, 35)
+    setNodeWidthBypass(nodes_protein_complexes, 75)
+
+  } else {
+
+    protein_node <- grep("PROTEIN", node_table$reactant_type)
+
+    nodes_protein <- (node_table[protein_node,"name"])
+
+    setNodeHeightBypass(nodes_protein, 35)
+    setNodeWidthBypass(nodes_protein, 75)
   }
+
+
+
+
+  #####Genes y RNAS
+  ####35 de altura y 85 de ancho.
+  genes_node <- grep("GENE", node_table$reactant_type)
+
+  nodes_genes <- (node_table[genes_node,"name"])
+
+  setNodeHeightBypass(nodes_genes, 35)
+  setNodeWidthBypass(nodes_genes, 85)
+
+  #######RNAS
+  #####35 de altura y 150 ancho
+  rna_node <- grep("RNA", node_table$reactant_type)
+
+  nodes_rna <- (node_table[rna_node,"name"])
+
+  setNodeHeightBypass(nodes_rna, 35)
+  setNodeWidthBypass(nodes_rna, 150)
+
+  ###Metabolitos
+  ### 35 de altura y 105 de ancho
+  metabolites_node <- grep("SIMPLE_MOLECULE", node_table$reactant_type)
+  nodes_metabolites <- (node_table[metabolites_node,"name"])
+
+  setNodeHeightBypass(nodes_metabolites, 35)
+  setNodeWidthBypass(nodes_metabolites, 105)
+
+  ###Auxiliares
+  aux_node <- grep("AUX", node_table$reactant_type)
+  nodes_aux <- (node_table[aux_node,"name"])
+
+  setNodeHeightBypass(nodes_aux, 10)
+  setNodeWidthBypass(nodes_aux, 10)
+
+
 
 
   #######Forma de los nodos
