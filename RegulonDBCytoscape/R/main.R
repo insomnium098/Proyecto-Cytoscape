@@ -746,6 +746,11 @@ cytoscapeRegulon <- function(x){
 
   }
 
+  ###Remover todas las flechas que apunten a los auxiliares
+
+  edges_auxiliares <- edgedata[grepl("Aux*", edgedata$target),"name"]
+  setEdgeTargetArrowShapeBypass(edges_auxiliares,"NONE")
+
 
 
 
