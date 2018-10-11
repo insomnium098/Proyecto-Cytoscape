@@ -782,6 +782,12 @@ cytoscapeRegulon <- function(x){
     setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
     setEdgeColorBypass(edges_stimulation_1,"#0099cc")
     setEdgeTargetArrowColorBypass(edges_stimulation_1,"#0099cc")
+
+    ###Remover todas las flechas que apunten a los auxiliares
+
+    edges_auxiliares_stimulation <- edges_stimulation[grepl("Aux*", edges_stimulation$target),"name"]
+    setEdgeTargetArrowShapeBypass(edges_auxiliares_stimulation,"NONE")
+
   } else{
     print ("No hay modificaciones Physical Stimulation")
   }
