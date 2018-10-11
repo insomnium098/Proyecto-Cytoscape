@@ -549,7 +549,12 @@ cytoscapeRegulon <- function(x){
 
   modifications <- rbind(modifications_RE, modifications_Pr)
 
-  loadTableData(modifications, data.key.column = "reaction",table = "edge",
+  ####Obtener solo las reacciones unicas
+
+
+  modifications_unique <- modifications[!duplicated(modifications$reaction), ]
+
+  loadTableData(modifications_unique, data.key.column = "reaction",table = "edge",
                 table.key.column = "reaction_id_")
 
   rm(modifications_RE, modifications_Pr)
