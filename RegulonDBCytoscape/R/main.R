@@ -711,34 +711,34 @@ cytoscapeRegulon <- function(x){
   #########Physical Stimulations ####MAL, SE COMENATARA PARA BUSCAR EDGES QUE
   ########TAMBIEN SEAN INHIBIDOS Y COLOREARLOS DE AMARILLO
 
-  #edges_stimulation <- filter(edgedata, modification_type == "PHYSICAL_STIMULATION")
+  edges_stimulation <- filter(edgedata, modification_type == "PHYSICAL_STIMULATION")
 
   #Verificar si hay inhibiciones
 
-  #if (length(rownames(edges_stimulation))>=1){
+  if (length(rownames(edges_stimulation))>=1){
 
-   # nodos_originales_stimulation <- filter(modifications, modification_type =="PHYSICAL_STIMULATION")
-  #  nodos_originales_stimulation <- unique(as.character(nodos_originales_stimulation$Object))
+    nodos_originales_stimulation <- filter(modifications, modification_type =="PHYSICAL_STIMULATION")
+    nodos_originales_stimulation <- unique(as.character(nodos_originales_stimulation$Object))
     #Obtener las reacciones re_Re
-   # edges_stimulation <- filter(edges_stimulation, reaction_id_direccion == "re_Re")
+    edges_stimulation <- filter(edges_stimulation, reaction_id_direccion == "re_Re")
 
     ###Obtener los nodos auxuliares de las reacciones re_Re
-    #nodos_aux_stimulation <- unique(as.character(edges_stimulation$target))
+    nodos_aux_stimulation <- unique(as.character(edges_stimulation$target))
 
     ###Obtener las edges que tengan como target los nodos aux stimulation y como source
     ###los nodos originales stimulation
 
-    #edges_stimulation_1 <- filter(edgedata, target %in% nodos_aux_stimulation &
-                               #    source %in% nodos_originales_stimulation)
+    edges_stimulation_1 <- filter(edgedata, target %in% nodos_aux_stimulation &
+                                   source %in% nodos_originales_stimulation)
 
 
-    #edges_stimulation_1 <- as.character(edges_stimulation_1$name)
-    #setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
-    #setEdgeColorBypass(edges_stimulation_1,"#48c4dc")
-    #setEdgeTargetArrowColorBypass(edges_stimulation_1,"#48c4dc")
-  #} else{
-  #  print ("No hay modificaciones Physical Stimulation")
-  #}
+    edges_stimulation_1 <- as.character(edges_stimulation_1$name)
+    setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
+    setEdgeColorBypass(edges_stimulation_1,"#48c4dc")
+    setEdgeTargetArrowColorBypass(edges_stimulation_1,"#48c4dc")
+  } else{
+    print ("No hay modificaciones Physical Stimulation")
+  }
 
   #####################
 
@@ -760,18 +760,18 @@ cytoscapeRegulon <- function(x){
 
 
 
-  ####PHYSYCAL STIMULATION BIEN
-  edges_stimulation <- filter(edgedata, modification_type == "PHYSICAL_STIMULATION")
+  ####PHYSYCAL STIMULATION BIEN( colorea las reacciones)
+  #edges_stimulation <- filter(edgedata, modification_type == "PHYSICAL_STIMULATION")
   #Verificar si hay STIMULATIONS
 
 
-  if (length(rownames(edges_stimulation))>=1){
+  #if (length(rownames(edges_stimulation))>=1){
 
-    nodos_originales_stimulation <- edges_stimulation
+    #nodos_originales_stimulation <- edges_stimulation
 
     #nodos_originales_stimulation <- unique(as.character(nodos_originales_stimulation$Object))
     #Obtener las reacciones re_Re
-    edges_stimulation <- filter(edges_stimulation, reaction_id_direccion == "re_Re")
+    #edges_stimulation <- filter(edges_stimulation, reaction_id_direccion == "re_Re")
 
     ###Obtener los nodos auxuliares de las reacciones re_Re
     #nodos_aux_stimulation <- unique(as.character(edges_stimulation$target))
@@ -783,19 +783,19 @@ cytoscapeRegulon <- function(x){
                                     #source %in% nodos_originales_stimulation)
 
 
-    edges_stimulation_1 <- as.character(nodos_originales_stimulation$name)
-    setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
-    setEdgeColorBypass(edges_stimulation_1,"#0099cc")
-    setEdgeTargetArrowColorBypass(edges_stimulation_1,"#0099cc")
+    #edges_stimulation_1 <- as.character(nodos_originales_stimulation$name)
+    #setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
+    #setEdgeColorBypass(edges_stimulation_1,"#0099cc")
+    #setEdgeTargetArrowColorBypass(edges_stimulation_1,"#0099cc")
 
     ###Remover todas las flechas que apunten a los auxiliares
 
-    edges_auxiliares_stimulation <- edges_stimulation[grepl("Aux*", edges_stimulation$target),"name"]
-    setEdgeTargetArrowShapeBypass(edges_auxiliares_stimulation,"NONE")
+    #edges_auxiliares_stimulation <- edges_stimulation[grepl("Aux*", edges_stimulation$target),"name"]
+    #setEdgeTargetArrowShapeBypass(edges_auxiliares_stimulation,"NONE")
 
-  } else{
-    print ("No hay modificaciones Physical Stimulation")
-  }
+  #} else{
+  #  print ("No hay modificaciones Physical Stimulation")
+  #}
 
 
   ##########VERIFICAR AQUELLAS MODIFICACIONES QUE SEAN
@@ -851,6 +851,10 @@ cytoscapeRegulon <- function(x){
 
 
   }
+
+
+  ###Remover todas las flechas salgan de los auxiliares con _Pr
+
 
 
 
