@@ -798,6 +798,62 @@ cytoscapeRegulon <- function(x){
   }
 
 
+  ##########VERIFICAR AQUELLAS MODIFICACIONES QUE SEAN
+  ##########INHIBITION Y PHYSYCAL STIMULATION EN LA MISMA REACCION
+
+  modifications_mod <- read.delim("modification.txt", header = FALSE,
+                              col.names = c("reaction","modification_type"
+                                            ,"Object","Reference"), stringsAsFactors=FALSE)
+
+  modificaciones_inhibition <- filter(modifications_mod, modification_type =="INHIBITION")
+  modificaciones_stimulation <- filter(modifications_mod, modification_type =="PHYSICAL_STIMULATION")
+
+  modificaciones_dobles <- inner_join(modificaciones_stimulation, modificaciones_inhibition, by="reaction" )
+
+  modificaciones_dobles_nombres <- as.character(unique(modificaciones_dobles$reaction))
+
+
+  if ((length(modificaciones_dobles_nombres))>=1){
+
+    modificaciones_dobles_RE <- paste(modificaciones_dobles_nombres, "Re", sep="_")
+    modificaciones_dobles_PR <- paste(modificaciones_dobles_nombres, "Pr", sep="_")
+
+    modificaciones_dobles_reaction <- c(modificaciones_dobles_PR, modificaciones_dobles_RE)
+
+    modificaciones_dobles <- filter(edgedata, reaction_id_ %in% modificaciones_dobles_reaction)
+    modificaciones_dobles_object <- as.character(modificaciones_dobles$reaction_id_)
+
+
+    #####Obtener los nodos originales
+    nodos_originales_mod_dobles <- filter(modifications, reaction %in% modificaciones_dobles_object)
+    nodos_originales_mod_dobles<- unique(as.character(nodos_originales_mod_dobles$Object))
+
+    ####Obtener los nodos auxiliares que sean target de estas reacciones Re
+
+    edges_aux_mod_dobles <- filter(modificaciones_dobles, reaction_id_direccion == "re_Re")
+    ###Obtener los nodos auxuliares de las reacciones re_Re
+    nodos_aux_mod_dobles <- unique(as.character(edges_aux_mod_dobles$target))
+
+    ###Obtener las edges que tengan como target los nodos_aux_mod_dobles y como source
+    ###los nodos_originales_mod_dobles
+
+    edges_mod_dobles_1 <- filter(edgedata, target %in% nodos_aux_mod_dobles &
+                                   source %in% nodos_originales_mod_dobles)
+
+    edges_mod_dobles_1 <- as.character(edges_mod_dobles_1$name)
+
+
+
+
+
+    setEdgeColorBypass(edges_mod_dobles_1,"#ffcc33")
+    setEdgeTargetArrowColorBypass(edges_mod_dobles_1,"#ffcc33")
+
+
+  }
+
+
+
 
   ################
 
