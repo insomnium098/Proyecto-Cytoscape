@@ -734,8 +734,8 @@ cytoscapeRegulon <- function(x){
 
     edges_stimulation_1 <- as.character(edges_stimulation_1$name)
     setEdgeTargetArrowShapeBypass(edges_stimulation_1,"DELTA")
-    setEdgeColorBypass(edges_stimulation_1,"#48c4dc")
-    setEdgeTargetArrowColorBypass(edges_stimulation_1,"#48c4dc")
+    setEdgeColorBypass(edges_stimulation_1,"#0099cc")
+    setEdgeTargetArrowColorBypass(edges_stimulation_1,"#0099cc")
   } else{
     print ("No hay modificaciones Physical Stimulation")
   }
