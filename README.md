@@ -22,7 +22,7 @@ OR
 
 B) Using binary package (only for mac OS)
 
-Download the binary file from https://github.com/insomnium098/Proyecto-Cytoscape/releases
+Download the binary file from https://github.com/insomnium098/RegulonDBCytoscape/releases
 
 In RStudio select Tools > Install packages > And in package archive select the downloaded package
 
