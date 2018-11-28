@@ -15,7 +15,7 @@ A) Directly from github
 library(devtools)
 
 
-install_github("insomnium098/Proyecto-Cytoscape/RegulonDBCytoscape")
+install_github("insomnium098/RegulonDBCytoscape/RegulonDBCytoscape")
 
 OR
 
